@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patrick D&#39;appollonio</title>
+    <link>http://patrickdappollonio.github.io/</link>
+    <description>Recent content on Patrick D&#39;appollonio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sat, 04 Apr 2015 23:18:19 -0400</lastBuildDate>
+    <atom:link href="http://patrickdappollonio.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>acumula puntos con su rut</title>
+      <link>http://patrickdappollonio.github.io/post/acumula-puntos-con-su-rut/</link>
+      <pubDate>Sat, 04 Apr 2015 23:18:19 -0400</pubDate>
+      
+      <guid>http://patrickdappollonio.github.io/post/acumula-puntos-con-su-rut/</guid>
+      <description>
+
+&lt;h3 id=&#34;hola-mundo:187d14cf54febbe843a6ec571c850fbc&#34;&gt;Hola Mundo!&lt;/h3&gt;
+
+&lt;p&gt;Esto es una prueba&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;esto := tambien()
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
