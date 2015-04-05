@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> HD Wallpapers para Android &middot; Patrick D&#39;appollonio </title>
+
+  
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/poole.css">
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/syntax.css">
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Patrick D&#39;appollonio" />
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>Patrick D&#39;appollonio</h1>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="/">Home</a> </li>
+      
+    </ul>
+
+    <p>&copy; 2015. All rights reserved. </p>
+  </div>
+</div>
+
+
+    <div class="content container">
+<div class="post">
+  <h1>HD Wallpapers para Android</h1>
+  <span class="post-date">Wed, Apr 2, 2014</span>
+      <p><img src="/content/img/hd-wallpapers-screenshot.jpg" alt="Una captura de HD Wallpapers, en widescreen" />
+</p>
+
+<p>En mis ratos, una de las cosas que hago es crear algunas piezas de código interesantes. La última, buscaba conseguir una <em>performance</em> de <em>scrolling</em> en Android bastante decente cuando habían imágenes de &ldquo;peso&rdquo; cargadas en la ventana, lo que logré optimizar bastante —cosa que ni Facebook hace con su app móvil—. ¿El resultado? Una app que decidí lanzar a todo público: HD Wallpapers.</p>
+
+<p><img src="/content/img/hd-wallpapers-screenshot-second.jpg" alt="Puedes elegir imágenes de un grupo de categorías :)" />
+</p>
+
+<p>Básicamente, <em>HD Wallpapers</em> es una app que <strong>obtiene las imágenes desde un sitio de Wallpapers</strong> — acción conocida como <em>web-scraping</em> — y las muestra directamente en pantalla. ¿La idea? Intentar hacer una línea de tiempo con imágenes <strong>y que el scrolling sobre éstas no tenga lag cuando pasamos sobre una multitud de imágenes</strong>. Esto permite dos cosas: primero, demostrar que Android es bastante potente en sí, que el manejo de memoria es bastante eficiente y que ciertos patrones que han aparecido como algunos llamados <em>&ldquo;ViewHolders&rdquo;</em> (que almacenan en el elemento &ldquo;tag&rdquo; de la vista XML su posición de memoria) realmente funcionan a la perfección; y lo segundo, es que hay muchas empresas que no cuidan este tipo de cosas: prueben entrando a Facebook para Android e intentar hacer scroll sin que se pegue al menos un poco mientras carga las fotos de la línea de tiempo. <strong>¡Difícil!</strong></p>
+
+<p>Obviamente, el resultado igual requiere una pequeña afinación, pero <em>¡vamos!</em> es una app completa que te permite descargar imágenes de gran resolución al celular y ponerlas como fondo de pantalla.</p>
+
+<p>Por debajo, la app usa la librería <a href="http://square.github.io/picasso/">Picasso</a> de Square&hellip; ¡Bastante buena! Además, una implementación propia del objeto &ldquo;target&rdquo; una vez que esté cargada la imagen, que permita almacenar la imagen descargada en el dispositivo para usarla luego.</p>
+
+<p>Puedes ahora probar la app. Ojo, <strong>no está 100% libre de errores</strong> —fue un proyecto de un par de días, pero bastante bueno para el tiempo que demoré desarrollándola— pero es usable al 99%.</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=us.dappollonio.hdwallpapers">Descarga HD Wallpapers desde el Play Store</a></p>
+
+</div>
+</div>
+
+  </body>
+</html>

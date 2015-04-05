@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> LaunchRocket: Lanza cualquier app Homebrew desde el panel de Preferencias de Mac &middot; Patrick D&#39;appollonio </title>
+
+  
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/poole.css">
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/syntax.css">
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Patrick D&#39;appollonio" />
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>Patrick D&#39;appollonio</h1>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="/">Home</a> </li>
+      
+    </ul>
+
+    <p>&copy; 2015. All rights reserved. </p>
+  </div>
+</div>
+
+
+    <div class="content container">
+<div class="post">
+  <h1>LaunchRocket: Lanza cualquier app Homebrew desde el panel de Preferencias de Mac</h1>
+  <span class="post-date">Mon, Mar 24, 2014</span>
+      
+
+<p>Ok, <em><strong>¡GeekTime!</strong></em> Para todos aquellos amigos informáticos que desarrollan tecnologías, una de las cosas más molestas de todas — <em>al menos para mí</em> — es el hecho de <strong>tener que instalar un sinfín de comandos</strong> para poder iniciar y detener los servicios de diferentes apps como bases de datos y servicios de Mac —sí, <em>launchctl</em>, te estoy mirando a ti!—.</p>
+
+<p><img src="/content/img/launchrocket.png" alt="La ventana de LaunchRocket, con tres servicios detectados" />
+</p>
+
+<p>Hoy, dando vuelta optimizando un poco mi trabajo habitual, me encontré con esta pieza de Software llamada <strong>LaunchRocket</strong>. Básicamente, LaunchRocket revisará los programas que hayas instalado con <em>Homebrew</em> y <strong>te permitirá crear un lanzador de servicios</strong> —ya sea con un usuario convencional o como <code>root</code>— fácilmente y sin tener que ver tu equipo afectado por comandos que de seguro olvidarás más adelante.</p>
+
+<h3 id="instalación:98d57be6a7431f46c8a219bee53f8ce2">Instalación</h3>
+
+<p>Para instalar LaunchRocket, <strong>bastará con que <a href="https://github.com/jimbojsb/launchrocket/releases/tag/v0.6">vayas al repositorio Github</a> y descargues la versión 0.6</strong> —que, al momento de redactar esta nota, es la última versión— y luego hagas doble click en el archivo .prefPane que se descomprimirá del zip que bajes.</p>
+
+<p><img src="/content/img/launchrocket-release.png" alt="El último release de LaunchRocket" />
+</p>
+
+<h3 id="consideraciones-de-ejecución:98d57be6a7431f46c8a219bee53f8ce2">Consideraciones de ejecución</h3>
+
+<p>Dadas las restricciones de Apple, y sobre todo <strong>las restricciones a los programas sin firma</strong>, es que una de las cosas lamentables es que hay que desactivar <em>Gatekeeper</em> —ese elemento de sistema que cada vez que bajas una app que no sea muy conocida y que no haya sido descargada del App Store y que te dice que la app &ldquo;proviene de un desarrollador desconocido o no identificado&rdquo;—.</p>
+
+<p>También hay otra alternativa que es instalarlo, ejecutar LaunchRocket, luego forzar la salida y abrir <em>&ldquo;Security and Privacy&rdquo;</em> y permitir la apertura de LaunchRocket dos veces: la primera para el prefPanel en sí, y la segunda para el archivo &ldquo;sudo&rdquo; que incluye el mismo y que es el que permite correr las apps.</p>
+
+<p>Hay una explicación bastante completa del por qué de esto <a href="https://github.com/jimbojsb/launchrocket/blob/master/README.md">en el archivo README del repositorio</a>.</p>
+
+<h3 id="agregar-servicios-de-homebrew:98d57be6a7431f46c8a219bee53f8ce2">Agregar servicios de Homebrew</h3>
+
+<p>La primera vez que abras el programa, aparecerá vacío, es decir, no habrá detectado ningún servicio. Hay dos formas de agregar servicios: escanear la instalación de Homebrew con el botón <code>Scan Homebrew</code> o agregar un archivo .plist para &ldquo;demonizarlo&rdquo; dentro de LaunchRocket, con <code>Add .plist</code>. En mi caso, <strong>la primera opción detectó todos los servicios instalados</strong> y pude ejecutarlos sin problemas.</p>
+
+<p>El mismo programa te permite <em>eliminar la &ldquo;vinculación&rdquo; de un servicio cualquiera</em> con <code>launchctl</code> en el caso de que ya no lo necesites, pero quieras mantener los ejecutables, basta con presionar <code>Remove</code> para deshacerse del mismo.</p>
+
+<p>Con todo lo anterior, ya puedo correr <a href="http://redis.io/">Redis</a> y <a href="https://www.mongodb.org/">MongoDB</a> sin mayores comandos de consola o, al menos, puedo dejar los comandos para otro tipo de momentos.</p>
+
+<p>Descarga: <a href="https://github.com/jimbojsb/launchrocket/releases/tag/v0.6">LaunchRocket.prefPane</a></p>
+
+</div>
+</div>
+
+  </body>
+</html>

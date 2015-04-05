@@ -50,6 +50,336 @@
       
   <div class="post">
     <h1 class="post-title">
+      <a href="https://patrickdappollonio.github.io/post/previene-que-tu-app-en-heroku-se-duerma/">
+        Previene que tu app en Heroku se duerma
+      </a>
+    </h1>
+
+    <span class="post-date">Thu, Jan 8, 2015</span>
+
+    
+
+<p><img src="/content/img/coffee.jpg" alt="¿Se te apetece un grano de café? sb_float" />
+</p>
+
+<p>Para los amigos webmasters que deciden alojar sus ideas en beta y desarrollos básicos en Heroku, éste presenta una gran alternativa: es fácil de usar, no se requiere inversión inicial, y además, acelera de sobremanera todo el trabajo de <em>sysoperations</em>, puesto que no hay que hacer más que un simple <code>git push heroku master</code> para tener la app funcionando en línea.</p>
+
+<p>¿El único problema? Las apps <em>free</em> en Heroku se duermen si, durante una hora, no reciben tráfico alguno. Generalmente, esas apps que se publican allí son para mostrarle a algún cliente algún detalle o, quizás, para alojar un blog o proyecto temporal a la espera de montar algo más serio en otro lado. Negativamente, una vez que una app Heroku se duerme, la siguiente persona que abra la webapp, deberá esperar un par de segundos extra mientras esta se <em>despierta</em> para volver a funcionar. <strong>¿Y qué si queremos evitar eso?</strong></p>
+
+<h2 id="dale-a-tu-app-una-taza-de-café:7369614baf6c921f7e156f7478996bda">Dale a tu app una taza de Café</h2>
+
+<p>O mejor dicho, un poco de cafeína. La cafeína está presente en casi todo desarrollo tecnológico: evita que nosotros, los geeks, nos quedemos dormidos mientras programamos; <a href="http://lightheadsw.com/caffeine/">evita que los Macs muestren el salvapantalla o incluso, <em>se duerman</em></a>; o incluso <a href="https://play.google.com/store/apps/details?id=us.dappollonio.keepalive">evitan que los Androids se les apague la pantalla</a> mientras mostramos algo.</p>
+
+<p>Pues bien, <strong>también hay caffeine para Heroku</strong> y, justamente, se trata de una app Heroku. <a href="http://kaffeine.herokuapp.com/"><strong><em>Kaffeine</em></strong></a> es una app alojada en Heroku que, cada 10 minutos, irá a visitar tu app, como si fuera un usuario real, para evitar que ésta se quede dormida. Para hacerla funcionar, <strong>basta con darle el ID de la aplicación</strong> para que cada 10 minutos haga <em>toc-toc</em> a tu puerta, y despierte a aquel que quizás se quede dormido.</p>
+
+<p>Es una solución bastante útil. He estado probándola con un par de proyectos y funciona de maravilla. ¿Lo mejor de todo? Es rápida y fácil de usar.</p>
+
+<p>Existen otras soluciones como usar <a href="http://pingdom.com/">Pingdom</a> o <a href="http://uptimerobot.com/">Uptime Robot</a> que hacen casi lo mismo que <a href="http://kaffeine.herokuapp.com/">Kaffeine</a>, pero&hellip; ¿Quién quiere tener que andar creando cuentas por ahí cuando sólo puedes meter el identificador en la página y olvidarte del resto?</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="https://patrickdappollonio.github.io/post/como-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh/">
+        Cómo prevenir el envío de la configuración de &#39;locale&#39; en Mac vía SSH
+      </a>
+    </h1>
+
+    <span class="post-date">Fri, Aug 1, 2014</span>
+
+    <p>Uno de los problemas que siempre me surge al momento en que limpio el Mac para dejarlo listo para la batalla es el problema de que <strong>la configuración por defecto del SSH de Mac envía a cualquier conexión vía SSH una solicitud para que aplique la configuración de <code>locale</code> de mi Mac en esas conexiones</strong>, resultando en problemas cuando instalas algunas aplicaciones o simplemente cuando ejecutas algún <code>make</code>. El resultado visual es algo así&hellip;</p>
+
+<p><img src="/content/img/locale.png" alt="Los mensajes de locale que dan problema..." />
+</p>
+
+<p>Con mensajes como:</p>
+
+<pre><code>locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+</code></pre>
+
+<p>Para evitar que se convierta en un inconveniente, podemos decirle al cliente de SSH integrado en Mac que evite mandar esa configuración, simplemente comentando una línea en el archivo de configuración ubicado en <code>/etc/ssh_config</code>. Para ello, bastará con editarlo, requiriendo obviamente los permisos de <code>sudo</code> para poder hacerlo y comentar la línea que reza <code>SendEnv LANG LC_*</code> anteponiendo una almohadilla al principio&hellip; Algo más visual, en esta imagen:</p>
+
+<p><img src="/content/img/editando-locale.png" alt="Editando la configuración de SSH en Mac" />
+</p>
+
+<p>Una vez hecho lo anterior, bastará con reiniciar cualquier conexión SSH abierta para que los cambios se apliquen.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="https://patrickdappollonio.github.io/post/interfaz-card-ui-xml/">
+        Cómo leer archivos bin/cue en Mac OS X
+      </a>
+    </h1>
+
+    <span class="post-date">Sun, May 11, 2014</span>
+
+    
+
+<p>Una de las cosas que son más comunes a la hora de diseñar interfaces en Android son las interfaces <em>Holo</em>. Actualmente, el elemento que es más común —en conjunto con los menús laterales y las _ActionBar_— son los elementos tipo tarjeta, bastante comunes en el Play Store.</p>
+
+<h3 id="implementación-en-xml:d1c5d11ee262fb3a821f486c0fc5929a">Implementación en XML</h3>
+
+<p>Hay varias alternativas de implementación. La que más se repite es hacer un <em>nine patch</em>, que requiere cierto esfuerzo, pero lamentablemente, el resultado no es <em>pixel perfect</em>, así que la mejor solución siempre es usar XML.</p>
+
+<p>Crea un nuevo archivo XML en tu carpeta de <em>drawables</em> y en ese archivo pega lo siguiente:</p>
+
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;
+   &lt;item&gt;
+      &lt;shape android:shape=&quot;rectangle&quot;&gt;
+         &lt;solid android:color=&quot;#CABBBBBB&quot;/&gt;
+         &lt;corners android:radius=&quot;2dp&quot; /&gt;
+      &lt;/shape&gt;
+   &lt;/item&gt;
+
+   &lt;item
+      android:left=&quot;0dp&quot;
+      android:right=&quot;0dp&quot;
+      android:top=&quot;0dp&quot;
+      android:bottom=&quot;2dp&quot;&gt;
+      &lt;shape android:shape=&quot;rectangle&quot;&gt;
+         &lt;solid android:color=&quot;@android:color/white&quot;/&gt;
+         &lt;corners android:radius=&quot;2dp&quot; /&gt;
+      &lt;/shape&gt;
+   &lt;/item&gt;
+</code></pre>
+
+<p>Con eso, tendrás un elemento tipo &ldquo;Card&rdquo; en la parte que necesites. Bastará nada más que definas como fondo al XML recién creado sobre cualquier <em>view</em> de Android.</p>
+
+<h3 id="demo:d1c5d11ee262fb3a821f486c0fc5929a">Demo</h3>
+
+<p>Este es un ejemplo en donde, además, se puso el fondo de color plomo, de manera de notar de mejor forma el resultado. El alto del <em>LinearLayout</em> es de 100dp, ya que si omitimos el alto o lo definimos como <em>wrap_content</em>, entonces no podremos ver prácticamente nada.</p>
+
+<p><img src="/content/img/card-ui-pixel-perfect.png" alt="Card UI Pixel Perfect" />
+</p>
+
+<p>Además, entre usar un 9patch vs un archivo XML, el resultado es, técnicamente, más <em>pixel perfect</em>.</p>
+
+<p>Ojalá te sirva como a mi. ¡Suerte!</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="https://patrickdappollonio.github.io/post/leer-archivos-bin-cue-mac/">
+        Cómo leer archivos bin/cue en Mac OS X
+      </a>
+    </h1>
+
+    <span class="post-date">Fri, Apr 25, 2014</span>
+
+    <p>Hoy me topé con algo de mi día a día: en un viejo disco duro de respaldo tenía unas copias de DVDs en formato bin/cue. Lamentablemente, Mavericks no me dejó montar los archivos bin ya que, técnicamente, <em>Apple no da soporte a los archivos bin/cue</em> de manera nativa en Mac, <strong>pero la solución es bastante simple</strong>.</p>
+
+<p><img src="/content/img/binchunker.png" alt="binchunker en acción" />
+</p>
+
+<p>Existe un programa de consola llamado  <code>binchunker</code> que convierte archivos bin/cue a ISO sin mayores inconvenientes. Eso sí, <strong>necesitas tener el archivo &lsquo;cue&rsquo;</strong> —que no es más que la descripción de los elementos dentro del archivo bin— aunque entiendo que también se pueden crear <em><a href="http://www.tech-recipes.com/rx/881/how-do-i-open-or-mount-a-bin-file-without-a-cue-file/">a mano</a></em>. ¿Lo tienes en mano? ¡Genial!</p>
+
+<p>Para convertir el archivo, primero <strong>necesitarás tener instalado Homebrew</strong>. Si no lo tienes instalado, hacerlo no cuesta nada&hellip; Sólo copia y pega el siguiente comando en tu Terminal (obtenido desde <a href="http://brew.sh/">la web oficial</a>):</p>
+
+<p><code>ruby -e &quot;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&quot;</code></p>
+
+<p>Una vez hecho eso, verifica que todo esté bien instalado con Homebrew ejecutando <code>brew doctor</code> en la consola y si todo va bien, actualízalo por seguridad ejecutando <code>brew update</code>. ¿Hecho? ¡Genial!</p>
+
+<p>El segundo paso es instalar <code>binchunker</code> utilizando Homebrew. Hacerlo es fácil, ejecuta <code>brew install bchunk</code> y espera a que finalice la instalación. Cuando ya esté listo, ¡estarás a un paso de convertir tus bin/cue a ISO!</p>
+
+<p>Para el último paso, <strong>abre en el Finder la carpeta donde se encuentran los archivos bin/cue</strong> y ponla a un costado de tu pantalla. En el otro costado vacío, <strong>mantén la Terminal abierta</strong>. En Terminal escribe <code>bchunk</code> luego presiona espacio, y <em>arrastra el archivo bin a la Terminal</em>, luego pulsa espacio nuevamente, y <em>arrastra el archivo cue al Terminal</em>. Finalmente, pulsa espacio nuevamente y escribe <code>~/nuevo.iso</code>. En definitiva, el comando luce más o menos así (obviamente, cambiando <code>/path/to</code> por la ubicación donde están los archivos bin y cue):</p>
+
+<p><code>bchunk /path/to/archivo.bin /path/to/archivo.cue ~/nuevo.iso</code></p>
+
+<p>Una vez que tengas el comando completo, pulsa <code>enter</code> y una ventana como la que se ve en la imagen superior aparecerá, mostrándote el porcentaje de la transformación y el peso del archivo. Cuando haya llegado al 100%, <strong>entra a tu carpeta de Usuario</strong> y verás allí el archivo <code>nuevo.iso</code>. ¡Ya puedes montarlo!</p>
+
+<p>Si no eres amigo de la Terminal, no hay problema. <a href="http://www.mactip.net/mount-bin-cue-disk-image-mac-daemon/">Aquí tienes un tutorial simple</a> para hacer todo el proceso más gráfico.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="https://patrickdappollonio.github.io/post/por-que-los-camiones-de-ups-no-giran-a-la-izquierda/">
+        ¿Por qué los camiones de UPS no giran a la Izquierda?
+      </a>
+    </h1>
+
+    <span class="post-date">Sat, Apr 5, 2014</span>
+
+    <p><img src="/content/img/ups-truck.jpg" alt="Imagen" />
+</p>
+
+<p>En 2004, UPS anunció una nueva política corporativa para sus conductores: la forma correcta de llegar a cualquier destino <strong>era evitar cualquier giro a la <em>izquierda</em></strong>.</p>
+
+<p>Cuando aparecieron mejores sistemas de seguimiento en 2001, el servicio de entrega de paquetes revisó más en detalle cómo era el rendimiento de cuando los camiones entregaban estos paquetes. Como empresa de logística con unos 96.000 camiones y varios cientos de aviones, una buena parte del negocio de UPS puede ser reducido a una serie de problemas de optimización sobre la reducción de la cantidad de combustible usado, el ahorro de tiempo y el uso más eficiente del espacio. (Los camiones en los estacionamientos de UPS se estacionan a un par de centímetros de distancia, incluso <a href="http://abcnews.go.com/WNT/story?id=3005890">llegando a superponer sus espejos laterales</a> para ahorrar espacio.)</p>
+
+<p>Los Ingenieros de UPS encontraron que, al doblar a la izquierda, <strong>se perdía eficiencia</strong>. Doblar contra el tráfico tenía como resultado <strong>largas esperas sólo para esperar que se liberara el carril</strong>, y además generaba un <strong><em>desproporcionado</em> número de accidentes</strong>. Mapeando rutas que tuvieran <a href="http://compass.ups.com/UPS-driver-avoid-left-turns/">una serie de giros hacia la derecha</a>, UPS mejoró los ingresos y la seguridad mientras hacían alarde de su pegadiza política de respeto por el medio ambiente. Para el 2012, la regla de doblar siempre a la derecha combinada con otras mejoras <strong>ahorró aproximadamente 10 millones de galones de gas</strong> y redujo las emisiones por <strong>un equivalente a quitar 3.500 autos de las carreteras por un año</strong>.</p>
+
+<p>Al describir la extraña política de la empresa en un discurso, <a href="http://www.pressroom.ups.com/About+UPS/UPS+Leadership/Speeches/D.+Scott+Davis/Right+Turn+at+the+Right+Time">el CEO de UPS comentó a la incrédula audiencia</a>: &ldquo;Puedo ver que varios de ustedes están sonriendo, y se lo que deben estar pensando, pero realmente funciona.&rdquo;</p>
+
+<p>Si no lo creen, bueno, <strong>¡para eso están los cazadores de mitos!</strong> El programa envió a un camión a entregar paquetes siguiendo una ruta normal y también siguiendo una ruta en la que sólo se doblara a la derecha, como UPS. Detectaron que la decisión de UPS ahorraba gas, pero tomaba un poco más de tiempo terminar el trabajo.</p>
+
+<iframe width="750" height="422" src="//www.youtube.com/embed/ppCz4f1L9iU" frameborder="0" allowfullscreen></iframe>
+
+<p>Los cazadores de mitos, probablemente, fallaron en ahorrar tiempo en la ruta <strong>por seguir muy al pié de la letra la regla de no virar a la izquierda</strong>. Mientras que la regla de no virar a la izquierda tiene una forma simple y algorítmica de verificarse, notarán que UPS sí realiza giros a la izquierda en ocasiones, especialmente en barrios residenciales que no tengan mucho tráfico. Cuando le preguntaron a uno de los conductores de UPS cuándo doblar a la derecha, <a href="http://abcnews.go.com/WNT/story?id=3005890">éste contestó a la cadena ABC</a>:</p>
+
+<blockquote>
+<p>Un estimado, puedo decir que un 90% del tiempo. Nosotros realmente, realmente odiamos las vueltas a la izquierda en UPS.</p>
+</blockquote>
+
+<p>Desde que UPS utiliza softwares para generar las rutas, puede enviar a los conductores <strong>a rutas en las que sólo se necesite girar a la derecha</strong>, sólo haciendo ciertas excepciones cuando una vuelta a la izquierda es, efectivamente, fácil y rápida. Tal cual como dijo el senior VP de UPS <a href="http://money.cnn.com/video/news/2010/12/13/n_cs_ups_no_left_turn.fortune/">en una entrevista sobre la regla</a>: &ldquo;Es por eso que amo a los ingenieros, ellos aman el hecho de seguir detectando cómo hacer las cosas mejor.&rdquo;</p>
+
+<hr />
+
+<p><em>Traducción libre del Original de <a href="http://priceonomics.com/why-ups-trucks-dont-turn-left/">Priceonomics</a>.
+Original de Alex Mayyasi.</em></p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="https://patrickdappollonio.github.io/post/hd-wallpapers-para-android/">
+        HD Wallpapers para Android
+      </a>
+    </h1>
+
+    <span class="post-date">Wed, Apr 2, 2014</span>
+
+    <p><img src="/content/img/hd-wallpapers-screenshot.jpg" alt="Una captura de HD Wallpapers, en widescreen" />
+</p>
+
+<p>En mis ratos, una de las cosas que hago es crear algunas piezas de código interesantes. La última, buscaba conseguir una <em>performance</em> de <em>scrolling</em> en Android bastante decente cuando habían imágenes de &ldquo;peso&rdquo; cargadas en la ventana, lo que logré optimizar bastante —cosa que ni Facebook hace con su app móvil—. ¿El resultado? Una app que decidí lanzar a todo público: HD Wallpapers.</p>
+
+<p><img src="/content/img/hd-wallpapers-screenshot-second.jpg" alt="Puedes elegir imágenes de un grupo de categorías :)" />
+</p>
+
+<p>Básicamente, <em>HD Wallpapers</em> es una app que <strong>obtiene las imágenes desde un sitio de Wallpapers</strong> — acción conocida como <em>web-scraping</em> — y las muestra directamente en pantalla. ¿La idea? Intentar hacer una línea de tiempo con imágenes <strong>y que el scrolling sobre éstas no tenga lag cuando pasamos sobre una multitud de imágenes</strong>. Esto permite dos cosas: primero, demostrar que Android es bastante potente en sí, que el manejo de memoria es bastante eficiente y que ciertos patrones que han aparecido como algunos llamados <em>&ldquo;ViewHolders&rdquo;</em> (que almacenan en el elemento &ldquo;tag&rdquo; de la vista XML su posición de memoria) realmente funcionan a la perfección; y lo segundo, es que hay muchas empresas que no cuidan este tipo de cosas: prueben entrando a Facebook para Android e intentar hacer scroll sin que se pegue al menos un poco mientras carga las fotos de la línea de tiempo. <strong>¡Difícil!</strong></p>
+
+<p>Obviamente, el resultado igual requiere una pequeña afinación, pero <em>¡vamos!</em> es una app completa que te permite descargar imágenes de gran resolución al celular y ponerlas como fondo de pantalla.</p>
+
+<p>Por debajo, la app usa la librería <a href="http://square.github.io/picasso/">Picasso</a> de Square&hellip; ¡Bastante buena! Además, una implementación propia del objeto &ldquo;target&rdquo; una vez que esté cargada la imagen, que permita almacenar la imagen descargada en el dispositivo para usarla luego.</p>
+
+<p>Puedes ahora probar la app. Ojo, <strong>no está 100% libre de errores</strong> —fue un proyecto de un par de días, pero bastante bueno para el tiempo que demoré desarrollándola— pero es usable al 99%.</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=us.dappollonio.hdwallpapers">Descarga HD Wallpapers desde el Play Store</a></p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="https://patrickdappollonio.github.io/post/launchrocket-prefpane-homebrew/">
+        LaunchRocket: Lanza cualquier app Homebrew desde el panel de Preferencias de Mac
+      </a>
+    </h1>
+
+    <span class="post-date">Mon, Mar 24, 2014</span>
+
+    
+
+<p>Ok, <em><strong>¡GeekTime!</strong></em> Para todos aquellos amigos informáticos que desarrollan tecnologías, una de las cosas más molestas de todas — <em>al menos para mí</em> — es el hecho de <strong>tener que instalar un sinfín de comandos</strong> para poder iniciar y detener los servicios de diferentes apps como bases de datos y servicios de Mac —sí, <em>launchctl</em>, te estoy mirando a ti!—.</p>
+
+<p><img src="/content/img/launchrocket.png" alt="La ventana de LaunchRocket, con tres servicios detectados" />
+</p>
+
+<p>Hoy, dando vuelta optimizando un poco mi trabajo habitual, me encontré con esta pieza de Software llamada <strong>LaunchRocket</strong>. Básicamente, LaunchRocket revisará los programas que hayas instalado con <em>Homebrew</em> y <strong>te permitirá crear un lanzador de servicios</strong> —ya sea con un usuario convencional o como <code>root</code>— fácilmente y sin tener que ver tu equipo afectado por comandos que de seguro olvidarás más adelante.</p>
+
+<h3 id="instalación:98d57be6a7431f46c8a219bee53f8ce2">Instalación</h3>
+
+<p>Para instalar LaunchRocket, <strong>bastará con que <a href="https://github.com/jimbojsb/launchrocket/releases/tag/v0.6">vayas al repositorio Github</a> y descargues la versión 0.6</strong> —que, al momento de redactar esta nota, es la última versión— y luego hagas doble click en el archivo .prefPane que se descomprimirá del zip que bajes.</p>
+
+<p><img src="/content/img/launchrocket-release.png" alt="El último release de LaunchRocket" />
+</p>
+
+<h3 id="consideraciones-de-ejecución:98d57be6a7431f46c8a219bee53f8ce2">Consideraciones de ejecución</h3>
+
+<p>Dadas las restricciones de Apple, y sobre todo <strong>las restricciones a los programas sin firma</strong>, es que una de las cosas lamentables es que hay que desactivar <em>Gatekeeper</em> —ese elemento de sistema que cada vez que bajas una app que no sea muy conocida y que no haya sido descargada del App Store y que te dice que la app &ldquo;proviene de un desarrollador desconocido o no identificado&rdquo;—.</p>
+
+<p>También hay otra alternativa que es instalarlo, ejecutar LaunchRocket, luego forzar la salida y abrir <em>&ldquo;Security and Privacy&rdquo;</em> y permitir la apertura de LaunchRocket dos veces: la primera para el prefPanel en sí, y la segunda para el archivo &ldquo;sudo&rdquo; que incluye el mismo y que es el que permite correr las apps.</p>
+
+<p>Hay una explicación bastante completa del por qué de esto <a href="https://github.com/jimbojsb/launchrocket/blob/master/README.md">en el archivo README del repositorio</a>.</p>
+
+<h3 id="agregar-servicios-de-homebrew:98d57be6a7431f46c8a219bee53f8ce2">Agregar servicios de Homebrew</h3>
+
+<p>La primera vez que abras el programa, aparecerá vacío, es decir, no habrá detectado ningún servicio. Hay dos formas de agregar servicios: escanear la instalación de Homebrew con el botón <code>Scan Homebrew</code> o agregar un archivo .plist para &ldquo;demonizarlo&rdquo; dentro de LaunchRocket, con <code>Add .plist</code>. En mi caso, <strong>la primera opción detectó todos los servicios instalados</strong> y pude ejecutarlos sin problemas.</p>
+
+<p>El mismo programa te permite <em>eliminar la &ldquo;vinculación&rdquo; de un servicio cualquiera</em> con <code>launchctl</code> en el caso de que ya no lo necesites, pero quieras mantener los ejecutables, basta con presionar <code>Remove</code> para deshacerse del mismo.</p>
+
+<p>Con todo lo anterior, ya puedo correr <a href="http://redis.io/">Redis</a> y <a href="https://www.mongodb.org/">MongoDB</a> sin mayores comandos de consola o, al menos, puedo dejar los comandos para otro tipo de momentos.</p>
+
+<p>Descarga: <a href="https://github.com/jimbojsb/launchrocket/releases/tag/v0.6">LaunchRocket.prefPane</a></p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="https://patrickdappollonio.github.io/post/series-que-ver-primera-parte/">
+        Series que ver (primera parte)
+      </a>
+    </h1>
+
+    <span class="post-date">Fri, Sep 6, 2013</span>
+
+    
+
+<p>Una de las cosas que hago en mi tiempo libre es ver series. <strong>Son aquellas cosas que me desestresan, mantienen la mente fuera de contexto por un rato, te hacen gritar, o incluso, te dejan preocupado por lo que pasará.</strong> Aquí, la recopilación de series que deberías ver (sin un orden de preferencia) y un pequeño resumen de cada una…</p>
+
+<h2 id="arrow-esperando-a-la-segunda-temporada:ded4f4914b08a0bae9dcd7d845861cfb">Arrow <em>(esperando a la segunda temporada)</em></h2>
+
+<p><img src="/content/img/arrow.jpeg" alt="Arrow" />
+</p>
+
+<p><strong>Arrow es una de esas series que llama la atención.</strong> Aunque a más de alguno no le puede terminar de gustar el fork que sucedió luego de Smallville — y la presencia de <em>Green Arrow</em> en ésta —, la nueva serie sí que es toda una creación.</p>
+
+<p>Para quienes no están familiarizados, se trata de un arquero — que está dentro de la trama de Superman <strong>— que naufragó junto a su padre en un Barco de la familia</strong> —multimillonaria, por cierto— pero que sobrevivió gracias a tener la fuerza de hacerlo —y de un par de personajes que le ayudaron—.</p>
+
+<p>Su padre, antes de decidir asesinarse para darle más víveres al hijo en el momento del naufragio, le indica que no todo era color de rosa, y que estaba sumido en un conflicto de proporciones, que lo transformaba en un enemigo de la ciudad. Le pide a su hijo, entonces, que debe resolver los problemas. Eliminar a aquellos que <em>“le fallan a la ciudad”</em> y limpiar el nombre tanto de su padre como de su familia.</p>
+
+<p>¿El resto? Averíguenlo por su cuenta ;)</p>
+
+<h2 id="continuum-recién-terminada-espera-la-tercera-temporada:ded4f4914b08a0bae9dcd7d845861cfb">Continuum <em>(recién terminada, espera la tercera temporada)</em></h2>
+
+<p><img src="/content/img/continuum.jpeg" alt="Continuum" />
+</p>
+
+<p>Continuum es una de esas series con toque futurista que llaman la atención: una policía del futuro — Kiera Cameron — atrapa a un par de maleantes de una agrupación terrorista llamada Liber8 (Liberate) y cuando los iban a enjuiciar, <strong>usan un dispositivo para viajar en el tiempo, 64 años en el pasado desde el 2077 hasta el 2013</strong>.</p>
+
+<p>La gracia del <em>viajecito</em> era que, modificando el pasado, pudieran cambiar el futuro: un futuro en el que las corporaciones controlan las naciones, y no existen, como tal, legislaturas democráticas.</p>
+
+<p>La historia se pone interesante cuando Kiera conoce a Alec Sadler, un informático del presente quien, en el futuro, <strong>es quien creó toda la tecnología para doblegar la democracia a los pies de las corporaciones</strong>. Es así como se enfrascan en problemas para intentar llevar a Kiera de vuelta al futuro, a su línea de tiempo, sin antes armar una trama bastante interesante.</p>
+
+<p>La serie está marcada de mucho futurismo: desde trajes que te convierten en invisible, te dan super fuerza o incluso te transforman en un enchufe con patas, hasta sistemas implantados en el cerebro que te permiten ver cual Google Glass tuvieras dentro.</p>
+
+<h2 id="homeland-esperando-la-tercera-temporada:ded4f4914b08a0bae9dcd7d845861cfb">Homeland <em>(esperando la tercera temporada)</em></h2>
+
+<p><img src="/content/img/homeland.jpeg" alt="Homeland: Carrie y Nicholas" />
+</p>
+
+<p>Debo decir que la primera vez que la vi, <strong>no me llamó la atención para nada</strong>. Le di una oportunidad un día en el que me quedé sin series que ver y no me arrepiento: ¡es una excelente historia!</p>
+
+<p><em>Homeland</em> trata de aquellos problemas americanos en los cuales se ven entremezcladas la inteligencia estadounidense y las conspiraciones como Al Qaeda y similares.</p>
+
+<p>Todo sucede cuando Carrie, la agente de inteligencia, se encontraba por aquellos países conflictivos a Estados Unidos, y uno de sus “ayudantes” iba a ser enjuiciado y, por ende, asesinado. En sus últimas palabras no encontró mejor idea que <strong>decir que *uno de los suyos se había cambiado de bando</strong>*. Momentos más tarde, un escuadrón militar encontraba en un sótano al — hasta ese entonces — desaparecido Sargento Nicholas Brody, quien sólo atinó a decir “I’m American” cuando lo encontraron.</p>
+
+<p>La historia continúa con que Mathison desconfía enormemente de Brody — y con justa razón — al punto de que se generan conflictos, hay bombas de por medio — sí, como las bombas terroristas que acostumbramos a ver en la pantalla chica y grande —. La historia <strong>llega incluso al punto en que Mathison y Brody se enganchan en un desliz amoroso</strong>. ¿El resto de la historia? Ya sabes qué hacer…</p>
+
+<h2 id="under-the-dome-en-transmisión-de-la-primera-temporada:ded4f4914b08a0bae9dcd7d845861cfb">Under The Dome <em>(en transmisión de la primera temporada)</em></h2>
+
+<p><img src="/content/img/under-the-dome.jpeg" alt="Under the Dome, de Stephen King" />
+</p>
+
+<p><strong>Del libro de Stephen King del mismo nombre</strong>, la serie que cubre a un pequeño pueblo de Estados Unidos con un domo misterioso del cual nadie sabe de dónde aparece.</p>
+
+<p>La historia transcurre en el pueblo de Chester’s Mill, donde repentinamente un domo aparece cerrando toda vía de comunicación con el exterior. Dentro de éste, quedan atrapadas un grupo de personas que deberán ver cómo se las arreglan para sobrevivir a la escasez de alimentos, agua, y otros elementos necesarios.</p>
+
+<p>Mientras tanto, además, se van desentrelazando otros conflictos como <strong>la desaparición del esposo de la periodista del pueblo</strong>, los conflictos de intereses entre el Sacerdote del pueblo y uno de sus concejales y los sucios actos que llevan a cuestas, y más. Hay de todo: desde cosas inexplicables como transmisiones de radio extrañas captadas por las antenas de Radio del pueblo, hasta un loco secuestrador que, supuestamente, lo hace por “amor”. ¿Y el resto de la historia? ¡Bien, nos vamos entendiendo!</p>
+
+<hr />
+
+<p>¡Es todo por esta entrega! A la próxima, más recomendaciones de series interesantes para ver. ¿Alguna recomendación mientras esperamos por The Walking Dead o similar?</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
       <a href="https://patrickdappollonio.github.io/post/linkedin-como-fuente-de-trabajo-para-profesionales/">
         LinkedIn como fuente de trabajo para Profesionales
       </a>
@@ -57,7 +387,31 @@
 
     <span class="post-date">Mon, Sep 3, 2012</span>
 
-    
+    <p>Hola de nuevo. Por acá poniendo el hombro con otra nota. Esta vez, <strong>para comentar alguna de las bondades de LinkedIn</strong>, la red social profesional. He de decir primero que LinkedIn no es algo muy factible de usar en empresas que quieren llegar a su público objetivo, a menos que sea un público de profesionales. LinkedIn es más algo como para que los profesionales y expertos puedan conocerse, fomentar el trabajo que realizan, y conseguir nuevas redes de contacto.</p>
+
+<p><img src="/content/img/linkedin.gif" alt="LinkedIn" />
+</p>
+
+<p>Una de las cosas que he estado siguiendo de cerca de LinkedIn, para Chile, es lo poderoso que se está convirtiendo en redes de contacto y búsqueda de empleos. Leí por ahí alguna vez a una conocida mujer —muy amiga de un amigo mío— preguntándose si LinkedIn servía para algo, y la verdad es que <strong>he visto a varios conseguir excelentes puestos de trabajo</strong> usando esta red de contactos.</p>
+
+<p>Hay varios grupos dentro de LinkedIn que se dedican a esto y la verdad, <strong>no les va nada mal</strong>. Además, no tienes que preocuparte de subir currículums o similares, puesto que quienes buscan profesionales, pueden leer los perfiles de los postulantes ahí mismo —aunque no falta el pelotudo que busca profesionales y pide currículum en una red social donde lo que cuenta es, justamente, el currículum—.</p>
+
+<p>Es interesante, además, ver la adopción que ha tenido LinkedIn en Chile: <strong>varias personas que conozco y que no son muy fan de las redes sociales han terminado usándolo</strong>, de la misma forma que terminaron usando Facebook, o sea, “porque mis amigos también tienen“. LinkedIn, por su parte, es especial para mantener el contacto con aquellos profesionales que no quieres que te vean etiquetado como ebrio, en una posición media deshonrosa, o incluso, mostrando lo bonito que es tu baño.</p>
+
+<p>Ahora, mucha maravilla de conseguir pega en LinkedIn, pero, <strong>¿y dónde buscar?</strong> Aquí algunas recomendaciones:</p>
+
+<ul>
+<li><p><strong><a href="http://www.linkedin.com/groups/Brujula-Profesional-3825782">Brújula Profesional</a>:</strong> Un grupo que he estado siguiendo desde hace poco, pero se encarga de publicar las solicitudes de profesionales del sitio web del mismo nombre, que es uno de los tantos sitios para buscar capital humano. Lo que sí: aunque LinkedIn tiene un sistema para publicar avisos de trabajo y conseguir un mejor funcionamiento, acá se esmeran en publicarlo como update del grupo. Ojalá alguien les avise ;)</p></li>
+
+<li><p><strong><a href="http://www.linkedin.com/groups/Busco-Trabajo-Chile-4578869">Busco Trabajo Chile</a>:</strong> Aunque parece un clon del anterior, puesto que varios trabajos de Brújula Profesional aparecen acá (sino todos), estos también tienen algunos trabajos exclusivos que son publicados por las personas que participan del grupo. Lo que tiene de bueno es que capta más gente porque al usar el buscador de grupos con las keywords “Busco Trabajo”, adivina quién sale primero.</p></li>
+
+<li><p><strong><a href="http://www.linkedin.com/groups/Chile-Profesionales-2111544">Chile Profesionales</a>:</strong> Mi favorito. Aunque en un principio habían más trabajos techies publicados acá, ahora han incluido más headhunters y personas de recursos humanos de empresas menos techies, lo que ha ampliado la gama de buscatrabajos existentes en el grupo. He oído de casos de éxito en donde han conseguido el puesto visto acá.</p></li>
+</ul>
+
+<p>Ahí está, <strong>3 alternativas para poder conseguir trabajo en LinkedIn</strong>. Ahora, si piensas usar LinkedIn a lo Facebook, date un tiro por todos nosotros, incluyendo uno por los creadores de LinkedIn.</p>
+
+<p><em>¿No que LinkedIn no servía para nada?</em> Ojalá quien necesite de un trabajo, encuentre por acá.</p>
+
   </div>
   
   <div class="post">

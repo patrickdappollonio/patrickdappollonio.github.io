@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> Previene que tu app en Heroku se duerma &middot; Patrick D&#39;appollonio </title>
+
+  
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/poole.css">
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/syntax.css">
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Patrick D&#39;appollonio" />
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>Patrick D&#39;appollonio</h1>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="/">Home</a> </li>
+      
+    </ul>
+
+    <p>&copy; 2015. All rights reserved. </p>
+  </div>
+</div>
+
+
+    <div class="content container">
+<div class="post">
+  <h1>Previene que tu app en Heroku se duerma</h1>
+  <span class="post-date">Thu, Jan 8, 2015</span>
+      
+
+<p><img src="/content/img/coffee.jpg" alt="¿Se te apetece un grano de café? sb_float" />
+</p>
+
+<p>Para los amigos webmasters que deciden alojar sus ideas en beta y desarrollos básicos en Heroku, éste presenta una gran alternativa: es fácil de usar, no se requiere inversión inicial, y además, acelera de sobremanera todo el trabajo de <em>sysoperations</em>, puesto que no hay que hacer más que un simple <code>git push heroku master</code> para tener la app funcionando en línea.</p>
+
+<p>¿El único problema? Las apps <em>free</em> en Heroku se duermen si, durante una hora, no reciben tráfico alguno. Generalmente, esas apps que se publican allí son para mostrarle a algún cliente algún detalle o, quizás, para alojar un blog o proyecto temporal a la espera de montar algo más serio en otro lado. Negativamente, una vez que una app Heroku se duerme, la siguiente persona que abra la webapp, deberá esperar un par de segundos extra mientras esta se <em>despierta</em> para volver a funcionar. <strong>¿Y qué si queremos evitar eso?</strong></p>
+
+<h2 id="dale-a-tu-app-una-taza-de-café:7369614baf6c921f7e156f7478996bda">Dale a tu app una taza de Café</h2>
+
+<p>O mejor dicho, un poco de cafeína. La cafeína está presente en casi todo desarrollo tecnológico: evita que nosotros, los geeks, nos quedemos dormidos mientras programamos; <a href="http://lightheadsw.com/caffeine/">evita que los Macs muestren el salvapantalla o incluso, <em>se duerman</em></a>; o incluso <a href="https://play.google.com/store/apps/details?id=us.dappollonio.keepalive">evitan que los Androids se les apague la pantalla</a> mientras mostramos algo.</p>
+
+<p>Pues bien, <strong>también hay caffeine para Heroku</strong> y, justamente, se trata de una app Heroku. <a href="http://kaffeine.herokuapp.com/"><strong><em>Kaffeine</em></strong></a> es una app alojada en Heroku que, cada 10 minutos, irá a visitar tu app, como si fuera un usuario real, para evitar que ésta se quede dormida. Para hacerla funcionar, <strong>basta con darle el ID de la aplicación</strong> para que cada 10 minutos haga <em>toc-toc</em> a tu puerta, y despierte a aquel que quizás se quede dormido.</p>
+
+<p>Es una solución bastante útil. He estado probándola con un par de proyectos y funciona de maravilla. ¿Lo mejor de todo? Es rápida y fácil de usar.</p>
+
+<p>Existen otras soluciones como usar <a href="http://pingdom.com/">Pingdom</a> o <a href="http://uptimerobot.com/">Uptime Robot</a> que hacen casi lo mismo que <a href="http://kaffeine.herokuapp.com/">Kaffeine</a>, pero&hellip; ¿Quién quiere tener que andar creando cuentas por ahí cuando sólo puedes meter el identificador en la página y olvidarte del resto?</p>
+
+</div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> Cómo leer archivos bin/cue en Mac OS X &middot; Patrick D&#39;appollonio </title>
+
+  
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/poole.css">
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/syntax.css">
+  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Patrick D&#39;appollonio" />
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>Patrick D&#39;appollonio</h1>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="/">Home</a> </li>
+      
+    </ul>
+
+    <p>&copy; 2015. All rights reserved. </p>
+  </div>
+</div>
+
+
+    <div class="content container">
+<div class="post">
+  <h1>Cómo leer archivos bin/cue en Mac OS X</h1>
+  <span class="post-date">Fri, Apr 25, 2014</span>
+      <p>Hoy me topé con algo de mi día a día: en un viejo disco duro de respaldo tenía unas copias de DVDs en formato bin/cue. Lamentablemente, Mavericks no me dejó montar los archivos bin ya que, técnicamente, <em>Apple no da soporte a los archivos bin/cue</em> de manera nativa en Mac, <strong>pero la solución es bastante simple</strong>.</p>
+
+<p><img src="/content/img/binchunker.png" alt="binchunker en acción" />
+</p>
+
+<p>Existe un programa de consola llamado  <code>binchunker</code> que convierte archivos bin/cue a ISO sin mayores inconvenientes. Eso sí, <strong>necesitas tener el archivo &lsquo;cue&rsquo;</strong> —que no es más que la descripción de los elementos dentro del archivo bin— aunque entiendo que también se pueden crear <em><a href="http://www.tech-recipes.com/rx/881/how-do-i-open-or-mount-a-bin-file-without-a-cue-file/">a mano</a></em>. ¿Lo tienes en mano? ¡Genial!</p>
+
+<p>Para convertir el archivo, primero <strong>necesitarás tener instalado Homebrew</strong>. Si no lo tienes instalado, hacerlo no cuesta nada&hellip; Sólo copia y pega el siguiente comando en tu Terminal (obtenido desde <a href="http://brew.sh/">la web oficial</a>):</p>
+
+<p><code>ruby -e &quot;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&quot;</code></p>
+
+<p>Una vez hecho eso, verifica que todo esté bien instalado con Homebrew ejecutando <code>brew doctor</code> en la consola y si todo va bien, actualízalo por seguridad ejecutando <code>brew update</code>. ¿Hecho? ¡Genial!</p>
+
+<p>El segundo paso es instalar <code>binchunker</code> utilizando Homebrew. Hacerlo es fácil, ejecuta <code>brew install bchunk</code> y espera a que finalice la instalación. Cuando ya esté listo, ¡estarás a un paso de convertir tus bin/cue a ISO!</p>
+
+<p>Para el último paso, <strong>abre en el Finder la carpeta donde se encuentran los archivos bin/cue</strong> y ponla a un costado de tu pantalla. En el otro costado vacío, <strong>mantén la Terminal abierta</strong>. En Terminal escribe <code>bchunk</code> luego presiona espacio, y <em>arrastra el archivo bin a la Terminal</em>, luego pulsa espacio nuevamente, y <em>arrastra el archivo cue al Terminal</em>. Finalmente, pulsa espacio nuevamente y escribe <code>~/nuevo.iso</code>. En definitiva, el comando luce más o menos así (obviamente, cambiando <code>/path/to</code> por la ubicación donde están los archivos bin y cue):</p>
+
+<p><code>bchunk /path/to/archivo.bin /path/to/archivo.cue ~/nuevo.iso</code></p>
+
+<p>Una vez que tengas el comando completo, pulsa <code>enter</code> y una ventana como la que se ve en la imagen superior aparecerá, mostrándote el porcentaje de la transformación y el peso del archivo. Cuando haya llegado al 100%, <strong>entra a tu carpeta de Usuario</strong> y verás allí el archivo <code>nuevo.iso</code>. ¡Ya puedes montarlo!</p>
+
+<p>Si no eres amigo de la Terminal, no hay problema. <a href="http://www.mactip.net/mount-bin-cue-disk-image-mac-daemon/">Aquí tienes un tutorial simple</a> para hacer todo el proceso más gráfico.</p>
+
+</div>
+</div>
+
+  </body>
+</html>
