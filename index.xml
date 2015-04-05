@@ -5,7 +5,7 @@
     <link>https://patrickdappollonio.github.io/</link>
     <description>Recent content on Patrick D&#39;appollonio</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es-es</language>
+    <language>es</language>
     <lastBuildDate>Thu, 08 Jan 2015 15:04:00 -0400</lastBuildDate>
     <atom:link href="https://patrickdappollonio.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,8 +17,7 @@
       <guid>https://patrickdappollonio.github.io/post/previene-que-tu-app-en-heroku-se-duerma/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/coffee.jpg&#34; alt=&#34;¿Se te apetece un grano de café? sb_float&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;alignleft&#34; alt=&#34;¿Se te apetece un grano de café?&#34; title=&#34;¿Se te apetece un grano de café?&#34; src=&#34;https://patrickdappollonio.github.io/content/img/coffee.jpg&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Para los amigos webmasters que deciden alojar sus ideas en beta y desarrollos básicos en Heroku, éste presenta una gran alternativa: es fácil de usar, no se requiere inversión inicial, y además, acelera de sobremanera todo el trabajo de &lt;em&gt;sysoperations&lt;/em&gt;, puesto que no hay que hacer más que un simple &lt;code&gt;git push heroku master&lt;/code&gt; para tener la app funcionando en línea.&lt;/p&gt;
 
@@ -63,7 +62,7 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
     </item>
     
     <item>
-      <title>Cómo leer archivos bin/cue en Mac OS X</title>
+      <title>Cómo crear una interfaz &#39;Card UI&#39; en Android usando XML</title>
       <link>https://patrickdappollonio.github.io/post/interfaz-card-ui-xml/</link>
       <pubDate>Sun, 11 May 2014 23:40:00 -0400</pubDate>
       
@@ -164,7 +163,10 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
 
 &lt;p&gt;Si no lo creen, bueno, &lt;strong&gt;¡para eso están los cazadores de mitos!&lt;/strong&gt; El programa envió a un camión a entregar paquetes siguiendo una ruta normal y también siguiendo una ruta en la que sólo se doblara a la derecha, como UPS. Detectaron que la decisión de UPS ahorraba gas, pero tomaba un poco más de tiempo terminar el trabajo.&lt;/p&gt;
 
-&lt;iframe width=&#34;750&#34; height=&#34;422&#34; src=&#34;//www.youtube.com/embed/ppCz4f1L9iU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/ppCz4f1L9iU&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;Los cazadores de mitos, probablemente, fallaron en ahorrar tiempo en la ruta &lt;strong&gt;por seguir muy al pié de la letra la regla de no virar a la izquierda&lt;/strong&gt;. Mientras que la regla de no virar a la izquierda tiene una forma simple y algorítmica de verificarse, notarán que UPS sí realiza giros a la izquierda en ocasiones, especialmente en barrios residenciales que no tengan mucho tráfico. Cuando le preguntaron a uno de los conductores de UPS cuándo doblar a la derecha, &lt;a href=&#34;http://abcnews.go.com/WNT/story?id=3005890&#34;&gt;éste contestó a la cadena ABC&lt;/a&gt;:&lt;/p&gt;
 
@@ -261,8 +263,7 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;arrow-esperando-a-la-segunda-temporada:ded4f4914b08a0bae9dcd7d845861cfb&#34;&gt;Arrow &lt;em&gt;(esperando a la segunda temporada)&lt;/em&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/arrow.jpeg&#34; alt=&#34;Arrow&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;center&#34; alt=&#34;Arrow&#34; title=&#34;Arrow&#34; src=&#34;https://patrickdappollonio.github.io/content/img/arrow.jpeg&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Arrow es una de esas series que llama la atención.&lt;/strong&gt; Aunque a más de alguno no le puede terminar de gustar el fork que sucedió luego de Smallville — y la presencia de &lt;em&gt;Green Arrow&lt;/em&gt; en ésta —, la nueva serie sí que es toda una creación.&lt;/p&gt;
 
@@ -274,8 +275,7 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;continuum-recién-terminada-espera-la-tercera-temporada:ded4f4914b08a0bae9dcd7d845861cfb&#34;&gt;Continuum &lt;em&gt;(recién terminada, espera la tercera temporada)&lt;/em&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/continuum.jpeg&#34; alt=&#34;Continuum&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;alignleft&#34; alt=&#34;Continuum&#34; title=&#34;Continuum&#34; src=&#34;https://patrickdappollonio.github.io/content/img/continuum.jpeg&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Continuum es una de esas series con toque futurista que llaman la atención: una policía del futuro — Kiera Cameron — atrapa a un par de maleantes de una agrupación terrorista llamada Liber8 (Liberate) y cuando los iban a enjuiciar, &lt;strong&gt;usan un dispositivo para viajar en el tiempo, 64 años en el pasado desde el 2077 hasta el 2013&lt;/strong&gt;.&lt;/p&gt;
 
@@ -287,8 +287,7 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;homeland-esperando-la-tercera-temporada:ded4f4914b08a0bae9dcd7d845861cfb&#34;&gt;Homeland &lt;em&gt;(esperando la tercera temporada)&lt;/em&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/homeland.jpeg&#34; alt=&#34;Homeland: Carrie y Nicholas&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;center&#34; alt=&#34;Homeland: Carrie y Nicholas&#34; title=&#34;Homeland: Carrie y Nicholas&#34; src=&#34;https://patrickdappollonio.github.io/content/img/homeland.jpeg&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Debo decir que la primera vez que la vi, &lt;strong&gt;no me llamó la atención para nada&lt;/strong&gt;. Le di una oportunidad un día en el que me quedé sin series que ver y no me arrepiento: ¡es una excelente historia!&lt;/p&gt;
 
@@ -300,8 +299,7 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;under-the-dome-en-transmisión-de-la-primera-temporada:ded4f4914b08a0bae9dcd7d845861cfb&#34;&gt;Under The Dome &lt;em&gt;(en transmisión de la primera temporada)&lt;/em&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/under-the-dome.jpeg&#34; alt=&#34;Under the Dome, de Stephen King&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;center&#34; alt=&#34;Under the Dome, de Stephen King&#34; title=&#34;Under the Dome, de Stephen King&#34; src=&#34;https://patrickdappollonio.github.io/content/img/under-the-dome.jpeg&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Del libro de Stephen King del mismo nombre&lt;/strong&gt;, la serie que cubre a un pequeño pueblo de Estados Unidos con un domo misterioso del cual nadie sabe de dónde aparece.&lt;/p&gt;
 
@@ -323,8 +321,7 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
       <guid>https://patrickdappollonio.github.io/post/linkedin-como-fuente-de-trabajo-para-profesionales/</guid>
       <description>&lt;p&gt;Hola de nuevo. Por acá poniendo el hombro con otra nota. Esta vez, &lt;strong&gt;para comentar alguna de las bondades de LinkedIn&lt;/strong&gt;, la red social profesional. He de decir primero que LinkedIn no es algo muy factible de usar en empresas que quieren llegar a su público objetivo, a menos que sea un público de profesionales. LinkedIn es más algo como para que los profesionales y expertos puedan conocerse, fomentar el trabajo que realizan, y conseguir nuevas redes de contacto.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/linkedin.gif&#34; alt=&#34;LinkedIn&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;center&#34; alt=&#34;LinkedIn&#34; title=&#34;LinkedIn&#34; src=&#34;https://patrickdappollonio.github.io/content/img/linkedin.gif&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Una de las cosas que he estado siguiendo de cerca de LinkedIn, para Chile, es lo poderoso que se está convirtiendo en redes de contacto y búsqueda de empleos. Leí por ahí alguna vez a una conocida mujer —muy amiga de un amigo mío— preguntándose si LinkedIn servía para algo, y la verdad es que &lt;strong&gt;he visto a varios conseguir excelentes puestos de trabajo&lt;/strong&gt; usando esta red de contactos.&lt;/p&gt;
 
@@ -358,8 +355,7 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Hace algunos minutos una interesante pregunta llegó a mi Twitter preguntándome por hosting, cosa práctica, puesto que &lt;strong&gt;toda la gente que quiere tener una web necesita hospedarla en alguna parte&lt;/strong&gt;. Es por eso que me decidí a publicar una nota explicando los tipos de hostings que existen en la actualidad totalmente a huevo —explicado con papas y manzanas, como decimos en Chile— para que tenga una idea enorme.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/hosting.jpg&#34; alt=&#34;Así se ve un datacenter sb_float&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;center&#34; alt=&#34;Así se ve un datacenter&#34; title=&#34;Así se ve un datacenter&#34; src=&#34;https://patrickdappollonio.github.io/content/img/hosting.jpg&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;De más está decir que &lt;strong&gt;todo lo aquí expresado es basado en conocimientos y la experiencia personal&lt;/strong&gt; —llevo más de 8 años en el marco web, sobre todo en el hosting y alojo sitios de alta cantidad de usuarios, como también de baja— y además no puede ser la totalidad de hostings existentes —puesto que algunas compañías deciden “poner nombre” a tipos de hostings especiales, que en la práctica, &lt;strong&gt;no tienen nada especial más que el nombre&lt;/strong&gt;, véase “hybrid” más abajo— así que lo dejo a criterio del lector.&lt;/p&gt;
 
@@ -374,8 +370,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Ahora, ¿qué debes saber de un hosting compartido? Que, como su nombre lo dice, es compartido. Generalmente &lt;strong&gt;las empresas que venden “shared hosting” tienen grandes equipos&lt;/strong&gt; —como ordenadores con 16 GB de RAM o más, procesadores super-hiper-monstruosos, discos duros de más de un terabyte por parte baja, y otro gran etcétera— &lt;strong&gt;y deciden poner en un sólo ordenador a unos 2.000 a 3.000 usuarios&lt;/strong&gt; —sí, son 3.000 personas que utilizan un mismo servidor en común— en los casos más amplios, mientras que en lo normal puedes toparte con unos 300 usuarios en tu propio servidor a groso modo.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/shared-hosting.jpg&#34; alt=&#34;Hosting compartido: este es tu espacio sb_float&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;center&#34; alt=&#34;Hosting compartido: este es tu espacio&#34; title=&#34;Hosting compartido: este es tu espacio&#34; src=&#34;https://patrickdappollonio.github.io/content/img/shared-hosting.jpg&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Como te ofrecen algo “ilimitado”, si el disco duro de ese ordenador —que, dije, es de un terabyte— se llena y tú no puedes meter más cosas, es simple… &lt;strong&gt;Te mueven a otro servidor que sí tenga espacio.&lt;/strong&gt; En teoría, casi un 75% de todos los clientes de una empresa de hosting nunca usan más allá de 10 GB —y eso con suerte!— de almacenamiento y por ende, el tráfico también es poco, por lo que, &lt;strong&gt;el tráfico y el disco duro que les sobra se lo entregan a otro cliente como tú&lt;/strong&gt;.&lt;/p&gt;
 
@@ -399,8 +394,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Este es el segundo punto en la escala de tu sitio web &lt;strong&gt;y es un tanto similar al anterior, aunque hay algo que los diferencia enormemente&lt;/strong&gt;. Es igual porque aún se siguen metiendo en &lt;strong&gt;un mismo computador a varios clientes&lt;/strong&gt;, aunque esta vez en menor cantidad —¡y mucha menor cantidad!— siendo entre &lt;strong&gt;3 a 10-15 clientes por PC&lt;/strong&gt;—.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/vps-diagram.gif&#34; alt=&#34;Así es un VPS&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;center&#34; alt=&#34;Así es un VPS&#34; title=&#34;Así es un VPS&#34; src=&#34;https://patrickdappollonio.github.io/content/img/vps-diagram.gif&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Ahora, te preguntarás, aparte de eso, ¿qué tiene de nuevo? Muy simple: &lt;strong&gt;&lt;em&gt;Virtualización&lt;/em&gt;&lt;/strong&gt;. Si eres un recién llegado, estimado webmaster, seguramente habrás oído el término pero no tengas idea de qué se trata y, como lo explicamos a huevo, lo entenderás… Imagina el computador desde el que estás leyendo esta nota. La virtualización significa que lo que harán es que &lt;strong&gt;con programas especiales, ese computador se subdivida en 3 a 10-15 computadores dentro de ese mismo computador&lt;/strong&gt; y, ¿sabes qué es lo mejor? que &lt;strong&gt;cada computador tiene sus propias características especiales tal cual como si fueran uno independiente&lt;/strong&gt;: puedes reiniciarlo, apagarlo, cambiarle el sistema operativo, reinstalarlo, borrarlo por completo, desconectarlo de internet, y agrega aquí un tercer gran etcétera.&lt;/p&gt;
 
@@ -434,8 +428,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Para algunos, el final de la línea del hosting. Para otros, sólo el comienzo. Los servidores dedicados, como su nombre lo dicen, &lt;strong&gt;no tienen a nadie más que a ti dentro y están a tu entera disposición&amp;hellip;&lt;/strong&gt; ¿Quieres tenerlos 5 semanas apagados? Adelante, nadie te dirá nada. ¿Quieres estropearlo? Adelante! Es todo tuyo. En sí, &lt;strong&gt;en un servidor dedicado puedes hacer y deshacer lo que quieras&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/servidor-dedicado.jpg&#34; alt=&#34;Servidores dedicados&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;center&#34; alt=&#34;Servidores dedicados&#34; title=&#34;Servidores dedicados&#34; src=&#34;https://patrickdappollonio.github.io/content/img/servidor-dedicado.jpg&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Es un computador REAL que sirve de alojamiento a tu sitio web —pudiendo ser perfectamente uno o varios, aunque sólo tuyos o de amigos y conocidos— aunque no como un ordenador común, sino que en el común de los casos &lt;strong&gt;se trata de un computador plano y muy delgado que se monta dentro de un rack junto con otros servidores&lt;/strong&gt; —sí, otros ordenadores de otros clientes que no tienen ninguna relación más contigo que estar cerca porque están dentro de la misma empresa— o también puede ser una torre de ordenador convencional —como los ordenadores de escritorio, observa la primera imagen de esta nota— claro que &lt;strong&gt;sin pantalla, mouse, teclado, tarjeta de vídeo, y todo el hardware innecesario&lt;/strong&gt;, sino que, esencialmente, una tarjeta de red, RAM, un procesador y una tarjeta de red que lo conecta a internet.&lt;/p&gt;
 
@@ -455,8 +448,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Aunque el nombre de este tipo de hosting no es del todo un estándar —muchos suelen llamarle como quieren—, &lt;strong&gt;es uno de los pasos de hosting más poderosos y baratos que existen&lt;/strong&gt; —esto último a largo plazo—. Súper simple: &lt;strong&gt;tú compras el computador que requieres o el servidor y luego le pides a una empresa un espacio donde ubicarlo&lt;/strong&gt;, pudiendo ser cerca tuyo, como también lejos, además pagando un extra muy básico por la electricidad consumida y la conexión a internet y, por supuesto, un céntimo por el espacio gastado y los técnicos, en caso de que los necesites.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/datacenter-de-google.jpg&#34; alt=&#34;Uno de los Datacenters de Google&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;center&#34; alt=&#34;Uno de los Datacenters de Google&#34; title=&#34;Uno de los Datacenters de Google&#34; src=&#34;https://patrickdappollonio.github.io/content/img/datacenter-de-google.jpg&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;En principio, el costo inicial es alto, puesto que debes comprar un ordenador completo. Luego, &lt;strong&gt;te olvidas de seguir pagando el precio del equipo y te preocupas de pagar sólo electricidad, internet y la ubicación&lt;/strong&gt;, lo que baja bastante el precio.&lt;/p&gt;
 
@@ -472,8 +464,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Este, a mi criterio, &lt;strong&gt;es el final de la línea del hosting&lt;/strong&gt;. Cloud Computing —o computación en la nube— ha llegado para quedarse. &lt;strong&gt;El cloud computing podría ser similar a lo que, en su tiempo y hasta ahora es el &lt;em&gt;clustering&lt;/em&gt;.&lt;/strong&gt; Contrario a lo que sucedía con el hosting compartido donde un equipo hospedaba a 300 clientes, aquí es totalmente al revés: &lt;strong&gt;300 servidores hospedan un equipo o una cuenta&lt;/strong&gt;. Sí, no estoy loco. El cloud computing no es más que miles de máquinas distribuidas en el mundo y que en conjunto hacen una gran cabeza que puede venderse como una por partes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://patrickdappollonio.github.io/content/img/cloud-computing.jpg&#34; alt=&#34;La &amp;quot;Computación en la Nube&amp;quot;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;center&#34; alt=&#34;La &amp;#39;Computación en la Nube&amp;#39;&#34; title=&#34;La &amp;#39;Computación en la Nube&amp;#39;&#34; src=&#34;https://patrickdappollonio.github.io/content/img/cloud-computing.jpg&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Así, por ejemplo, &lt;strong&gt;si contratas un cloud VPS, en teoría no deberías tener ningún problema si tu web se vuelve más famosa que la portada de Google algún día&lt;/strong&gt;, puesto que toda esa nube —a la nube le llamamos a aquellos cientos de miles de computadores trabajando como uno solo— &lt;strong&gt;estará disponible para que tú la uses&lt;/strong&gt; —eso si puedes pagar el extra, claro—.&lt;/p&gt;
 

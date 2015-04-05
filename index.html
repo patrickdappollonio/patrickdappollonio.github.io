@@ -1,667 +1,217 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html lang="es">
 <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-  <title> Patrick D&#39;appollonio &middot; Patrick D&#39;appollonio </title>
-
-  
-  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/poole.css">
-  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/syntax.css">
-  <link rel="stylesheet" href="https://patrickdappollonio.github.io//css/hyde.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-
-  
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/favicon.ico">
-
-  
-  <link href="https://patrickdappollonio.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Patrick D&#39;appollonio" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Lora:400,700&amp;subset=latin,latin-ext" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64 128x128 256x256">
+<meta name="generator" content="Hugo 0.14-DEV" />
+<title>Patrick D&#39;appollonio</title>
+<meta name="description" content="">
 </head>
-
 <body>
-
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>Patrick D&#39;appollonio</h1>
-      <p class="lead">
-      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
-      </p>
-    </div>
-
-    <ul class="sidebar-nav">
-      <li><a href="/">Home</a> </li>
-      
-    </ul>
-
-    <p>&copy; 2015. All rights reserved. </p>
-  </div>
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-lg-offset-1 col-lg-10">
+				<div id="header">
+					<h1><a href="https://patrickdappollonio.github.io/">Patrick D&#39;appollonio</a></h1>
+				</div>
+				<div id="subheader">
+					<div id="profile-image"></div>
+					<h2>CTO de Sonusland Inc., Fundador de <a href="https://www.twitter.com/marlexsystems" target="_blank" rel="nofollow">@MarlexSystems</a>. Escribiendo desde Doral, FL. Originalmente Chileno. Mi twitter: <a href="https://www.twitter.com/marlex" target="_blank" rel="nofollow">@marlex</a>.</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	
+<section id="blogposts">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-lg-offset-1 col-lg-10">
+				
+					<div class="blogpost-item">
+	<h3><a href="https://patrickdappollonio.github.io/post/previene-que-tu-app-en-heroku-se-duerma/">Previene que tu app en Heroku se duerma</a></h3>
+	
+	<p>Para los amigos webmasters que deciden alojar sus ideas en beta y desarrollos básicos en Heroku, éste presenta una gran alternativa: es fácil de usar, no se requiere inversión inicial, y además, acelera de sobremanera todo el trabajo de sysoperations, puesto que no hay que hacer más que un simple git push heroku master para tener la app funcionando en línea. ¿El único problema? Las apps free en Heroku se duermen si, durante una hora, no reciben tráfico alguno.</p>
+	<span>
+		Publicado el 08/01/2015 / 
+		
+			2 minutos
+		 &mdash; 400 palabras
+	</span>
 </div>
-
-
-    <div class="content container">
-<div class="posts">
-
-      
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/previene-que-tu-app-en-heroku-se-duerma/">
-        Previene que tu app en Heroku se duerma
-      </a>
-    </h1>
-
-    <span class="post-date">Thu, Jan 8, 2015</span>
-
-    
-
-<p><img src="/content/img/coffee.jpg" alt="¿Se te apetece un grano de café? sb_float" />
-</p>
-
-<p>Para los amigos webmasters que deciden alojar sus ideas en beta y desarrollos básicos en Heroku, éste presenta una gran alternativa: es fácil de usar, no se requiere inversión inicial, y además, acelera de sobremanera todo el trabajo de <em>sysoperations</em>, puesto que no hay que hacer más que un simple <code>git push heroku master</code> para tener la app funcionando en línea.</p>
-
-<p>¿El único problema? Las apps <em>free</em> en Heroku se duermen si, durante una hora, no reciben tráfico alguno. Generalmente, esas apps que se publican allí son para mostrarle a algún cliente algún detalle o, quizás, para alojar un blog o proyecto temporal a la espera de montar algo más serio en otro lado. Negativamente, una vez que una app Heroku se duerme, la siguiente persona que abra la webapp, deberá esperar un par de segundos extra mientras esta se <em>despierta</em> para volver a funcionar. <strong>¿Y qué si queremos evitar eso?</strong></p>
-
-<h2 id="dale-a-tu-app-una-taza-de-café:7369614baf6c921f7e156f7478996bda">Dale a tu app una taza de Café</h2>
-
-<p>O mejor dicho, un poco de cafeína. La cafeína está presente en casi todo desarrollo tecnológico: evita que nosotros, los geeks, nos quedemos dormidos mientras programamos; <a href="http://lightheadsw.com/caffeine/">evita que los Macs muestren el salvapantalla o incluso, <em>se duerman</em></a>; o incluso <a href="https://play.google.com/store/apps/details?id=us.dappollonio.keepalive">evitan que los Androids se les apague la pantalla</a> mientras mostramos algo.</p>
-
-<p>Pues bien, <strong>también hay caffeine para Heroku</strong> y, justamente, se trata de una app Heroku. <a href="http://kaffeine.herokuapp.com/"><strong><em>Kaffeine</em></strong></a> es una app alojada en Heroku que, cada 10 minutos, irá a visitar tu app, como si fuera un usuario real, para evitar que ésta se quede dormida. Para hacerla funcionar, <strong>basta con darle el ID de la aplicación</strong> para que cada 10 minutos haga <em>toc-toc</em> a tu puerta, y despierte a aquel que quizás se quede dormido.</p>
-
-<p>Es una solución bastante útil. He estado probándola con un par de proyectos y funciona de maravilla. ¿Lo mejor de todo? Es rápida y fácil de usar.</p>
-
-<p>Existen otras soluciones como usar <a href="http://pingdom.com/">Pingdom</a> o <a href="http://uptimerobot.com/">Uptime Robot</a> que hacen casi lo mismo que <a href="http://kaffeine.herokuapp.com/">Kaffeine</a>, pero&hellip; ¿Quién quiere tener que andar creando cuentas por ahí cuando sólo puedes meter el identificador en la página y olvidarte del resto?</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/como-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh/">
-        Cómo prevenir el envío de la configuración de &#39;locale&#39; en Mac vía SSH
-      </a>
-    </h1>
-
-    <span class="post-date">Fri, Aug 1, 2014</span>
-
-    <p>Uno de los problemas que siempre me surge al momento en que limpio el Mac para dejarlo listo para la batalla es el problema de que <strong>la configuración por defecto del SSH de Mac envía a cualquier conexión vía SSH una solicitud para que aplique la configuración de <code>locale</code> de mi Mac en esas conexiones</strong>, resultando en problemas cuando instalas algunas aplicaciones o simplemente cuando ejecutas algún <code>make</code>. El resultado visual es algo así&hellip;</p>
-
-<p><img src="/content/img/locale.png" alt="Los mensajes de locale que dan problema..." />
-</p>
-
-<p>Con mensajes como:</p>
-
-<pre><code>locale: Cannot set LC_CTYPE to default locale: No such file or directory
-locale: Cannot set LC_ALL to default locale: No such file or directory
-</code></pre>
-
-<p>Para evitar que se convierta en un inconveniente, podemos decirle al cliente de SSH integrado en Mac que evite mandar esa configuración, simplemente comentando una línea en el archivo de configuración ubicado en <code>/etc/ssh_config</code>. Para ello, bastará con editarlo, requiriendo obviamente los permisos de <code>sudo</code> para poder hacerlo y comentar la línea que reza <code>SendEnv LANG LC_*</code> anteponiendo una almohadilla al principio&hellip; Algo más visual, en esta imagen:</p>
-
-<p><img src="/content/img/editando-locale.png" alt="Editando la configuración de SSH en Mac" />
-</p>
-
-<p>Una vez hecho lo anterior, bastará con reiniciar cualquier conexión SSH abierta para que los cambios se apliquen.</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/interfaz-card-ui-xml/">
-        Cómo leer archivos bin/cue en Mac OS X
-      </a>
-    </h1>
-
-    <span class="post-date">Sun, May 11, 2014</span>
-
-    
-
-<p>Una de las cosas que son más comunes a la hora de diseñar interfaces en Android son las interfaces <em>Holo</em>. Actualmente, el elemento que es más común —en conjunto con los menús laterales y las _ActionBar_— son los elementos tipo tarjeta, bastante comunes en el Play Store.</p>
-
-<h3 id="implementación-en-xml:d1c5d11ee262fb3a821f486c0fc5929a">Implementación en XML</h3>
-
-<p>Hay varias alternativas de implementación. La que más se repite es hacer un <em>nine patch</em>, que requiere cierto esfuerzo, pero lamentablemente, el resultado no es <em>pixel perfect</em>, así que la mejor solución siempre es usar XML.</p>
-
-<p>Crea un nuevo archivo XML en tu carpeta de <em>drawables</em> y en ese archivo pega lo siguiente:</p>
-
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;
-   &lt;item&gt;
-      &lt;shape android:shape=&quot;rectangle&quot;&gt;
-         &lt;solid android:color=&quot;#CABBBBBB&quot;/&gt;
-         &lt;corners android:radius=&quot;2dp&quot; /&gt;
-      &lt;/shape&gt;
-   &lt;/item&gt;
-
-   &lt;item
-      android:left=&quot;0dp&quot;
-      android:right=&quot;0dp&quot;
-      android:top=&quot;0dp&quot;
-      android:bottom=&quot;2dp&quot;&gt;
-      &lt;shape android:shape=&quot;rectangle&quot;&gt;
-         &lt;solid android:color=&quot;@android:color/white&quot;/&gt;
-         &lt;corners android:radius=&quot;2dp&quot; /&gt;
-      &lt;/shape&gt;
-   &lt;/item&gt;
-</code></pre>
-
-<p>Con eso, tendrás un elemento tipo &ldquo;Card&rdquo; en la parte que necesites. Bastará nada más que definas como fondo al XML recién creado sobre cualquier <em>view</em> de Android.</p>
-
-<h3 id="demo:d1c5d11ee262fb3a821f486c0fc5929a">Demo</h3>
-
-<p>Este es un ejemplo en donde, además, se puso el fondo de color plomo, de manera de notar de mejor forma el resultado. El alto del <em>LinearLayout</em> es de 100dp, ya que si omitimos el alto o lo definimos como <em>wrap_content</em>, entonces no podremos ver prácticamente nada.</p>
-
-<p><img src="/content/img/card-ui-pixel-perfect.png" alt="Card UI Pixel Perfect" />
-</p>
-
-<p>Además, entre usar un 9patch vs un archivo XML, el resultado es, técnicamente, más <em>pixel perfect</em>.</p>
-
-<p>Ojalá te sirva como a mi. ¡Suerte!</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/leer-archivos-bin-cue-mac/">
-        Cómo leer archivos bin/cue en Mac OS X
-      </a>
-    </h1>
-
-    <span class="post-date">Fri, Apr 25, 2014</span>
-
-    <p>Hoy me topé con algo de mi día a día: en un viejo disco duro de respaldo tenía unas copias de DVDs en formato bin/cue. Lamentablemente, Mavericks no me dejó montar los archivos bin ya que, técnicamente, <em>Apple no da soporte a los archivos bin/cue</em> de manera nativa en Mac, <strong>pero la solución es bastante simple</strong>.</p>
-
-<p><img src="/content/img/binchunker.png" alt="binchunker en acción" />
-</p>
-
-<p>Existe un programa de consola llamado  <code>binchunker</code> que convierte archivos bin/cue a ISO sin mayores inconvenientes. Eso sí, <strong>necesitas tener el archivo &lsquo;cue&rsquo;</strong> —que no es más que la descripción de los elementos dentro del archivo bin— aunque entiendo que también se pueden crear <em><a href="http://www.tech-recipes.com/rx/881/how-do-i-open-or-mount-a-bin-file-without-a-cue-file/">a mano</a></em>. ¿Lo tienes en mano? ¡Genial!</p>
-
-<p>Para convertir el archivo, primero <strong>necesitarás tener instalado Homebrew</strong>. Si no lo tienes instalado, hacerlo no cuesta nada&hellip; Sólo copia y pega el siguiente comando en tu Terminal (obtenido desde <a href="http://brew.sh/">la web oficial</a>):</p>
-
-<p><code>ruby -e &quot;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&quot;</code></p>
-
-<p>Una vez hecho eso, verifica que todo esté bien instalado con Homebrew ejecutando <code>brew doctor</code> en la consola y si todo va bien, actualízalo por seguridad ejecutando <code>brew update</code>. ¿Hecho? ¡Genial!</p>
-
-<p>El segundo paso es instalar <code>binchunker</code> utilizando Homebrew. Hacerlo es fácil, ejecuta <code>brew install bchunk</code> y espera a que finalice la instalación. Cuando ya esté listo, ¡estarás a un paso de convertir tus bin/cue a ISO!</p>
-
-<p>Para el último paso, <strong>abre en el Finder la carpeta donde se encuentran los archivos bin/cue</strong> y ponla a un costado de tu pantalla. En el otro costado vacío, <strong>mantén la Terminal abierta</strong>. En Terminal escribe <code>bchunk</code> luego presiona espacio, y <em>arrastra el archivo bin a la Terminal</em>, luego pulsa espacio nuevamente, y <em>arrastra el archivo cue al Terminal</em>. Finalmente, pulsa espacio nuevamente y escribe <code>~/nuevo.iso</code>. En definitiva, el comando luce más o menos así (obviamente, cambiando <code>/path/to</code> por la ubicación donde están los archivos bin y cue):</p>
-
-<p><code>bchunk /path/to/archivo.bin /path/to/archivo.cue ~/nuevo.iso</code></p>
-
-<p>Una vez que tengas el comando completo, pulsa <code>enter</code> y una ventana como la que se ve en la imagen superior aparecerá, mostrándote el porcentaje de la transformación y el peso del archivo. Cuando haya llegado al 100%, <strong>entra a tu carpeta de Usuario</strong> y verás allí el archivo <code>nuevo.iso</code>. ¡Ya puedes montarlo!</p>
-
-<p>Si no eres amigo de la Terminal, no hay problema. <a href="http://www.mactip.net/mount-bin-cue-disk-image-mac-daemon/">Aquí tienes un tutorial simple</a> para hacer todo el proceso más gráfico.</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/por-que-los-camiones-de-ups-no-giran-a-la-izquierda/">
-        ¿Por qué los camiones de UPS no giran a la Izquierda?
-      </a>
-    </h1>
-
-    <span class="post-date">Sat, Apr 5, 2014</span>
-
-    <p><img src="/content/img/ups-truck.jpg" alt="Imagen" />
-</p>
-
-<p>En 2004, UPS anunció una nueva política corporativa para sus conductores: la forma correcta de llegar a cualquier destino <strong>era evitar cualquier giro a la <em>izquierda</em></strong>.</p>
-
-<p>Cuando aparecieron mejores sistemas de seguimiento en 2001, el servicio de entrega de paquetes revisó más en detalle cómo era el rendimiento de cuando los camiones entregaban estos paquetes. Como empresa de logística con unos 96.000 camiones y varios cientos de aviones, una buena parte del negocio de UPS puede ser reducido a una serie de problemas de optimización sobre la reducción de la cantidad de combustible usado, el ahorro de tiempo y el uso más eficiente del espacio. (Los camiones en los estacionamientos de UPS se estacionan a un par de centímetros de distancia, incluso <a href="http://abcnews.go.com/WNT/story?id=3005890">llegando a superponer sus espejos laterales</a> para ahorrar espacio.)</p>
-
-<p>Los Ingenieros de UPS encontraron que, al doblar a la izquierda, <strong>se perdía eficiencia</strong>. Doblar contra el tráfico tenía como resultado <strong>largas esperas sólo para esperar que se liberara el carril</strong>, y además generaba un <strong><em>desproporcionado</em> número de accidentes</strong>. Mapeando rutas que tuvieran <a href="http://compass.ups.com/UPS-driver-avoid-left-turns/">una serie de giros hacia la derecha</a>, UPS mejoró los ingresos y la seguridad mientras hacían alarde de su pegadiza política de respeto por el medio ambiente. Para el 2012, la regla de doblar siempre a la derecha combinada con otras mejoras <strong>ahorró aproximadamente 10 millones de galones de gas</strong> y redujo las emisiones por <strong>un equivalente a quitar 3.500 autos de las carreteras por un año</strong>.</p>
-
-<p>Al describir la extraña política de la empresa en un discurso, <a href="http://www.pressroom.ups.com/About+UPS/UPS+Leadership/Speeches/D.+Scott+Davis/Right+Turn+at+the+Right+Time">el CEO de UPS comentó a la incrédula audiencia</a>: &ldquo;Puedo ver que varios de ustedes están sonriendo, y se lo que deben estar pensando, pero realmente funciona.&rdquo;</p>
-
-<p>Si no lo creen, bueno, <strong>¡para eso están los cazadores de mitos!</strong> El programa envió a un camión a entregar paquetes siguiendo una ruta normal y también siguiendo una ruta en la que sólo se doblara a la derecha, como UPS. Detectaron que la decisión de UPS ahorraba gas, pero tomaba un poco más de tiempo terminar el trabajo.</p>
-
-<iframe width="750" height="422" src="//www.youtube.com/embed/ppCz4f1L9iU" frameborder="0" allowfullscreen></iframe>
-
-<p>Los cazadores de mitos, probablemente, fallaron en ahorrar tiempo en la ruta <strong>por seguir muy al pié de la letra la regla de no virar a la izquierda</strong>. Mientras que la regla de no virar a la izquierda tiene una forma simple y algorítmica de verificarse, notarán que UPS sí realiza giros a la izquierda en ocasiones, especialmente en barrios residenciales que no tengan mucho tráfico. Cuando le preguntaron a uno de los conductores de UPS cuándo doblar a la derecha, <a href="http://abcnews.go.com/WNT/story?id=3005890">éste contestó a la cadena ABC</a>:</p>
-
-<blockquote>
-<p>Un estimado, puedo decir que un 90% del tiempo. Nosotros realmente, realmente odiamos las vueltas a la izquierda en UPS.</p>
-</blockquote>
-
-<p>Desde que UPS utiliza softwares para generar las rutas, puede enviar a los conductores <strong>a rutas en las que sólo se necesite girar a la derecha</strong>, sólo haciendo ciertas excepciones cuando una vuelta a la izquierda es, efectivamente, fácil y rápida. Tal cual como dijo el senior VP de UPS <a href="http://money.cnn.com/video/news/2010/12/13/n_cs_ups_no_left_turn.fortune/">en una entrevista sobre la regla</a>: &ldquo;Es por eso que amo a los ingenieros, ellos aman el hecho de seguir detectando cómo hacer las cosas mejor.&rdquo;</p>
-
-<hr />
-
-<p><em>Traducción libre del Original de <a href="http://priceonomics.com/why-ups-trucks-dont-turn-left/">Priceonomics</a>.
-Original de Alex Mayyasi.</em></p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/hd-wallpapers-para-android/">
-        HD Wallpapers para Android
-      </a>
-    </h1>
-
-    <span class="post-date">Wed, Apr 2, 2014</span>
-
-    <p><img src="/content/img/hd-wallpapers-screenshot.jpg" alt="Una captura de HD Wallpapers, en widescreen" />
-</p>
-
-<p>En mis ratos, una de las cosas que hago es crear algunas piezas de código interesantes. La última, buscaba conseguir una <em>performance</em> de <em>scrolling</em> en Android bastante decente cuando habían imágenes de &ldquo;peso&rdquo; cargadas en la ventana, lo que logré optimizar bastante —cosa que ni Facebook hace con su app móvil—. ¿El resultado? Una app que decidí lanzar a todo público: HD Wallpapers.</p>
-
-<p><img src="/content/img/hd-wallpapers-screenshot-second.jpg" alt="Puedes elegir imágenes de un grupo de categorías :)" />
-</p>
-
-<p>Básicamente, <em>HD Wallpapers</em> es una app que <strong>obtiene las imágenes desde un sitio de Wallpapers</strong> — acción conocida como <em>web-scraping</em> — y las muestra directamente en pantalla. ¿La idea? Intentar hacer una línea de tiempo con imágenes <strong>y que el scrolling sobre éstas no tenga lag cuando pasamos sobre una multitud de imágenes</strong>. Esto permite dos cosas: primero, demostrar que Android es bastante potente en sí, que el manejo de memoria es bastante eficiente y que ciertos patrones que han aparecido como algunos llamados <em>&ldquo;ViewHolders&rdquo;</em> (que almacenan en el elemento &ldquo;tag&rdquo; de la vista XML su posición de memoria) realmente funcionan a la perfección; y lo segundo, es que hay muchas empresas que no cuidan este tipo de cosas: prueben entrando a Facebook para Android e intentar hacer scroll sin que se pegue al menos un poco mientras carga las fotos de la línea de tiempo. <strong>¡Difícil!</strong></p>
-
-<p>Obviamente, el resultado igual requiere una pequeña afinación, pero <em>¡vamos!</em> es una app completa que te permite descargar imágenes de gran resolución al celular y ponerlas como fondo de pantalla.</p>
-
-<p>Por debajo, la app usa la librería <a href="http://square.github.io/picasso/">Picasso</a> de Square&hellip; ¡Bastante buena! Además, una implementación propia del objeto &ldquo;target&rdquo; una vez que esté cargada la imagen, que permita almacenar la imagen descargada en el dispositivo para usarla luego.</p>
-
-<p>Puedes ahora probar la app. Ojo, <strong>no está 100% libre de errores</strong> —fue un proyecto de un par de días, pero bastante bueno para el tiempo que demoré desarrollándola— pero es usable al 99%.</p>
-
-<p><a href="https://play.google.com/store/apps/details?id=us.dappollonio.hdwallpapers">Descarga HD Wallpapers desde el Play Store</a></p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/launchrocket-prefpane-homebrew/">
-        LaunchRocket: Lanza cualquier app Homebrew desde el panel de Preferencias de Mac
-      </a>
-    </h1>
-
-    <span class="post-date">Mon, Mar 24, 2014</span>
-
-    
-
-<p>Ok, <em><strong>¡GeekTime!</strong></em> Para todos aquellos amigos informáticos que desarrollan tecnologías, una de las cosas más molestas de todas — <em>al menos para mí</em> — es el hecho de <strong>tener que instalar un sinfín de comandos</strong> para poder iniciar y detener los servicios de diferentes apps como bases de datos y servicios de Mac —sí, <em>launchctl</em>, te estoy mirando a ti!—.</p>
-
-<p><img src="/content/img/launchrocket.png" alt="La ventana de LaunchRocket, con tres servicios detectados" />
-</p>
-
-<p>Hoy, dando vuelta optimizando un poco mi trabajo habitual, me encontré con esta pieza de Software llamada <strong>LaunchRocket</strong>. Básicamente, LaunchRocket revisará los programas que hayas instalado con <em>Homebrew</em> y <strong>te permitirá crear un lanzador de servicios</strong> —ya sea con un usuario convencional o como <code>root</code>— fácilmente y sin tener que ver tu equipo afectado por comandos que de seguro olvidarás más adelante.</p>
-
-<h3 id="instalación:98d57be6a7431f46c8a219bee53f8ce2">Instalación</h3>
-
-<p>Para instalar LaunchRocket, <strong>bastará con que <a href="https://github.com/jimbojsb/launchrocket/releases/tag/v0.6">vayas al repositorio Github</a> y descargues la versión 0.6</strong> —que, al momento de redactar esta nota, es la última versión— y luego hagas doble click en el archivo .prefPane que se descomprimirá del zip que bajes.</p>
-
-<p><img src="/content/img/launchrocket-release.png" alt="El último release de LaunchRocket" />
-</p>
-
-<h3 id="consideraciones-de-ejecución:98d57be6a7431f46c8a219bee53f8ce2">Consideraciones de ejecución</h3>
-
-<p>Dadas las restricciones de Apple, y sobre todo <strong>las restricciones a los programas sin firma</strong>, es que una de las cosas lamentables es que hay que desactivar <em>Gatekeeper</em> —ese elemento de sistema que cada vez que bajas una app que no sea muy conocida y que no haya sido descargada del App Store y que te dice que la app &ldquo;proviene de un desarrollador desconocido o no identificado&rdquo;—.</p>
-
-<p>También hay otra alternativa que es instalarlo, ejecutar LaunchRocket, luego forzar la salida y abrir <em>&ldquo;Security and Privacy&rdquo;</em> y permitir la apertura de LaunchRocket dos veces: la primera para el prefPanel en sí, y la segunda para el archivo &ldquo;sudo&rdquo; que incluye el mismo y que es el que permite correr las apps.</p>
-
-<p>Hay una explicación bastante completa del por qué de esto <a href="https://github.com/jimbojsb/launchrocket/blob/master/README.md">en el archivo README del repositorio</a>.</p>
-
-<h3 id="agregar-servicios-de-homebrew:98d57be6a7431f46c8a219bee53f8ce2">Agregar servicios de Homebrew</h3>
-
-<p>La primera vez que abras el programa, aparecerá vacío, es decir, no habrá detectado ningún servicio. Hay dos formas de agregar servicios: escanear la instalación de Homebrew con el botón <code>Scan Homebrew</code> o agregar un archivo .plist para &ldquo;demonizarlo&rdquo; dentro de LaunchRocket, con <code>Add .plist</code>. En mi caso, <strong>la primera opción detectó todos los servicios instalados</strong> y pude ejecutarlos sin problemas.</p>
-
-<p>El mismo programa te permite <em>eliminar la &ldquo;vinculación&rdquo; de un servicio cualquiera</em> con <code>launchctl</code> en el caso de que ya no lo necesites, pero quieras mantener los ejecutables, basta con presionar <code>Remove</code> para deshacerse del mismo.</p>
-
-<p>Con todo lo anterior, ya puedo correr <a href="http://redis.io/">Redis</a> y <a href="https://www.mongodb.org/">MongoDB</a> sin mayores comandos de consola o, al menos, puedo dejar los comandos para otro tipo de momentos.</p>
-
-<p>Descarga: <a href="https://github.com/jimbojsb/launchrocket/releases/tag/v0.6">LaunchRocket.prefPane</a></p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/series-que-ver-primera-parte/">
-        Series que ver (primera parte)
-      </a>
-    </h1>
-
-    <span class="post-date">Fri, Sep 6, 2013</span>
-
-    
-
-<p>Una de las cosas que hago en mi tiempo libre es ver series. <strong>Son aquellas cosas que me desestresan, mantienen la mente fuera de contexto por un rato, te hacen gritar, o incluso, te dejan preocupado por lo que pasará.</strong> Aquí, la recopilación de series que deberías ver (sin un orden de preferencia) y un pequeño resumen de cada una…</p>
-
-<h2 id="arrow-esperando-a-la-segunda-temporada:ded4f4914b08a0bae9dcd7d845861cfb">Arrow <em>(esperando a la segunda temporada)</em></h2>
-
-<p><img src="/content/img/arrow.jpeg" alt="Arrow" />
-</p>
-
-<p><strong>Arrow es una de esas series que llama la atención.</strong> Aunque a más de alguno no le puede terminar de gustar el fork que sucedió luego de Smallville — y la presencia de <em>Green Arrow</em> en ésta —, la nueva serie sí que es toda una creación.</p>
-
-<p>Para quienes no están familiarizados, se trata de un arquero — que está dentro de la trama de Superman <strong>— que naufragó junto a su padre en un Barco de la familia</strong> —multimillonaria, por cierto— pero que sobrevivió gracias a tener la fuerza de hacerlo —y de un par de personajes que le ayudaron—.</p>
-
-<p>Su padre, antes de decidir asesinarse para darle más víveres al hijo en el momento del naufragio, le indica que no todo era color de rosa, y que estaba sumido en un conflicto de proporciones, que lo transformaba en un enemigo de la ciudad. Le pide a su hijo, entonces, que debe resolver los problemas. Eliminar a aquellos que <em>“le fallan a la ciudad”</em> y limpiar el nombre tanto de su padre como de su familia.</p>
-
-<p>¿El resto? Averíguenlo por su cuenta ;)</p>
-
-<h2 id="continuum-recién-terminada-espera-la-tercera-temporada:ded4f4914b08a0bae9dcd7d845861cfb">Continuum <em>(recién terminada, espera la tercera temporada)</em></h2>
-
-<p><img src="/content/img/continuum.jpeg" alt="Continuum" />
-</p>
-
-<p>Continuum es una de esas series con toque futurista que llaman la atención: una policía del futuro — Kiera Cameron — atrapa a un par de maleantes de una agrupación terrorista llamada Liber8 (Liberate) y cuando los iban a enjuiciar, <strong>usan un dispositivo para viajar en el tiempo, 64 años en el pasado desde el 2077 hasta el 2013</strong>.</p>
-
-<p>La gracia del <em>viajecito</em> era que, modificando el pasado, pudieran cambiar el futuro: un futuro en el que las corporaciones controlan las naciones, y no existen, como tal, legislaturas democráticas.</p>
-
-<p>La historia se pone interesante cuando Kiera conoce a Alec Sadler, un informático del presente quien, en el futuro, <strong>es quien creó toda la tecnología para doblegar la democracia a los pies de las corporaciones</strong>. Es así como se enfrascan en problemas para intentar llevar a Kiera de vuelta al futuro, a su línea de tiempo, sin antes armar una trama bastante interesante.</p>
-
-<p>La serie está marcada de mucho futurismo: desde trajes que te convierten en invisible, te dan super fuerza o incluso te transforman en un enchufe con patas, hasta sistemas implantados en el cerebro que te permiten ver cual Google Glass tuvieras dentro.</p>
-
-<h2 id="homeland-esperando-la-tercera-temporada:ded4f4914b08a0bae9dcd7d845861cfb">Homeland <em>(esperando la tercera temporada)</em></h2>
-
-<p><img src="/content/img/homeland.jpeg" alt="Homeland: Carrie y Nicholas" />
-</p>
-
-<p>Debo decir que la primera vez que la vi, <strong>no me llamó la atención para nada</strong>. Le di una oportunidad un día en el que me quedé sin series que ver y no me arrepiento: ¡es una excelente historia!</p>
-
-<p><em>Homeland</em> trata de aquellos problemas americanos en los cuales se ven entremezcladas la inteligencia estadounidense y las conspiraciones como Al Qaeda y similares.</p>
-
-<p>Todo sucede cuando Carrie, la agente de inteligencia, se encontraba por aquellos países conflictivos a Estados Unidos, y uno de sus “ayudantes” iba a ser enjuiciado y, por ende, asesinado. En sus últimas palabras no encontró mejor idea que <strong>decir que *uno de los suyos se había cambiado de bando</strong>*. Momentos más tarde, un escuadrón militar encontraba en un sótano al — hasta ese entonces — desaparecido Sargento Nicholas Brody, quien sólo atinó a decir “I’m American” cuando lo encontraron.</p>
-
-<p>La historia continúa con que Mathison desconfía enormemente de Brody — y con justa razón — al punto de que se generan conflictos, hay bombas de por medio — sí, como las bombas terroristas que acostumbramos a ver en la pantalla chica y grande —. La historia <strong>llega incluso al punto en que Mathison y Brody se enganchan en un desliz amoroso</strong>. ¿El resto de la historia? Ya sabes qué hacer…</p>
-
-<h2 id="under-the-dome-en-transmisión-de-la-primera-temporada:ded4f4914b08a0bae9dcd7d845861cfb">Under The Dome <em>(en transmisión de la primera temporada)</em></h2>
-
-<p><img src="/content/img/under-the-dome.jpeg" alt="Under the Dome, de Stephen King" />
-</p>
-
-<p><strong>Del libro de Stephen King del mismo nombre</strong>, la serie que cubre a un pequeño pueblo de Estados Unidos con un domo misterioso del cual nadie sabe de dónde aparece.</p>
-
-<p>La historia transcurre en el pueblo de Chester’s Mill, donde repentinamente un domo aparece cerrando toda vía de comunicación con el exterior. Dentro de éste, quedan atrapadas un grupo de personas que deberán ver cómo se las arreglan para sobrevivir a la escasez de alimentos, agua, y otros elementos necesarios.</p>
-
-<p>Mientras tanto, además, se van desentrelazando otros conflictos como <strong>la desaparición del esposo de la periodista del pueblo</strong>, los conflictos de intereses entre el Sacerdote del pueblo y uno de sus concejales y los sucios actos que llevan a cuestas, y más. Hay de todo: desde cosas inexplicables como transmisiones de radio extrañas captadas por las antenas de Radio del pueblo, hasta un loco secuestrador que, supuestamente, lo hace por “amor”. ¿Y el resto de la historia? ¡Bien, nos vamos entendiendo!</p>
-
-<hr />
-
-<p>¡Es todo por esta entrega! A la próxima, más recomendaciones de series interesantes para ver. ¿Alguna recomendación mientras esperamos por The Walking Dead o similar?</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/linkedin-como-fuente-de-trabajo-para-profesionales/">
-        LinkedIn como fuente de trabajo para Profesionales
-      </a>
-    </h1>
-
-    <span class="post-date">Mon, Sep 3, 2012</span>
-
-    <p>Hola de nuevo. Por acá poniendo el hombro con otra nota. Esta vez, <strong>para comentar alguna de las bondades de LinkedIn</strong>, la red social profesional. He de decir primero que LinkedIn no es algo muy factible de usar en empresas que quieren llegar a su público objetivo, a menos que sea un público de profesionales. LinkedIn es más algo como para que los profesionales y expertos puedan conocerse, fomentar el trabajo que realizan, y conseguir nuevas redes de contacto.</p>
-
-<p><img src="/content/img/linkedin.gif" alt="LinkedIn" />
-</p>
-
-<p>Una de las cosas que he estado siguiendo de cerca de LinkedIn, para Chile, es lo poderoso que se está convirtiendo en redes de contacto y búsqueda de empleos. Leí por ahí alguna vez a una conocida mujer —muy amiga de un amigo mío— preguntándose si LinkedIn servía para algo, y la verdad es que <strong>he visto a varios conseguir excelentes puestos de trabajo</strong> usando esta red de contactos.</p>
-
-<p>Hay varios grupos dentro de LinkedIn que se dedican a esto y la verdad, <strong>no les va nada mal</strong>. Además, no tienes que preocuparte de subir currículums o similares, puesto que quienes buscan profesionales, pueden leer los perfiles de los postulantes ahí mismo —aunque no falta el pelotudo que busca profesionales y pide currículum en una red social donde lo que cuenta es, justamente, el currículum—.</p>
-
-<p>Es interesante, además, ver la adopción que ha tenido LinkedIn en Chile: <strong>varias personas que conozco y que no son muy fan de las redes sociales han terminado usándolo</strong>, de la misma forma que terminaron usando Facebook, o sea, “porque mis amigos también tienen“. LinkedIn, por su parte, es especial para mantener el contacto con aquellos profesionales que no quieres que te vean etiquetado como ebrio, en una posición media deshonrosa, o incluso, mostrando lo bonito que es tu baño.</p>
-
-<p>Ahora, mucha maravilla de conseguir pega en LinkedIn, pero, <strong>¿y dónde buscar?</strong> Aquí algunas recomendaciones:</p>
-
-<ul>
-<li><p><strong><a href="http://www.linkedin.com/groups/Brujula-Profesional-3825782">Brújula Profesional</a>:</strong> Un grupo que he estado siguiendo desde hace poco, pero se encarga de publicar las solicitudes de profesionales del sitio web del mismo nombre, que es uno de los tantos sitios para buscar capital humano. Lo que sí: aunque LinkedIn tiene un sistema para publicar avisos de trabajo y conseguir un mejor funcionamiento, acá se esmeran en publicarlo como update del grupo. Ojalá alguien les avise ;)</p></li>
-
-<li><p><strong><a href="http://www.linkedin.com/groups/Busco-Trabajo-Chile-4578869">Busco Trabajo Chile</a>:</strong> Aunque parece un clon del anterior, puesto que varios trabajos de Brújula Profesional aparecen acá (sino todos), estos también tienen algunos trabajos exclusivos que son publicados por las personas que participan del grupo. Lo que tiene de bueno es que capta más gente porque al usar el buscador de grupos con las keywords “Busco Trabajo”, adivina quién sale primero.</p></li>
-
-<li><p><strong><a href="http://www.linkedin.com/groups/Chile-Profesionales-2111544">Chile Profesionales</a>:</strong> Mi favorito. Aunque en un principio habían más trabajos techies publicados acá, ahora han incluido más headhunters y personas de recursos humanos de empresas menos techies, lo que ha ampliado la gama de buscatrabajos existentes en el grupo. He oído de casos de éxito en donde han conseguido el puesto visto acá.</p></li>
-</ul>
-
-<p>Ahí está, <strong>3 alternativas para poder conseguir trabajo en LinkedIn</strong>. Ahora, si piensas usar LinkedIn a lo Facebook, date un tiro por todos nosotros, incluyendo uno por los creadores de LinkedIn.</p>
-
-<p><em>¿No que LinkedIn no servía para nada?</em> Ojalá quien necesite de un trabajo, encuentre por acá.</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/el-manual-del-hosting-for-dummies/">
-        El Manual del Hosting — For Dummies
-      </a>
-    </h1>
-
-    <span class="post-date">Tue, Sep 20, 2011</span>
-
-    
-
-<p>Hace algunos minutos una interesante pregunta llegó a mi Twitter preguntándome por hosting, cosa práctica, puesto que <strong>toda la gente que quiere tener una web necesita hospedarla en alguna parte</strong>. Es por eso que me decidí a publicar una nota explicando los tipos de hostings que existen en la actualidad totalmente a huevo —explicado con papas y manzanas, como decimos en Chile— para que tenga una idea enorme.</p>
-
-<p><img src="/content/img/hosting.jpg" alt="Así se ve un datacenter sb_float" />
-</p>
-
-<p>De más está decir que <strong>todo lo aquí expresado es basado en conocimientos y la experiencia personal</strong> —llevo más de 8 años en el marco web, sobre todo en el hosting y alojo sitios de alta cantidad de usuarios, como también de baja— y además no puede ser la totalidad de hostings existentes —puesto que algunas compañías deciden “poner nombre” a tipos de hostings especiales, que en la práctica, <strong>no tienen nada especial más que el nombre</strong>, véase “hybrid” más abajo— así que lo dejo a criterio del lector.</p>
-
-<p><strong><em>Aviso: Nota consistente en más de 4.000 palabras.
-Muy extensa. Recomendado leer con tiempo y dedicación.</em></strong></p>
-
-<h2 id="hosting-compartido-o-shared-hosting:b84287b1d2201dc9689486ca2d9a93ee">Hosting Compartido o Shared Hosting</h2>
-
-<p>Es el hosting más común y el más usado en la actualidad <strong>puesto que es muy barato</strong> —en algunos casos, mientras que en otro es carísimo— en las empresas que lo ofrecen a grandes escalas. Generalmente <strong>se cobran cada año o cada dos años</strong>, aunque se pueden pedir formas de pago especiales —como mes a mes, semestre a semestre, trimestre a trimestre y siga aquí agregando divisiones del año—.</p>
-
-<p>La mayor parte de las empresas de hosting “respetables” —ojo, puedo usar el término “respetable” aún cuando la empresa no sea tan recomendable— <strong>ofrecen todos sus servicios “ilimitados”</strong> como tráfico ilimitado y almacenamiento ilimitado aunque, en la práctica, <strong>esto no es del todo cierto</strong>, siendo la realidad como “tráfico no medido” y “almacenamiento no medido”. Esto, porque no se preocupan por cuánta cantidad gastes <strong>ya que pueden “acomodarte” en algún lugar que sea capaz de soportarlo</strong>. Además puedes hospedar un sinnúmero de dominios y subdominios, administrar cuentas de correo y un gran etcétera.</p>
-
-<p>Ahora, ¿qué debes saber de un hosting compartido? Que, como su nombre lo dice, es compartido. Generalmente <strong>las empresas que venden “shared hosting” tienen grandes equipos</strong> —como ordenadores con 16 GB de RAM o más, procesadores super-hiper-monstruosos, discos duros de más de un terabyte por parte baja, y otro gran etcétera— <strong>y deciden poner en un sólo ordenador a unos 2.000 a 3.000 usuarios</strong> —sí, son 3.000 personas que utilizan un mismo servidor en común— en los casos más amplios, mientras que en lo normal puedes toparte con unos 300 usuarios en tu propio servidor a groso modo.</p>
-
-<p><img src="/content/img/shared-hosting.jpg" alt="Hosting compartido: este es tu espacio sb_float" />
-</p>
-
-<p>Como te ofrecen algo “ilimitado”, si el disco duro de ese ordenador —que, dije, es de un terabyte— se llena y tú no puedes meter más cosas, es simple… <strong>Te mueven a otro servidor que sí tenga espacio.</strong> En teoría, casi un 75% de todos los clientes de una empresa de hosting nunca usan más allá de 10 GB —y eso con suerte!— de almacenamiento y por ende, el tráfico también es poco, por lo que, <strong>el tráfico y el disco duro que les sobra se lo entregan a otro cliente como tú</strong>.</p>
-
-<p>Esto de “compartir casa” tiene sus pros y sus contras. El pro más notorio es el precio, imagínalo como viajar una gran distancia en Taxi donde tú y seis amigos más —sí, en el mismo taxi— <strong>comparten en partes iguales el pago&hellip; Se hace más barato</strong> y, en el caso del hosting, es muchísimo más barato. Por su parte, tiene, a mi gusto, más contras que pros…</p>
-
-<p>Primero está en que <strong>compartes la casa de tu sitio web con varias personas más</strong> y eso tiene sus consecuencias. Explicándolo “for dummies” podemos decir que el hosting es la casa de tu web e <strong>imagina <em>compartirla</em> con 300 personas que ni siquiera conoces, no sabes qué negocios hacen y sólo les conoces de nombre</strong>. Existen malos “vecinos” o compañeros de casa que pueden hacer algunas acciones ilegales, como enviar SPAM al correo electrónico <em>o hacer estafas</em>, de las cuales, las empresas afectadas guardan “la dirección” —dirección IP para los lectores más técnicos— de la casa de quien hace las estafas y <strong>la bloquean permanentemente</strong> y no sólo eso, sino que también le dicen a otras empresas que hagan lo mismo y… ¡Adivina qué! Sí, <strong>es TÚ casa la que fue “marcada” como estafadora</strong>.</p>
-
-<p>Otro contra es que no tienes control sobre el equipo —PC— en el que estás. <strong>Si por esas cosas de la vida algún malintencionado lo apagara</strong> —aunque no sucede por seriedad de las empresas— entonces…  <strong>¿Cómo lo encenderías de nuevo?</strong> Que un sitio web esté caído termina afectando a sus usuarios.</p>
-
-<p>Otro contra realmente complejo y que tiene que ver con el anterior es que si alguno de tus vecinos <strong>que viven en tu misma casa se pone a realizar experimentos</strong> con su sitio web y, por esas cosas de la vida, <strong>termina jodiendo todo el servidor</strong> y éste se vuelve lento —¡a que sabías que los PCs se pueden pegar!— o simplemente no responde… ¡Adivina qué, de nuevo! <strong>Sí, tu sitio web también irá lento</strong>, por lo que nuevamente tendrás que arreglártelas para que, o reinicien el servidor, o te cambies de casa.</p>
-
-<p>Un contra que “debes” saber es que, además, <strong>el equipo en el que estás no es tuyo y por ende no tienes libertad de agregar o eliminar cosas</strong>, así como de reconfigurar algunas y, es más, en el mayor de los casos, algunas funciones comunes de los sitios web vienen “capadas” y <strong>deberás pedirlas a la empresa si es que es posible que las activen</strong> —que puede ser tanto como que no puede ser, todo depende— aunque en lo más seguro es que recibas un no por respuesta, porque estás comprando algo prefabricado e igual para todos. Seguramente, te dirán que <strong>si quieres características extra, deberás pagar</strong> por esos extras. Negocio es negocio.</p>
-
-<p>Finalmente, el punto más complejo es que, <strong>aunque tienes transferencia ilimitada o almacenamiento ilimitado, lo que no tienes ilimitado es la capacidad de “pensar” de tu servidor</strong>. En palabras simples, si tu web hace trabajos muy difíciles o complejos para los ordenadores —como visitar un 100 veces Google.com con cada F5 que le des al navegador o trabajos similares— y <strong>comienzas a afectar al resto de los vecinos que comparten la misma casa</strong>, entonces de seguro en segundos recibirás un mensaje de tu proveedor de hosting <strong>diciéndote gentilmente que busques una nueva casa</strong> —servidor— más grande —y, de seguro, te recomendará seguramente las casas más complejas que  ellos tienen y <strong>que cuestan mucho más caro de lo normal</strong>, aunque te ayudarán con la mudanza —sí, los sitios web también se mudan— y con la configuración inicial. ¿Cuándo puede pasar esto de que tu web comience a pensar mucho y comience a estresar la CPU —el cerebro del computador en el que te alojas— al punto de que te digan que te vayas? Simple: <strong>cuando tu sitio web comienza a ser popular</strong>. Cuando eso sucede, la “casa” necesita de más elementos para soportar todos tus usuarios y, como hay tantos otros sitios web pidiendo lo mismo, entonces en algún momento colapsará.</p>
-
-<p>Todo esto tiene tres soluciones: <strong>puedes cambiarte de casa dentro de la misma empresa</strong> a una casa —servidor— que no tenga tantos usuarios o que no estén haciendo payasadas o estafas o donde no hagan pruebas raras —generalmente son servidores instalados recientemente que, como son nuevos, nadie los usa— siendo una opción lógica mientras que <strong>se trata de que tu servidor se colgó o se volvió incapaz de responder</strong> —recuerda que, como el servidor no es tuyo, no podrás “reiniciarlo” como cualquier PC— claramente <strong>puedes escribirle a quienes serán desde ahora en adelante tus mejores amigos: el soporte técnico</strong> de tu empresa de hosting, tipos que son capaces de responder —idealmente de manera rápida, digamos, 2 minutos, aunque esto nunca sucede en la realidad— y resolver casi todos los problemas por los que estás pagando para que nunca sucedan, aunque <strong>habrás perdido minutos de tu tiempo como algunos pelos de la cabeza al ver que tu web no carga</strong>, y además eso no es todo, imagina si dije que la empresa tiene unos 8.000 clientes o más y sólo 12 técnicos de soporte y un 10% de sus clientes están pidiendo ayuda, entonces dejo a tu imaginación decidir qué es lo que pasará.</p>
-
-<p>La tercera solución <strong>es pasar a un nivel de hosting más avanzado como los que vienen más abajo</strong>, así que… Sigue leyendo! Y, por cierto, lo de sobrevender hosting y meter tantos usuarios como sea posible en un sitio web, aunque no es ético, <a href="http://www.marlexsystems.org/el-overselling-una-tecnica-para-vender-mas/1768/">es de lo más común y se llama <strong>overselling</strong></a>. Por otra parte, <strong>si estás en un hosting compartido y quieres saber quiénes son tus vecinos</strong>, entonces entra a <a href="http://www.majesticseo.com/reports/neighbourhood-checker">este enlace</a>.</p>
-
-<h2 id="servidores-privados-virtuales-o-virtual-private-server-vps:b84287b1d2201dc9689486ca2d9a93ee">Servidores privados virtuales o Virtual Private Server (VPS)</h2>
-
-<p>Este es el segundo punto en la escala de tu sitio web <strong>y es un tanto similar al anterior, aunque hay algo que los diferencia enormemente</strong>. Es igual porque aún se siguen metiendo en <strong>un mismo computador a varios clientes</strong>, aunque esta vez en menor cantidad —¡y mucha menor cantidad!— siendo entre <strong>3 a 10-15 clientes por PC</strong>—.</p>
-
-<p><img src="/content/img/vps-diagram.gif" alt="Así es un VPS" />
-</p>
-
-<p>Ahora, te preguntarás, aparte de eso, ¿qué tiene de nuevo? Muy simple: <strong><em>Virtualización</em></strong>. Si eres un recién llegado, estimado webmaster, seguramente habrás oído el término pero no tengas idea de qué se trata y, como lo explicamos a huevo, lo entenderás… Imagina el computador desde el que estás leyendo esta nota. La virtualización significa que lo que harán es que <strong>con programas especiales, ese computador se subdivida en 3 a 10-15 computadores dentro de ese mismo computador</strong> y, ¿sabes qué es lo mejor? que <strong>cada computador tiene sus propias características especiales tal cual como si fueran uno independiente</strong>: puedes reiniciarlo, apagarlo, cambiarle el sistema operativo, reinstalarlo, borrarlo por completo, desconectarlo de internet, y agrega aquí un tercer gran etcétera.</p>
-
-<p><strong>Un VPS es en sí un ordenador más pequeño dentro de otro más grande</strong>. El más pequeño es un ordenador “falso” o “virtualizado” —de “virtual”— pero puedes hacer con el todo lo que quieras —y esto en el mayor de los casos, porque conozco algunas empresas que no te venden un VPS real—. Eso sí, sigue teniendo en mente de que <strong>siguen habiendo en el ordenador real otros cuantos usuarios más aparte de ti</strong>.</p>
-
-<p><strong>Lo positivo en la mayoría de los VPS es que son escalables</strong> —no, no son grandes ni podrás ponerles una soga y escalarlos, hablo de otro escalado—. Esto quiere decir que, por ejemplo, <strong>si en una de esas tu web se vuelve “popular”</strong> en un determinado momento —piénsalo como que compraste un anuncio publicitario en TV y en ese minuto todos esos televidentes se volcaron a ver tu web, mientras que cuando eso haya pasado volverás a la cantidad normal de visitantes— <strong>podrás pedir que “aumenten” en ese determinado momento un recurso del servidor</strong>, como más “cabeza” para pensar —CPU y RAM, para los expertos—. Aunque esta escalabilidad no todos los proveedores de hosting la ofrecen, <strong>existe en la mayoría de los casos</strong>.</p>
-
-<p>Otro detalle que debes sumar es que <strong>ya puedes irte olvidando de la farsa de “almacenamiento ilimitado” y “ancho de banda ilimitado”</strong> —de nuevo, no existe lo ilimitado, lo correcto es decir “no medido”— puesto que como <strong>estás comprando un “servidor virtual” tendrás características como cualquier computador</strong>, por ejemplo: 100 GB de Disco Duro, 256 Megas de RAM, conexión a internet con una transferencia mensual de 10 GB, y siga agregando en este etcétera.</p>
-
-<p>Un gran detalle cuando hablamos de VPS es el precio: <strong>si antes pagabas 45 dólares a 75 dólares al año, ahora fácilmente podrás pagar eso en un mes</strong> —sí, un mes—, por lo que el cambio es enorme, sobre todo para esa tarjeta de crédito internacional que usarás para pagar.</p>
-
-<p>Eso sí, <strong>pasar del shared hosting a un VPS es algo realmente normal</strong>. Generalmente, al “mudarte a un VPS” es señal de que tu web está por buen camino, ha crecido suficiente y, en teoría, debería “pagar por sí sola” el servidor VPS que estás arrendando. Además es común que <strong>al cambiarte de shared hosting a VPS también te cambies de empresa</strong> —y ojo que no sólo es bueno, sino también sano—.</p>
-
-<p>Entre otras características de un VPS, además de que <strong>tienes control total sobre el equipo, puedes reinstalar, desinstalar e instalar software a gusto</strong>, así también como apagar y/o reiniciar el ordenador. Además, <strong>si te dicen que te entregarán 640 MB de RAM, podrás usar sólo eso</strong> —aunque en la actualidad algunas empresas ofrecen una RAM base <strong>y una RAM “burstable” o alcanzable como límite</strong> que está disponible sólo cuando está libre de uso, como por ejemplo, 640 MB de RAM Base o asegurada y 1 GB de RAM Burst— y <strong>ninguno de los otros pocos clientes podrán usar más de la que disponen</strong>, por lo que es muy difícil que el servidor se caiga o se “bloquee”.</p>
-
-<p>Una cosa importantísima que debes saber de ahora en adelante es que <strong>siempre existirán dos tipos de servidores: administrados o “managed” y no administrados o “unmanaged”</strong>. El primero tiene un costo adicional para ti, pero significa que pagarás un extra para que, prácticamente, <strong>cualquier problema que tengas en tu servidor lo deba solucionar la empresa</strong> que ofrece los servicios sin costo extra más que el servicio “managed” que pagaste, mientras que en el “unmanaged” <strong>te las tendrás que arreglar por ti mismo</strong> para resolver cualquier problema, pudiendo ser de cualquier índole —desde un programa mal instalado hasta, incluso, que el disco duro o la RAM de tu PC se queme—.</p>
-
-<p><strong>Existe un punto medio que las empresas llaman “semi-managed”</strong> donde ofrecen servicios como una preconfiguración inicial del servidor —es decir, que te lo dejan listo para usar, sin entrar en odiosas configuraciones—, <em>“hardening”</em> —tecnicismo que significa que harán una configuración inicial un tanto segura para que los hackers no tiren abajo tu web minutos después de haberla y/o soporte prioritario —que estarán ahí más rápido para ti que para el resto de los clientes, aunque es altamente relativo—.</p>
-
-<p>Cuando tu web sigue siendo popular —por cierto, ¡felicidades! has creado una web-monstruo— <strong>entonces debes pasar a un nivel superior</strong>.</p>
-
-<h2 id="dedicado-virtual-híbrido-o-hybrid-vps:b84287b1d2201dc9689486ca2d9a93ee">Dedicado Virtual Híbrido o Hybrid VPS</h2>
-
-<p>Este es un nivel un tanto superior y sólo algunas compañías lo ofrecen. <strong>Es un término que “inventó” como medida de marketing una conocida empresa de hosting</strong> —que, por cierto, tiene muy buenos VPS— y no es más que un VPS <strong>sólo que con 2 a 5 usuarios por servidor</strong> y con características de hardware un tanto más altas que un VPS normal —que en algunas compañías sólo tienen hasta 1 GB de RAM, mientras que un VPS Híbrido puede tener hasta 4 GB— pero que obviamente tendrán su costo extra para el bolsillo del que compra.</p>
-
-<p>No sólo eso, sino que además <strong>ofrecen algunas tecnologías extra que ayudan a mantener correctamente dichos servidores y que son bastante útiles</strong> como remote reboot —quizás dirás no entender ni jota qué es eso, pero en palabras sencillas, es un “sitio web” que te permite reiniciar a diestra y siniestra y cuantas veces quieras tu servidor híbrido, recuerda que los servidores anteriores <em>cuesta</em> reiniciarlos— y algunos addons —complementos o “extras” al servicio que te facilitarán la vida o el manejo de tu servidor—.</p>
-
-<p>Además de que hay menos clientes en cada server y que tienen capacidades más complejas que los VPS tradicionales, no dejan de ser un VPS de tomo y lomo.</p>
-
-<h2 id="servidor-dedicado-o-dedicated-server:b84287b1d2201dc9689486ca2d9a93ee">Servidor Dedicado o Dedicated Server</h2>
-
-<p>Para algunos, el final de la línea del hosting. Para otros, sólo el comienzo. Los servidores dedicados, como su nombre lo dicen, <strong>no tienen a nadie más que a ti dentro y están a tu entera disposición&hellip;</strong> ¿Quieres tenerlos 5 semanas apagados? Adelante, nadie te dirá nada. ¿Quieres estropearlo? Adelante! Es todo tuyo. En sí, <strong>en un servidor dedicado puedes hacer y deshacer lo que quieras</strong>.</p>
-
-<p><img src="/content/img/servidor-dedicado.jpg" alt="Servidores dedicados" />
-</p>
-
-<p>Es un computador REAL que sirve de alojamiento a tu sitio web —pudiendo ser perfectamente uno o varios, aunque sólo tuyos o de amigos y conocidos— aunque no como un ordenador común, sino que en el común de los casos <strong>se trata de un computador plano y muy delgado que se monta dentro de un rack junto con otros servidores</strong> —sí, otros ordenadores de otros clientes que no tienen ninguna relación más contigo que estar cerca porque están dentro de la misma empresa— o también puede ser una torre de ordenador convencional —como los ordenadores de escritorio, observa la primera imagen de esta nota— claro que <strong>sin pantalla, mouse, teclado, tarjeta de vídeo, y todo el hardware innecesario</strong>, sino que, esencialmente, una tarjeta de red, RAM, un procesador y una tarjeta de red que lo conecta a internet.</p>
-
-<p>En un servidor dedicado, por ejemplo, <strong>puedes montar tu propio VPS y vender como si fueras una empresa de hosting u ofrecer “shared hosting”</strong> instalando alguna solución —algún programa— que lo permita hacer —en el caso de los VPS tienes programas como OpenVZ, VMWare, Virtuozzo o Xen, mientras que para el “shared hosting” basta con instalar Apache o alguna aplicación para servidores web con soporte de múltiples usuarios—. <strong>Las posibilidades son infinitas.</strong></p>
-
-<p>En algunos casos, además, <strong>la empresa que te arrienda uno de sus ordenadores te permite tener una solución escalable</strong> —nuevamente, no de escalarlo con cuerda para llegar a la cima— que te permita <strong>aumentar la RAM, el procesador, agregar uno o más discos duros</strong> o, quizás, una nueva tarjeta de red donde el límite sólo estará en el chasis que monta toda esa parafernalia —en palabras simples, podrás aumentar, por ejemplo, el procesador, <strong>sólo si el espacio donde se conecta tiene el mismo <em>conector</em> del procesador que quieres instalar</strong>, ya que no todos los procesadores son iguales o tienen la misma conexión—.</p>
-
-<p>Los servidores dedicados son de todo tipo y no debes confundirte: en mi experiencia, <strong>un VPS con 1 GB de RAM y un procesador de doble núcleo es mucho más lento que un dedicado de iguales características</strong> puesto que la virtualización del VPS también resta un poco de “capacidad” —y dicho sea de paso, ¿notaste que ya entiendes toda una frase técnica de hosting leyendo la frase anterior? ¡te felicito!—. <strong>Además, hay tanto baratos como costosos.</strong> Aquí es como ir a las tiendas y “vitrinear” como decimos los Chilenos, es decir, buscar la mejor relación precio-calidad en las empresas que los ofrecen. Te encontrarás con diferencias de precio enormes, así que te aconsejo encarecidamente vitrinear bastante.</p>
-
-<p><strong>Aquí también existen del tipo “managed”, “unmanaged” y “semi-managed”</strong>, siendo además altos alteradores de precio. En algunas empresas, <strong>agregar el servicio de “managed” puede suponer un aumento hasta del 200%</strong> del valor del servidor contratado, por lo que sale mejor, en muchos casos, contratar el servicio, por única vez, de alguien que sepa, que configure las cosas y luego se olvide del tema y cuando tengas problemas llamarle de nuevo. Eso o aprendes todo lo de servidores por ti mismo y te unes a la tropa de sysadmins —administradores de sistemas—.</p>
-
-<p>Lo que debes saber, además, es que <strong>algunas empresas exigen y otras ofrecen un valor extra en el momento que contratas un dedicado</strong>. Esto lo llaman <em>“Setup”</em>, que sería el montaje y configuración inicial. En teoría, si te cobran un setup al principio, <strong>el precio total mes a mes debería bajar notoriamente</strong>.</p>
-
-<p>El único gran contra es que <strong>el equipo que estás arrendando no es tuyo</strong>. Además no se permite comprar para vender de nuevo en muchas de las empresas que ofrecen servidores dedicados —reventa o “reselling” como dicen los gringos— aunque <strong>algunos dicen que pueden revender siempre y cuando la empresa no se entere</strong> que, en todo caso, no tendría porqué enterarse. Por lo demás, si quieres un servidor tuyo y sólo tuyo, sigue leyendo…</p>
-
-<h2 id="ubicación-colocación-colo-o-colocation:b84287b1d2201dc9689486ca2d9a93ee">Ubicación, Colocación, “colo” o Colocation</h2>
-
-<p>Aunque el nombre de este tipo de hosting no es del todo un estándar —muchos suelen llamarle como quieren—, <strong>es uno de los pasos de hosting más poderosos y baratos que existen</strong> —esto último a largo plazo—. Súper simple: <strong>tú compras el computador que requieres o el servidor y luego le pides a una empresa un espacio donde ubicarlo</strong>, pudiendo ser cerca tuyo, como también lejos, además pagando un extra muy básico por la electricidad consumida y la conexión a internet y, por supuesto, un céntimo por el espacio gastado y los técnicos, en caso de que los necesites.</p>
-
-<p><img src="/content/img/datacenter-de-google.jpg" alt="Uno de los Datacenters de Google" />
-</p>
-
-<p>En principio, el costo inicial es alto, puesto que debes comprar un ordenador completo. Luego, <strong>te olvidas de seguir pagando el precio del equipo y te preocupas de pagar sólo electricidad, internet y la ubicación</strong>, lo que baja bastante el precio.</p>
-
-<p><strong>Aquí el ordenador es 100% tuyo</strong> y sí puedes revenderlo, romperlo, quebrarlo, quemarlo, etcétera. Tanto en el caso de los VPS, como los Dedicados y la Colocación, la ubicación física —geográfica— y el entorno en el que el equipo está influyen de sobremanera. Esto porque <strong>un ordenador debe estar en condiciones ambientales óptimas para trabajar</strong>, esto es, una temperatura apta, un sistema de refrigeración bueno, y un flujo de energía constante, sin altibajos&hellip; No es la idea que tu equipo se queme a la primera fluctuación de electricidad.</p>
-
-<p>Para todo eso, las empresas disponen —y sobre todo en la colocación— de unos <strong>grandes centros llamados “*datacenters*”</strong> —o centros de datos, como quieras llamarles— que están realizados conforme a las normas de seguridad que los servicios de alojamiento web o “hosting” requieren. Puedes ver uno de los datacenters de Google en la imagen superior. <strong>Generalmente siguen normas de calidad y medioambientales.</strong></p>
-
-<p>Existen algunos datacenters, incluso, <strong>que funcionan bajo “energías renovables”</strong>, obteniendo energía solar, del mar —sí, hay datacenters cerca del mar o en el mismo mar— o que tienen sistemas de refrigeración de puta madre —perdonando la expresión— o que modifican el hardware de sus servidores para que consuman menos y que limiten las emanaciones de contaminantes al mínimo —sí, aunque no lo creas, un datacenter libera contaminantes altísimos, tal cual como un automóvil, a la atmósfera—.</p>
-
-<p><strong>¿Ventajas? Todas las anteriores.</strong> La desventaja más amplia es que si ubicas el servidor lejano a tu ubicación y algo pasa, <strong>no podrás ir corriendo a solucionarlo</strong>. Lo mejor es contratar a alguien que lo haga. Por lo demás, la empresa que te hospeda no es responsable en ningún minuto de lo que le pueda pasar a tu servidor. <strong>Ellos siempre ofrecerán las condiciones óptimas para que nada le suceda a tu servidor.</strong></p>
-
-<h2 id="cloud-hosting-cloud-compartido-cloud-vps:b84287b1d2201dc9689486ca2d9a93ee">Cloud Hosting (Cloud Compartido, Cloud VPS)</h2>
-
-<p>Este, a mi criterio, <strong>es el final de la línea del hosting</strong>. Cloud Computing —o computación en la nube— ha llegado para quedarse. <strong>El cloud computing podría ser similar a lo que, en su tiempo y hasta ahora es el <em>clustering</em>.</strong> Contrario a lo que sucedía con el hosting compartido donde un equipo hospedaba a 300 clientes, aquí es totalmente al revés: <strong>300 servidores hospedan un equipo o una cuenta</strong>. Sí, no estoy loco. El cloud computing no es más que miles de máquinas distribuidas en el mundo y que en conjunto hacen una gran cabeza que puede venderse como una por partes.</p>
-
-<p><img src="/content/img/cloud-computing.jpg" alt="La &quot;Computación en la Nube&quot;" />
-</p>
-
-<p>Así, por ejemplo, <strong>si contratas un cloud VPS, en teoría no deberías tener ningún problema si tu web se vuelve más famosa que la portada de Google algún día</strong>, puesto que toda esa nube —a la nube le llamamos a aquellos cientos de miles de computadores trabajando como uno solo— <strong>estará disponible para que tú la uses</strong> —eso si puedes pagar el extra, claro—.</p>
-
-<p><strong>Podrás pensar que es algo carísimo</strong>, puesto que si arrendar un sólo equipo era costoso, arrendar 300 podría ser tu perdición. La verdad no es tan así. En casos puntuales y en sitios de alto tráfico, <strong>el cloud hosting reduce entre un 50% a un 80% el costo del hosting en el mejor de los casos</strong> y evita en las empresas que mantienen la nube que tengan equipos sin uso o “inútiles” en su empresa, sólo gastando electricidad.</p>
-
-<p>Amazon, por ejemplo, <strong>tiene miles de servidores en 5 ó 6 ubicaciones del planeta</strong>, pero no los usa todos en su sitio web, por lo que el resto de los equipos que no usa <strong>los combina como uno solo y los arrienda</strong>. Además, si se trata de un VPS, tienes todas las ventajas de un servidor dedicado virtual —y no podría ser servidor dedicado sin el “virtual” puesto que está más que claro que se deben virtualizar las cosas en la nube— con todas las de la ley.</p>
-
-<p>En el caso del cloud hosting <strong>es la única solución viable para sitios web de alto tráfico</strong> que, caso contrario, deberían arrendar cientos de servidores dedicados no virtuales para poder soportar la carga que significa tener esos sitios en línea.</p>
-
-<hr />
-
-<h3 id="consideraciones-finales:b84287b1d2201dc9689486ca2d9a93ee">Consideraciones finales</h3>
-
-<p>Para los casos más prácticos, <strong>siempre es recomendable comenzar desde la base e ir escalando</strong> conforme se necesite, puesto que es innecesario y un gasto estúpido el lanzarse a comprar lo más grande porque “crecerá” en unos meses, a menos que tengas claro que has inventado el siguiente Facebook.</p>
-
-<p>Otro punto es que mucha gente llega preguntándome, por ejemplo, <strong>qué servidor es bueno si tengo 1.000, 2.000, 5.000, 10.000 o más visitas</strong> y la verdad es una pregunta sin salida, puesto que, <em>en sí, todos los sitios son diferentes</em> —no hay dos sitios iguales en el mundo, ¿o sí?— y por ende, todos requieren de características diferentes.</p>
-
-<p><strong>Probablemente yo pueda tener 100 mil visitas únicas diarias y mi servidor pueda ser uno pequeño pasando a mediano</strong>, pero no significa que otra web con la misma cantidad de visitas podrá mantenerse en el mismo servidor y esto es principalmente porque <strong>cada web “pesa” de manera diferente</strong> para el equipo y el “cerebro” del servidor. Una web que procese vídeos requerirá sin duda de mucha más capacidad de proceso que una web que muestra imágenes en GIF, aún cuando ambas tengan la misma cantidad de visitas y la misma cantidad de páginas dentro.</p>
-
-<p>Finalmente, <strong>el comprar o arrendar hosting es simplemente prueba y error</strong>. Depende mucho la ubicación en la que tu servidor esté —y en este último caso recomiendo encarecidamente <strong>buscar hosting en lugares como Estados Unidos, Inglaterra, Alemania, Francia o España que en tu país natal</strong>, puesto que dichos países llevan años en el negocio del hosting y te ofrecerán por un precio mucho más accesible mejores características. Contáctame si quieres que te compruebe lo antes mencionado.</p>
-
-<p>Por lo demás, si necesitas asesoría o la nota te ha dejado alguna duda, puedes encontrarme en <a href="http://twitter.com/marlex">Twitter</a> y <a href="http://gplus.to/marlex">Google Plus</a> y hacer las consultas pertinentes. Si algo no se entendió de la nota, repórtalo en los comentarios. No sólo me ayudas a que el texto sea más entendible, sino que también a futuros lectores que de seguro les orientará, al igual que a ti.</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/primer-telefono-google-nexus-one/">
-        El primer teléfono de Google no fue el Nexus S
-      </a>
-    </h1>
-
-    <span class="post-date">Tue, May 31, 2011</span>
-
-    <p>No es una novedad para muchos de mis conocidos que <strong>me encantan los gadgets y muchos me podrán tachar de “fan” de todos los productos y servicios de Google</strong>, y no ha sido muy diferente con las últimas aplicaciones y tecnologías del megabuscador. Una de esas cosas que me encantan <strong>son los teléfonos y tablets y, más especialmente, Android</strong>.</p>
-
-<p>Me gusta Android <strong>porque es un sistema operativo móvil</strong> -es decir, <strong>no sólo para teléfonos, sino también para tablets</strong>- totalmente versátil y útil. Algunas veces lo llego a comparar con Windows en el sentido de que <strong>es muy fácil pasar de una versión de Android a otra</strong>, sólo falta entender un poco el inglés y ponerse a buscar <a href="http://forum.xda-developers.com/">en los foros de XDA Developers</a> para encontrar soluciones.</p>
-
-<p><strong>Me animé a escribir esta nota por un tweet que recibí de mi colega Sander Martínez</strong>, conocido en Twitter como <a href="http://twitter.com/Therius24">Therius24</a>, quien me comentaba que había escuchado de una compañía de telefonía, <strong>Movistar, que promovían al Nexus S como el primer teléfono de Google</strong>, cosa que es una total falsedad.</p>
-
-<p><strong>Google lanzó Android luego de comprar una empresa que producía la base de este sistema operativo</strong> -Google siempre compra buenas cosas- y lo puso a mejorar a tal punto que ahora es un monstruo. Por aquellos entonces <strong>ya existía el iPhone con sus cualidades inigualables</strong> por otro móvil, <strong>pero Google supo sopesar a iPhone lanzando un sistema operativo para móviles que crecería con el tiempo</strong>, porque tenía ideas claras que <strong>Vic Gundotra, Senior Vicepresidente de Google</strong>, comentó en el evento de Google, llamado “Google I/O” en el 2010. <strong>Vean este vídeo donde Vic habla de su primer día en Google</strong> y, específicamente, en Android (minuto 1:03) y allí comenta dos puntos que Andy Rubin le indicó de porqué Google estaba interesado en crear un sistema operativo móvil.</p>
-
-<iframe width="750" height="422" src="//www.youtube.com/embed/IY3U2GXhz44" frameborder="0" allowfullscreen></iframe>
-
-<p><strong>En Inglés:</strong>
-&gt; And he <em>[Andy Rubin]</em> argued that if Google did not act, we faced a Draconian future, a future where one man, one company, one device, one carrier would be our only choice. That’s a future we don’t want.</p>
-
-<p><strong>En Español:</strong>
-&gt; Y el <em>[Andy Rubin]</em> indicó que si Google no actuaba, enfrentaríamos un futuro draconiano, un futuro donde un hombre <em>(Steve Jobs, de Apple)</em>, una compañía <em>(Apple)</em>, un dispositivo <em>(el iPhone)</em>, una operadora serían nuestra única opción. Ese es un futuro que no queremos.</p>
-
-<p>Por mi posición bajo el buque insignia <a href="http://www.marlexsystems.org/">Marlex Systems</a>, <strong>me ha tocado seguir muy de cerca todo lo que tiene que ver con iPhone y Android</strong>. Recuerdo que uno de los primeros móviles que mayor auge tuvo en aquellos días que <strong>se comenzaba a hablar de Android fue el HTC G1</strong>. Para quienes no conozcan a HTC, <strong>apúntenlo, que es un nombre que está dando que hablar</strong>. Se trata de una compañía taiwanesa que, a mi gusto, crea los mejores hardwares para teléfonos móviles inteligentes. Comenzó con Windows Mobile, <strong>donde creó una especie de “escritorio de Windows” llamada *HTC Sense</strong>* -o Vanila, por su nombre en clave-. Sense <strong>llegó a ser muy popular</strong> más que nada por la utilidad -habían accesos directos realmente útiles en el- y su belleza, con algunos elementos delicadamente diseñados, como los efectos del clima.</p>
-
-<p><strong>Google contactó a HTC en aquellos días para lanzar un primer teléfono con una versión muy verde de Android</strong> -un “beta” como siempre gusta Google de llamar a sus inventos- y <strong>el resultado fue el HTC G1</strong>. Muchos medios en internet lo llamaron “the Google Phone” o el teléfono de Google, a lo que Google tuvo que salir al paso diciendo que <strong><em>no se trataba</em> de un teléfono de ellos</strong>, sino que <strong>sólo el sistema operativo formaba parte de Google</strong>, mientras que el resto era de HTC.</p>
-
-<p>Esto hizo que <strong>muchos medios pusieran el ojo en el naciente SO Android</strong> y esperaran un teléfono manufacturado por Google. Al menos esa era la idea. Entre septiembre y diciembre de 2009, muchos medios comenzaron a hablar de una noticia que <strong>Google estaría pronto a lanzar su propio teléfono con Android</strong>, que incluiría características realmente avanzadas para lo que se podía esperar en aquel entonces. HTC ya había lanzado algunos teléfonos -no muy buenos en hardware- por aquellos entonces y <strong>el 12 de Diciembre de 2009, Google comentaba de manera oficial <a href="http://googlemobile.blogspot.com/2009/12/android-dogfood-diet-for-holidays.html">que estaba probando un teléfono</a>, el primer teléfono de Google</strong> hecho desde el borrador por la mismísima compañía <strong>y manufacturado por HTC</strong>, pero con el control de calidad de Google. Como los medios no conocían su nombre, <strong>simplemente le llamaron el “GPhone”</strong> haciendo referencia al iPhone de la competencia, pero en Google.</p>
-
-<p>Tal fue el revuelo, que <strong>Google lanzó oficialmente a la venta su primer teléfono, el Google Nexus One, el 5 de Enero de 2010 mediante la compañía estadounidense T-Mobile</strong>. Fue tan así, incluso, que se vendieron una buena cantidad de teléfonos, <strong>pero no logró opacar las ventas de iPhone</strong> -es que la gente compra cada tontera!- aún cuando las características de hardware entre el iPhone y el teléfono de Google, el Nexus One, eran de enorme diferencia. <strong>El Nexus One era el primer teléfono con contar con procesador de 1 Ghz y estaba hecho para desarrolladores</strong> -como una idea de fomentar las ventas y la producción de aplicaciones para Android- además de tener un diseño bien cuidado de un sólo cuerpo -unibody-.</p>
-
-<iframe width="750" height="422" src="//www.youtube.com/embed/I6COwgigJ-g" frameborder="0" allowfullscreen></iframe>
-
-<p>El cuidado que tuvo Google fue tal <strong>que entregó una url desde su propia web principal</strong> -en aquellos entonces google.com/phone (ahora muestra una web con teléfonos con Android)- para acceder a ver el teléfono. Incluso <strong>habían vídeos de los controles de calidad que Google y HTC realizaban, como <a href="http://www.youtube.com/watch?v=R1sz5c-R9h0">hacer rebotar el teléfono contra el suelo</a> para ver si resistía</strong>. Lamentablemente, <strong>el recomendar la venta a desarrolladores limitó la cantidad de equipos vendidos</strong>, lo que hizo que no hubieran muchos beneficios y por consiguiente, no mejoraran las ventas.</p>
-
-<p>Sumado a eso está que como el productor era HTC, <strong>este no contaba con los permisos para distribuir su teléfono en no más que unos 9 países del globo</strong>, lo que limitaba aún más la venta. El Nexus One fue una realidad en determinados países donde HTC podría venderlos <strong>gracias a un acuerdo con Microsoft</strong> que ahora permite que este último <a href="http://www.marlexsystems.org/microsoft-dinero-android-wp7/12870/">gane aproximadamente 5 dólares por teléfono HTC con Android que se vendiera</a>.</p>
-
-<p>Aún así, <strong>las ventas de Android hicieron subir los beneficios de HTC</strong> -aún en su limitado mercado- a números realmente asombrosos, a tal punto de cortar la producción de Windows Mobile y mantenerse sólo en Android. No fue el único: <strong>Motorola, una empresa destinada a morir por aquellos días, hizo su movida más exigente, pasándose a Android</strong> y creando el Motorola Droid, un teléfono que <strong>hizo resurgir a la compañía de entre las cenizas</strong>, con una agresiva campaña contra el iPhone llamada <a href="http://www.marlexsystems.org/verizon-inicia-fuerte-campana-contra-el-iphone-en-usa/8678/">“Droid Does”</a>.</p>
-
-<p>Pero <strong>también llegaron otras empresas, entre ellas la conocida Samsung</strong>. Comenzó a manufacturar teléfonos “powered by Google” que utilizaban Android y <strong>su mejor apuesta fue el <em>Samsung Galaxy S</em>, que se vendió como el pan caliente</strong> porque Samsung ya contaba con suficiente mercado a nivel mundial que logró hacer llegar su móvil hasta donde otros no habrían podido. El éxito del Samsung Galaxy S fue tal que <strong>hizo toda una familia de teléfonos Galaxys</strong>: unos más grandes, otros más chicos y con diferentes características.</p>
-
-<p>Google entonces puso el ojo en este nuevo actor que entraba a escena y decidió anunciar el 15 de Diciembre de 2010 en el evento Web 2.0 Summit, <strong>que estaba haciendo un partnership con Samsung para lanzar el sucesor del Nexus One, el <em>Google Nexus S</em></strong> utilizando algunas características de hardware calcadas del Samsung Galaxy S, pero con un añadido: <strong>un chip de comunicaciones <em>NFC</em></strong> que ya se está hablando de ellos pero que no es motivo de esta nota.</p>
-
-<p><img src="/content/img/nexus-s-movistar.jpg" alt="Nexus S sb_float" />
-</p>
-
-<p><strong>Es el Nexus S hasta el momento, el segundo teléfono de Google manufacturado por una empresa externa</strong> -y es totalmente comprensible que Google manufacture con empresas externas, puesto que <strong>Google no se dedica a producir teléfonos, sino software</strong>-. Hasta el momento, mientras muchas compañías podrán decir que los teléfonos con Android son “powered by Google”, lo que dicen en realidad <strong>es que es el sistema operativo el hecho por Google, pero no el teléfono</strong>.</p>
-
-<p>Recapitulando: <strong>El primer teléfono de Google o “Google Phone” es el Nexus One. El segundo es el Nexus S. No existen otros teléfonos</strong>, tengan Android o no, que Google haya declarado como suyos. Puedo hablar de primera fuente, porque <strong>fui uno de los primeros en manejar un Nexus One en Chile con Android</strong>, el primer <em>Google Phone</em> y en la actualidad he seguido tan de cerca el tema de Android que ya manejo una buena cantidad del SO.</p>
-
-<p>Si tienes dudas respecto del tema o necesitas explicaciones en extenso, <strong>no tengas miedo en dejar el comentario</strong>, que responderé con gusto. <strong>Y espero que esta nota esclarezca a mi amigo Sander</strong>, con las publicidades de doble sentido de Movistar en Chile.</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="https://patrickdappollonio.github.io/post/acumula-puntos-con-su-rut/">
-        La idea tras el “¿acumula puntos con su RUT?”
-      </a>
-    </h1>
-
-    <span class="post-date">Wed, Jan 5, 2011</span>
-
-    <p><strong>Pongámonos en este caso:</strong> vas de camino a una farmacia, o a un supermercado de una cadena nacional y cuando pasas por caja, la gentil cajera que poco o nada sabe del asunto te pregunta: <em>&ldquo;¿Acumula puntos?, ¿Cuál es su RUT?&rdquo;</em>. ¿Cuál será la idea a través de esto? Muy simple: <strong>Información</strong>.</p>
-
-<p>Como dice una vieja frase: <em>la información es poder</em>. <strong>Y las multinacionales y grandes empresas lo saben muy bien.</strong> Conocer tendencias, información, detalle&hellip; Todo lo que suponga una buena venta significa mucho para ellos. <strong>¿Y los descuentos?</strong> Aunque no lo crea, <strong>suponen beneficios para la empresa</strong>, aún cuando baja los precios, puesto que elimina mercadería que está gastando espacio en su bodega y que podrían servir para poner allí mercadería que se vende en mayor cantidad. Y no todo el tiempo se vende una mercadería a una razón fija.</p>
-
-<p><strong>Conocer estas tendencias es útil para saber qué vender y cómo venderlo.</strong> Pongo un ejemplo que me comentó un profesor hace algún tiempo. En un país del que no recuerdo su nombre, un conocido supermercado hizo un estudio en el que encontró que <strong>los viernes se vendía una buena cantidad de Cerveza y Pañales después de las 7 de la tarde</strong>. Más aún, agregando un poco más de datos, notaron que <strong>el mayor porcentaje de personas que realizaba esta compra dual eran hombres</strong>. Por lo mismo, decidió durante unos meses probar poniendo la cerveza en una esquina del supermercado y en la otra totalmente opuesta los pañales para bebés.</p>
-
-<p>Con ello, los hombres al entrar tomaban el carrito y se iban a las cervezas, en una punta del supermercado, tomando, por supuesto como cualquier otro consumista, <strong>todo lo que le interesara a su paso</strong>. Peor aún&hellip; Cuando preguntaban dónde estaban los pañales y les indicaran que estaban prácticamente al otro lado del supermercado, enojados pasaban nuevamente recorriendo una buena cantidad de estanterías del supermercado, <strong>recogiendo de camino varias cosas más</strong>. Llegaban a los pañales y se encontraban con el carro lleno de cosas: desde productos para el cuidado personal hasta víveres.</p>
-
-<p>Esta &ldquo;idea&rdquo; de usar la ubicación de las cosas en base a la información de las ventas supuso para aquel supermercado <strong>más que <em>cuadruplicar</em> las ganancias. Una simple compra de cerveza y pañales terminaba en la compra del mes</strong>. Peor aún cuando veían los típicos Packs de 3x2. Imagine, querido lector, si compra 3 salsas de tomates por el valor de 2, <strong>¿no necesitará comprar también más fideos para acompañar la salsa extra que se lleva?</strong> Es la idea del negocio&hellip;</p>
-
-<p>Toda esta información se obtiene de un concepto de ingeniería llamado <em>&ldquo;data mining&rdquo;</em> o minería de datos. <strong>Un gran volumen de datos se mueve en las empresas</strong> y, mientras más haya, mejor aún. Registrar todas las cosas que estás comprando en tu boleta y, por supuesto, ni tontos ni perezosos, enviando una copia al centro de datos del supermercado supone &ldquo;conocer&rdquo; por parte del supermercado las tendencias de compra y saber qué la gente quiere y saber dónde ubicarla, así estás forzado a recorrer todo el supermercado en busca de lo que quieres. Y no sólo en supermercados, sino también en tiendas de ropa, etcétera.</p>
-
-<p>Una historia un tanto más diferente que pudo haber pasado en Chile resultó que cierto día <strong>una nieta de 17 años muy proactiva, notó que su abuelita necesitó, en su momento, unas pastillas para la depresión</strong>, cuadro clínico que se generaliza cuando eres viejo y además estás solo. Como la nieta quería a su abuela, <strong>salió corriendo a comprar a la farmacia</strong> <em>(ponga el nombre aquí de una farmacia conocida)</em> más cercana unas pastillas antidepresivas para la abuelita. El dependiente le vendió el producto y le consultó el RUT para <em>&ldquo;acumular puntos&rdquo;</em>. La niña, sin problemas porque <strong>estaba hablando con una empresa seria</strong>, entregó su RUT, pagó el precio de las pastillas antidepresivas, y se fue a casa a entregar el medicamento.</p>
-
-<p><img src="/content/img/farmacia.jpg" alt="Imagine una farmacia cualquiera..." />
-</p>
-
-<p>Todo bien hasta que pasó el tiempo, la nieta llegó a los 18 y se puso a trabajar con contrato. Cuando fue a la ISAPRE o a FONASA como parte de su contrato que lo requería, <strong>le pidieron que, en una planilla, llenara todas las enfermedades de las que padecía</strong>. Ella, como era muy sana, <strong>no marcó ninguna, ni siquiera el apartado de fumar y/o beber</strong>. Pasó nuevamente el tiempo, y mientras trabajaba cayó en un cuadro de stress. Fue a su ISAPRE para obtener su beneficio legal para visitar al médico <strong>y éste fue rechazado. ¿El porqué? La ISAPRE le habría indicado que padecía de una &ldquo;enfermedad no declarada&rdquo;</strong>. Que habían registros de que ella consumía antidepresivos desde antes de los 18.</p>
-
-<p>¿Cómo mier&hellip; la ISAPRE supo esto? Una sóla respuesta, y así como una empresa hace minería de datos con sus propios datos, <strong>estos mismos tienen valor para otras empresas</strong>: farmacias con ISAPRES, por ejemplo. Es así como también <strong>por debajo se &ldquo;venden&rdquo; los datos que se obtienen de los clientes entre empresas a valores muy altos</strong>, incluso a veces <strong>bordeando los millones de dólares</strong> para un volumen de datos de más de 1 millón de personas o un mes de movimientos.</p>
-
-<p>En conclusión: <strong>aunque no estoy fomentando a no entregar el RUT</strong> y, si lo hace, haga uso de sus beneficios, que una &ldquo;rebaja&rdquo; del precio del producto no significa que la farmacia o supermercado le hayan descontado por <em>buena onda</em>, <strong>sino porque necesitan espacio en sus estantes</strong> para nueva mercadería o nuevos fármacos, <strong>recomiendo encarecidamente evitar la práctica cuando el producto que haya comprado se trate de su intimidad</strong>. Si padece de hemorroides, por ejemplo, al menos evitando entregar el RUT la compra quedará entre usted y el cajero o cajera y no entre usted, el cajero, la empresa, el informático de la empresa, el contador, el analista, la empresa que los compra bajo la mesa, el informático de la empresa que lo compra, el contador de esa empresa, su analista, el perro y el gato y la gente del Aseo que después le gastarán una buena broma.</p>
-
-<p><strong>Nota al Pie:</strong> Si quiere saber más del asunto, <a href="http://munir.multiactiva.com/2010/08/13/nectar-la-nueva-forma-en-que-cencosud-averiguara-todo-sobre-ti/">Munir tiene una excelente nota que habla del <em>Club de Puntos Néctar</em></a>, del uso de la información que el cliente entrega y a dónde va a parar.</p>
-
-  </div>
-  
+				
+					<div class="blogpost-item">
+	<h3><a href="https://patrickdappollonio.github.io/post/como-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh/">Cómo prevenir el envío de la configuración de &#39;locale&#39; en Mac vía SSH</a></h3>
+	
+		<i style="background-image: url('/content/img/locale.png')"></i>
+	
+	<p>Uno de los problemas que siempre me surge al momento en que limpio el Mac para dejarlo listo para la batalla es el problema de que la configuración por defecto del SSH de Mac envía a cualquier conexión vía SSH una solicitud para que aplique la configuración de locale de mi Mac en esas conexiones, resultando en problemas cuando instalas algunas aplicaciones o simplemente cuando ejecutas algún make. El resultado visual es algo así&hellip; Con mensajes como: locale: Cannot set LC_CTYPE to default locale: No such file or directory locale: Cannot set LC_ALL to default locale: No such file or directory Para evitar que se convierta en un inconveniente, podemos decirle al cliente de SSH integrado en Mac que evite mandar esa configuración, simplemente comentando una línea en el archivo de configuración ubicado en /etc/ssh_config.</p>
+	<span>
+		Publicado el 01/08/2014 / 
+		
+			1 minuto
+		 &mdash; 200 palabras
+	</span>
 </div>
+				
+					<div class="blogpost-item">
+	<h3><a href="https://patrickdappollonio.github.io/post/interfaz-card-ui-xml/">Cómo crear una interfaz &#39;Card UI&#39; en Android usando XML</a></h3>
+	
+		<i style="background-image: url('/content/img/card-ui-pixel-perfect.png')"></i>
+	
+	<p>Una de las cosas que son más comunes a la hora de diseñar interfaces en Android son las interfaces Holo. Actualmente, el elemento que es más común —en conjunto con los menús laterales y las _ActionBar_— son los elementos tipo tarjeta, bastante comunes en el Play Store. Implementación en XML Hay varias alternativas de implementación. La que más se repite es hacer un nine patch, que requiere cierto esfuerzo, pero lamentablemente, el resultado no es pixel perfect, así que la mejor solución siempre es usar XML.</p>
+	<span>
+		Publicado el 11/05/2014 / 
+		
+			2 minutos
+		 &mdash; 300 palabras
+	</span>
 </div>
+				
+					<div class="blogpost-item">
+	<h3><a href="https://patrickdappollonio.github.io/post/leer-archivos-bin-cue-mac/">Cómo leer archivos bin/cue en Mac OS X</a></h3>
+	
+		<i style="background-image: url('/content/img/binchunker.png')"></i>
+	
+	<p>Hoy me topé con algo de mi día a día: en un viejo disco duro de respaldo tenía unas copias de DVDs en formato bin/cue. Lamentablemente, Mavericks no me dejó montar los archivos bin ya que, técnicamente, Apple no da soporte a los archivos bin/cue de manera nativa en Mac, pero la solución es bastante simple. Existe un programa de consola llamado binchunker que convierte archivos bin/cue a ISO sin mayores inconvenientes.</p>
+	<span>
+		Publicado el 25/04/2014 / 
+		
+			2 minutos
+		 &mdash; 400 palabras
+	</span>
+</div>
+				
+					<div class="blogpost-item">
+	<h3><a href="https://patrickdappollonio.github.io/post/por-que-los-camiones-de-ups-no-giran-a-la-izquierda/">¿Por qué los camiones de UPS no giran a la Izquierda?</a></h3>
+	
+		<i style="background-image: url('/content/img/ups-truck.jpg')"></i>
+	
+	<p>En 2004, UPS anunció una nueva política corporativa para sus conductores: la forma correcta de llegar a cualquier destino era evitar cualquier giro a la izquierda. Cuando aparecieron mejores sistemas de seguimiento en 2001, el servicio de entrega de paquetes revisó más en detalle cómo era el rendimiento de cuando los camiones entregaban estos paquetes. Como empresa de logística con unos 96.000 camiones y varios cientos de aviones, una buena parte del negocio de UPS puede ser reducido a una serie de problemas de optimización sobre la reducción de la cantidad de combustible usado, el ahorro de tiempo y el uso más eficiente del espacio.</p>
+	<span>
+		Publicado el 05/04/2014 / 
+		
+			3 minutos
+		 &mdash; 600 palabras
+	</span>
+</div>
+				
+					<div class="blogpost-item">
+	<h3><a href="https://patrickdappollonio.github.io/post/hd-wallpapers-para-android/">HD Wallpapers para Android</a></h3>
+	
+		<i style="background-image: url('/content/img/hd-wallpapers-screenshot.jpg')"></i>
+	
+	<p>En mis ratos, una de las cosas que hago es crear algunas piezas de código interesantes. La última, buscaba conseguir una performance de scrolling en Android bastante decente cuando habían imágenes de &ldquo;peso&rdquo; cargadas en la ventana, lo que logré optimizar bastante —cosa que ni Facebook hace con su app móvil—. ¿El resultado? Una app que decidí lanzar a todo público: HD Wallpapers. Básicamente, HD Wallpapers es una app que obtiene las imágenes desde un sitio de Wallpapers — acción conocida como web-scraping — y las muestra directamente en pantalla.</p>
+	<span>
+		Publicado el 02/04/2014 / 
+		
+			2 minutos
+		 &mdash; 400 palabras
+	</span>
+</div>
+				
+					<div class="blogpost-item">
+	<h3><a href="https://patrickdappollonio.github.io/post/launchrocket-prefpane-homebrew/">LaunchRocket: Lanza cualquier app Homebrew desde el panel de Preferencias de Mac</a></h3>
+	
+		<i style="background-image: url('/content/img/launchrocket.png')"></i>
+	
+	<p>Ok, ¡GeekTime! Para todos aquellos amigos informáticos que desarrollan tecnologías, una de las cosas más molestas de todas — al menos para mí — es el hecho de tener que instalar un sinfín de comandos para poder iniciar y detener los servicios de diferentes apps como bases de datos y servicios de Mac —sí, launchctl, te estoy mirando a ti!—. Hoy, dando vuelta optimizando un poco mi trabajo habitual, me encontré con esta pieza de Software llamada LaunchRocket.</p>
+	<span>
+		Publicado el 24/03/2014 / 
+		
+			3 minutos
+		 &mdash; 500 palabras
+	</span>
+</div>
+				
+					<div class="blogpost-item">
+	<h3><a href="https://patrickdappollonio.github.io/post/series-que-ver-primera-parte/">Series que ver (primera parte)</a></h3>
+	
+	<p>Una de las cosas que hago en mi tiempo libre es ver series. Son aquellas cosas que me desestresan, mantienen la mente fuera de contexto por un rato, te hacen gritar, o incluso, te dejan preocupado por lo que pasará. Aquí, la recopilación de series que deberías ver (sin un orden de preferencia) y un pequeño resumen de cada una… Arrow (esperando a la segunda temporada) Arrow es una de esas series que llama la atención.</p>
+	<span>
+		Publicado el 06/09/2013 / 
+		
+			5 minutos
+		 &mdash; 900 palabras
+	</span>
+</div>
+				
+					<div class="blogpost-item">
+	<h3><a href="https://patrickdappollonio.github.io/post/linkedin-como-fuente-de-trabajo-para-profesionales/">LinkedIn como fuente de trabajo para Profesionales</a></h3>
+	
+		<i style="background-image: url('/content/img/linkedin.gif')"></i>
+	
+	<p>Hola de nuevo. Por acá poniendo el hombro con otra nota. Esta vez, para comentar alguna de las bondades de LinkedIn, la red social profesional. He de decir primero que LinkedIn no es algo muy factible de usar en empresas que quieren llegar a su público objetivo, a menos que sea un público de profesionales. LinkedIn es más algo como para que los profesionales y expertos puedan conocerse, fomentar el trabajo que realizan, y conseguir nuevas redes de contacto.</p>
+	<span>
+		Publicado el 03/09/2012 / 
+		
+			3 minutos
+		 &mdash; 600 palabras
+	</span>
+</div>
+				
+					<div class="blogpost-item">
+	<h3><a href="https://patrickdappollonio.github.io/post/el-manual-del-hosting-for-dummies/">El Manual del Hosting — For Dummies</a></h3>
+	
+		<i style="background-image: url('/content/img/servidor-dedicado.jpg')"></i>
+	
+	<p>Hace algunos minutos una interesante pregunta llegó a mi Twitter preguntándome por hosting, cosa práctica, puesto que toda la gente que quiere tener una web necesita hospedarla en alguna parte. Es por eso que me decidí a publicar una nota explicando los tipos de hostings que existen en la actualidad totalmente a huevo —explicado con papas y manzanas, como decimos en Chile— para que tenga una idea enorme. De más está decir que todo lo aquí expresado es basado en conocimientos y la experiencia personal —llevo más de 8 años en el marco web, sobre todo en el hosting y alojo sitios de alta cantidad de usuarios, como también de baja— y además no puede ser la totalidad de hostings existentes —puesto que algunas compañías deciden “poner nombre” a tipos de hostings especiales, que en la práctica, no tienen nada especial más que el nombre, véase “hybrid” más abajo— así que lo dejo a criterio del lector.</p>
+	<span>
+		Publicado el 20/09/2011 / 
+		
+			22 minutos
+		 &mdash; 4500 palabras
+	</span>
+</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
 
-  </body>
+<footer>
+	<div class="container">
+		<div class="row">
+			<p>&copy; 2015 &mdash; Weblog personal de Patrick D'appollonio<br>
+			Creado con <a href="http://gohugo.io/" rel="nofollow" target="_blank">Hugo</a> más la adaptación del template Monoid de Ghost</p>
+			<ul>
+				<li>
+					<a href="https://www.twitter.com/marlex" target="_blank" rel="nofollow">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/patrickdappollonio" target="_blank" rel="nofollow">
+						<i class="fa fa-github"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://play.google.com/store/apps/developer?id=Patrick+D%27appollonio" target="_blank" rel="nofollow">
+						<i class="fa fa-android"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.twitch.tv/patrickdappollonio" target="_blank" rel="nofollow">
+						<i class="fa fa-twitch"></i>
+					</a>
+				</li>
+				<li>
+					<a href="/index.xml" target="_blank" rel="nofollow">
+						<i class="fa fa-rss-square"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
 </html>
