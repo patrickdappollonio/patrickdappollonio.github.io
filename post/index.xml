@@ -2,27 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Patrick D&#39;appollonio</title>
-    <link>http://patrickdappollonio.github.io/post/</link>
+    <link>https://patrickdappollonio.github.io/post/</link>
     <description>Recent content in Posts on Patrick D&#39;appollonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <lastBuildDate>Sat, 04 Apr 2015 23:18:19 -0400</lastBuildDate>
-    <atom:link href="http://patrickdappollonio.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://patrickdappollonio.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>acumula puntos con su rut</title>
-      <link>http://patrickdappollonio.github.io/post/acumula-puntos-con-su-rut/</link>
+      <link>https://patrickdappollonio.github.io/post/acumula-puntos-con-su-rut/</link>
       <pubDate>Sat, 04 Apr 2015 23:18:19 -0400</pubDate>
       
-      <guid>http://patrickdappollonio.github.io/post/acumula-puntos-con-su-rut/</guid>
-      <description>
+      <guid>https://patrickdappollonio.github.io/post/acumula-puntos-con-su-rut/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://silvrback.s3.amazonaws.com/uploads/2fdf6ba7-35c4-4b30-a34a-fdea608e6b7f/boleta_large.gif&#34; alt=&#34;Una boleta cualquiera&#34; /&gt;
+&lt;/p&gt;
 
-&lt;h3 id=&#34;hola-mundo:187d14cf54febbe843a6ec571c850fbc&#34;&gt;Hola Mundo!&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Pongámonos en este caso:&lt;/strong&gt; vas de camino a una farmacia, o a un supermercado de una cadena nacional y cuando pasas por caja, la gentil cajera que poco o nada sabe del asunto te pregunta: &lt;em&gt;&amp;ldquo;¿Acumula puntos?, ¿Cuál es su RUT?&amp;rdquo;&lt;/em&gt;. ¿Cuál será la idea a través de esto? Muy simple: &lt;strong&gt;Información&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Esto es una prueba&lt;/p&gt;
+&lt;p&gt;Como dice una vieja frase: &lt;em&gt;la información es poder&lt;/em&gt;. &lt;strong&gt;Y las multinacionales y grandes empresas lo saben muy bien.&lt;/strong&gt; Conocer tendencias, información, detalle&amp;hellip; Todo lo que suponga una buena venta significa mucho para ellos. &lt;strong&gt;¿Y los descuentos?&lt;/strong&gt; Aunque no lo crea, &lt;strong&gt;suponen beneficios para la empresa&lt;/strong&gt;, aún cuando baja los precios, puesto que elimina mercadería que está gastando espacio en su bodega y que podrían servir para poner allí mercadería que se vende en mayor cantidad. Y no todo el tiempo se vende una mercadería a una razón fija.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;esto := tambien()
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Conocer estas tendencias es útil para saber qué vender y cómo venderlo.&lt;/strong&gt; Pongo un ejemplo que me comentó un profesor hace algún tiempo. En un país del que no recuerdo su nombre, un conocido supermercado hizo un estudio en el que encontró que &lt;strong&gt;los viernes se vendía una buena cantidad de Cerveza y Pañales después de las 7 de la tarde&lt;/strong&gt;. Más aún, agregando un poco más de datos, notaron que &lt;strong&gt;el mayor porcentaje de personas que realizaba esta compra dual eran hombres&lt;/strong&gt;. Por lo mismo, decidió durante unos meses probar poniendo la cerveza en una esquina del supermercado y en la otra totalmente opuesta los pañales para bebés.&lt;/p&gt;
+
+&lt;p&gt;Con ello, los hombres al entrar tomaban el carrito y se iban a las cervezas, en una punta del supermercado, tomando, por supuesto como cualquier otro consumista, &lt;strong&gt;todo lo que le interesara a su paso&lt;/strong&gt;. Peor aún&amp;hellip; Cuando preguntaban dónde estaban los pañales y les indicaran que estaban prácticamente al otro lado del supermercado, enojados pasaban nuevamente recorriendo una buena cantidad de estanterías del supermercado, &lt;strong&gt;recogiendo de camino varias cosas más&lt;/strong&gt;. Llegaban a los pañales y se encontraban con el carro lleno de cosas: desde productos para el cuidado personal hasta víveres.&lt;/p&gt;
+
+&lt;p&gt;Esta &amp;ldquo;idea&amp;rdquo; de usar la ubicación de las cosas en base a la información de las ventas supuso para aquel supermercado &lt;strong&gt;más que &lt;em&gt;cuadruplicar&lt;/em&gt; las ganancias. Una simple compra de cerveza y pañales terminaba en la compra del mes&lt;/strong&gt;. Peor aún cuando veían los típicos Packs de 3x2. Imagine, querido lector, si compra 3 salsas de tomates por el valor de 2, &lt;strong&gt;¿no necesitará comprar también más fideos para acompañar la salsa extra que se lleva?&lt;/strong&gt; Es la idea del negocio&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Toda esta información se obtiene de un concepto de ingeniería llamado &lt;em&gt;&amp;ldquo;data mining&amp;rdquo;&lt;/em&gt; o minería de datos. &lt;strong&gt;Un gran volumen de datos se mueve en las empresas&lt;/strong&gt; y, mientras más haya, mejor aún. Registrar todas las cosas que estás comprando en tu boleta y, por supuesto, ni tontos ni perezosos, enviando una copia al centro de datos del supermercado supone &amp;ldquo;conocer&amp;rdquo; por parte del supermercado las tendencias de compra y saber qué la gente quiere y saber dónde ubicarla, así estás forzado a recorrer todo el supermercado en busca de lo que quieres. Y no sólo en supermercados, sino también en tiendas de ropa, etcétera.&lt;/p&gt;
+
+&lt;p&gt;Una historia un tanto más diferente que pudo haber pasado en Chile resultó que cierto día &lt;strong&gt;una nieta de 17 años muy proactiva, notó que su abuelita necesitó, en su momento, unas pastillas para la depresión&lt;/strong&gt;, cuadro clínico que se generaliza cuando eres viejo y además estás solo. Como la nieta quería a su abuela, &lt;strong&gt;salió corriendo a comprar a la farmacia&lt;/strong&gt; &lt;em&gt;(ponga el nombre aquí de una farmacia conocida)&lt;/em&gt; más cercana unas pastillas antidepresivas para la abuelita. El dependiente le vendió el producto y le consultó el RUT para &lt;em&gt;&amp;ldquo;acumular puntos&amp;rdquo;&lt;/em&gt;. La niña, sin problemas porque &lt;strong&gt;estaba hablando con una empresa seria&lt;/strong&gt;, entregó su RUT, pagó el precio de las pastillas antidepresivas, y se fue a casa a entregar el medicamento.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silvrback.s3.amazonaws.com/uploads/41784947-4378-4042-80c2-93f54eed630c/farmacia_large.jpg&#34; alt=&#34;Imagine una farmacia cualquiera...&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Todo bien hasta que pasó el tiempo, la nieta llegó a los 18 y se puso a trabajar con contrato. Cuando fue a la ISAPRE o a FONASA como parte de su contrato que lo requería, &lt;strong&gt;le pidieron que, en una planilla, llenara todas las enfermedades de las que padecía&lt;/strong&gt;. Ella, como era muy sana, &lt;strong&gt;no marcó ninguna, ni siquiera el apartado de fumar y/o beber&lt;/strong&gt;. Pasó nuevamente el tiempo, y mientras trabajaba cayó en un cuadro de stress. Fue a su ISAPRE para obtener su beneficio legal para visitar al médico &lt;strong&gt;y éste fue rechazado. ¿El porqué? La ISAPRE le habría indicado que padecía de una &amp;ldquo;enfermedad no declarada&amp;rdquo;&lt;/strong&gt;. Que habían registros de que ella consumía antidepresivos desde antes de los 18.&lt;/p&gt;
+
+&lt;p&gt;¿Cómo mier&amp;hellip; la ISAPRE supo esto? Una sóla respuesta, y así como una empresa hace minería de datos con sus propios datos, &lt;strong&gt;estos mismos tienen valor para otras empresas&lt;/strong&gt;: farmacias con ISAPRES, por ejemplo. Es así como también &lt;strong&gt;por debajo se &amp;ldquo;venden&amp;rdquo; los datos que se obtienen de los clientes entre empresas a valores muy altos&lt;/strong&gt;, incluso a veces &lt;strong&gt;bordeando los millones de dólares&lt;/strong&gt; para un volumen de datos de más de 1 millón de personas o un mes de movimientos.&lt;/p&gt;
+
+&lt;p&gt;En conclusión: &lt;strong&gt;aunque no estoy fomentando a no entregar el RUT&lt;/strong&gt; y, si lo hace, haga uso de sus beneficios, que una &amp;ldquo;rebaja&amp;rdquo; del precio del producto no significa que la farmacia o supermercado le hayan descontado por &lt;em&gt;buena onda&lt;/em&gt;, &lt;strong&gt;sino porque necesitan espacio en sus estantes&lt;/strong&gt; para nueva mercadería o nuevos fármacos, &lt;strong&gt;recomiendo encarecidamente evitar la práctica cuando el producto que haya comprado se trate de su intimidad&lt;/strong&gt;. Si padece de hemorroides, por ejemplo, al menos evitando entregar el RUT la compra quedará entre usted y el cajero o cajera y no entre usted, el cajero, la empresa, el informático de la empresa, el contador, el analista, la empresa que los compra bajo la mesa, el informático de la empresa que lo compra, el contador de esa empresa, su analista, el perro y el gato y la gente del Aseo que después le gastarán una buena broma.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota al Pie:&lt;/strong&gt; Si quiere saber más del asunto, &lt;a href=&#34;http://munir.multiactiva.com/2010/08/13/nectar-la-nueva-forma-en-que-cencosud-averiguara-todo-sobre-ti/&#34;&gt;Munir tiene una excelente nota que habla del &lt;em&gt;Club de Puntos Néctar&lt;/em&gt;&lt;/a&gt;, del uso de la información que el cliente entrega y a dónde va a parar.&lt;/p&gt;
 </description>
     </item>
     
