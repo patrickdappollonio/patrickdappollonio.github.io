@@ -365,6 +365,13 @@ header
 			margin 0 auto
 			margin-bottom 10px
 			
+			@media screen and (max-width 499px)
+				width 100%
+				min-width 100%
+				max-width 100%
+				display block !important
+				float none !important
+			
 			alignleft()
 				max-width 230px
 				display block
@@ -402,11 +409,7 @@ header
 			
 			&[alt$=":f"]
 				fullscreen()
-			
-			@media screen and (max-width 499px)
-				width 100%
-				display block
-					
+								
 		blockquote
 			margin 24px 0 26px
 			color lighten(#222, 40%)
