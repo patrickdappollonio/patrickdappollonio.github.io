@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Lora:400,700&amp;subset=latin,latin-ext" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Inconsolata:400|Lora:400,700&amp;subset=latin,latin-ext" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
 <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64 128x128 256x256">
 <meta name="generator" content="Hugo 0.14-DEV" />
@@ -36,15 +36,14 @@
 					<div id="post-heading">
 						<h1><a href="https://patrickdappollonio.github.io/post/launchrocket-prefpane-homebrew/">LaunchRocket: Lanza cualquier app Homebrew desde el panel de Preferencias de Mac</a></h1>
 						<div class="meta">
-							
+							<span>
 								3 minutos
 							
 							de lectura,
 							
 								435 palabras
-							
-							&nbsp; &mdash; &nbsp;
-							Publicado el 24-03-2014
+							</span>
+							<span>Publicado el 24-03-2014</span>
 						</div>
 					</div>
 					<div id="post-content">
@@ -57,14 +56,14 @@
 
 <p>Hoy, dando vuelta optimizando un poco mi trabajo habitual, me encontré con esta pieza de Software llamada <strong>LaunchRocket</strong>. Básicamente, LaunchRocket revisará los programas que hayas instalado con <em>Homebrew</em> y <strong>te permitirá crear un lanzador de servicios</strong> —ya sea con un usuario convencional o como <code>root</code>— fácilmente y sin tener que ver tu equipo afectado por comandos que de seguro olvidarás más adelante.</p>
 
-<h3 id="instalación:98d57be6a7431f46c8a219bee53f8ce2">Instalación</h3>
+<h3 id="instalación">Instalación</h3>
 
 <p>Para instalar LaunchRocket, <strong>bastará con que <a href="https://github.com/jimbojsb/launchrocket/releases/tag/v0.6">vayas al repositorio Github</a> y descargues la versión 0.6</strong> —que, al momento de redactar esta nota, es la última versión— y luego hagas doble click en el archivo .prefPane que se descomprimirá del zip que bajes.</p>
 
 <p><img src="/content/img/launchrocket-release.png" alt="El último release de LaunchRocket" />
 </p>
 
-<h3 id="consideraciones-de-ejecución:98d57be6a7431f46c8a219bee53f8ce2">Consideraciones de ejecución</h3>
+<h3 id="consideraciones-de-ejecución">Consideraciones de ejecución</h3>
 
 <p>Dadas las restricciones de Apple, y sobre todo <strong>las restricciones a los programas sin firma</strong>, es que una de las cosas lamentables es que hay que desactivar <em>Gatekeeper</em> —ese elemento de sistema que cada vez que bajas una app que no sea muy conocida y que no haya sido descargada del App Store y que te dice que la app &ldquo;proviene de un desarrollador desconocido o no identificado&rdquo;—.</p>
 
@@ -72,7 +71,7 @@
 
 <p>Hay una explicación bastante completa del por qué de esto <a href="https://github.com/jimbojsb/launchrocket/blob/master/README.md">en el archivo README del repositorio</a>.</p>
 
-<h3 id="agregar-servicios-de-homebrew:98d57be6a7431f46c8a219bee53f8ce2">Agregar servicios de Homebrew</h3>
+<h3 id="agregar-servicios-de-homebrew">Agregar servicios de Homebrew</h3>
 
 <p>La primera vez que abras el programa, aparecerá vacío, es decir, no habrá detectado ningún servicio. Hay dos formas de agregar servicios: escanear la instalación de Homebrew con el botón <code>Scan Homebrew</code> o agregar un archivo .plist para &ldquo;demonizarlo&rdquo; dentro de LaunchRocket, con <code>Add .plist</code>. En mi caso, <strong>la primera opción detectó todos los servicios instalados</strong> y pude ejecutarlos sin problemas.</p>
 
@@ -118,7 +117,7 @@
 	<div class="container">
 		<div class="row">
 			<p>&copy; 2015 &mdash; Weblog personal de Patrick D'appollonio<br>
-			Creado con <a href="http://gohugo.io/" rel="nofollow" target="_blank">Hugo</a> más la adaptación del template Monoid de Ghost</p>
+			Creado con <a href="http://gohugo.io/" rel="nofollow" target="_blank">Hugo</a> + Adaptación de Monoid de Ghost</p>
 			<ul>
 				<li>
 					<a href="https://www.twitter.com/marlex" target="_blank" rel="nofollow">
@@ -151,5 +150,8 @@
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src="/js/code.min.js"></script>
 </body>
 </html>

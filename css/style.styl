@@ -1,12 +1,15 @@
+@import "nib"
+@import url('highlight.css')
+
 body
-	color #444
+	color #444 
 	font-family "PT Serif", sans-serif
 	font-size 18px
 	line-height 1.5
-	margin 0
+	margin 0 
 	padding 0
 	text-rendering optimizeLegibility
-	
+	 
 header
 	border-top 5px solid #2a2a2a
 	padding 40px 0
@@ -148,6 +151,7 @@ header
 			display block
 			float right
 			width 300px
+			max-width 100%
 			height 150px
 			background-size cover
 			background-position center center
@@ -156,6 +160,10 @@ header
 			border-radius 3px
 			position relative
 			box-shadow 1px 1px 1px #ccc
+	
+			@media screen and (max-width 550px)
+				display block
+				width 100%
 					
 		p
 			font-size 16px
@@ -169,6 +177,37 @@ header
 			font-style italic
 			color lighten(#222, 50%)
 			
+#pagination
+	display block
+	text-align center
+	margin-top 50px
+	
+	.pagination-links
+		clearfix()
+		display block
+		margin 0 auto
+		max-width 600px
+	
+	.pagination-prev, .pagination-next
+		display block
+		font-size 13px
+		text-transform uppercase
+		font-weight bold
+		font-family "Lora", serif
+		color #222
+		text-decoration none
+		transition color .2s ease-in-out
+		
+		&:hover, &:active, &:focus
+			color lighten(#222, 50%)
+		
+		
+	.pagination-prev
+		float left
+		
+	.pagination-next
+		float right
+			
 #single
 	display block
 
@@ -181,10 +220,14 @@ header
 			
 		h1
 			font-size 42px
-			line-height 1.3
+			line-height 1.1
 			color #222
 			font-weight 400
 			font-family "Lora", serif
+			
+			@media screen and (max-width 500px)
+				font-size 36px
+				line-height 1.2
 			
 			a
 				color #222
@@ -196,12 +239,36 @@ header
 			font-style italic
 			color #999
 			
+			span
+				&:first-child:after
+					content "–"
+					display inline-block
+					margin 0 6px
+					
+				@media screen and (max-width 500px)
+					display block
+			
 	#post-content
 		padding-top 40px
 		font-size 18px
 		line-height 1.8
 		max-width 750px
 		margin 0 auto
+		
+		table
+			clearfix()
+			min-width 200px
+			max-width 100%
+			margin-bottom 10px
+
+			th, td
+				padding 0 5px
+			
+			tr
+				border-bottom 1px solid #ccc
+				
+			thead tr
+				border-bottom-width 2px
 		
 		h1, h2, h3, h4, h5, h6
 			font-weight 600
@@ -241,39 +308,69 @@ header
 			display none
 				
 		code
-			font-size 76%
 			padding 3px 7px
+			background rgba(0, 0, 0, .04)
+			color #333
+			font-family "Inconsolata", monospace
 			
 		pre
 			padding 8px 12px
+			background-color #272822
+			border 0 
 			
 			code
+				color #ddd
 				padding 0
-				font-size 90%
+				font-size 15px
 				line-height 1.8
+				background-color transparent
+				font-family "Inconsolata", monospace
 				
-		img, p img
+		p img
 			max-width 100%
 			border-radius 3px
+			display block
+			margin 0 auto
+			margin-bottom 10px
 			
-			&.alignleft
+			alignleft()
 				max-width 230px
 				display block
 				float left 
 				margin 18px
 				margin-left 0
 				
-			&.alignright
+			alignright()
 				max-width 230px
 				display block
 				float right 
 				margin 18px
 				margin-right 0
-			
-			&.center
+				
+			fullscreen()
 				display block
 				margin 0 auto
+				width 100%
 				margin-bottom 10px
+			
+			&.alignleft
+				alignleft()
+				
+			&[alt$=":l"]
+				alignleft()
+				
+			&.alignright
+				alignright()
+			
+			&[alt$=":r"]
+				alignright()
+			
+			&.full
+				fullscreen()
+			
+			&[alt$=":f"]
+				fullscreen()
+				
 			
 		@media screen and (max-width 500px)
 			img, p img

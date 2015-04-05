@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Lora:400,700&amp;subset=latin,latin-ext" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Inconsolata:400|Lora:400,700&amp;subset=latin,latin-ext" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
 <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64 128x128 256x256">
 <meta name="generator" content="Hugo 0.14-DEV" />
@@ -36,27 +36,27 @@
 					<div id="post-heading">
 						<h1><a href="https://patrickdappollonio.github.io/post/previene-que-tu-app-en-heroku-se-duerma/">Previene que tu app en Heroku se duerma</a></h1>
 						<div class="meta">
-							
+							<span>
 								2 minutos
 							
 							de lectura,
 							
 								350 palabras
-							
-							&nbsp; &mdash; &nbsp;
-							Publicado el 08-01-2015
+							</span>
+							<span>Publicado el 08-01-2015</span>
 						</div>
 					</div>
 					<div id="post-content">
 						
 
-<p><img class="alignleft" alt="¿Se te apetece un grano de café?" title="¿Se te apetece un grano de café?" src="/content/img/coffee.jpg"></p>
+<p><img src="/content/img/coffee.jpg" alt="¿Se te apetece un grano de café? :l" />
+</p>
 
 <p>Para los amigos webmasters que deciden alojar sus ideas en beta y desarrollos básicos en Heroku, éste presenta una gran alternativa: es fácil de usar, no se requiere inversión inicial, y además, acelera de sobremanera todo el trabajo de <em>sysoperations</em>, puesto que no hay que hacer más que un simple <code>git push heroku master</code> para tener la app funcionando en línea.</p>
 
 <p>¿El único problema? Las apps <em>free</em> en Heroku se duermen si, durante una hora, no reciben tráfico alguno. Generalmente, esas apps que se publican allí son para mostrarle a algún cliente algún detalle o, quizás, para alojar un blog o proyecto temporal a la espera de montar algo más serio en otro lado. Negativamente, una vez que una app Heroku se duerme, la siguiente persona que abra la webapp, deberá esperar un par de segundos extra mientras esta se <em>despierta</em> para volver a funcionar. <strong>¿Y qué si queremos evitar eso?</strong></p>
 
-<h2 id="dale-a-tu-app-una-taza-de-café:7369614baf6c921f7e156f7478996bda">Dale a tu app una taza de Café</h2>
+<h2 id="dale-a-tu-app-una-taza-de-café">Dale a tu app una taza de Café</h2>
 
 <p>O mejor dicho, un poco de cafeína. La cafeína está presente en casi todo desarrollo tecnológico: evita que nosotros, los geeks, nos quedemos dormidos mientras programamos; <a href="http://lightheadsw.com/caffeine/">evita que los Macs muestren el salvapantalla o incluso, <em>se duerman</em></a>; o incluso <a href="https://play.google.com/store/apps/details?id=us.dappollonio.keepalive">evitan que los Androids se les apague la pantalla</a> mientras mostramos algo.</p>
 
@@ -102,7 +102,7 @@
 	<div class="container">
 		<div class="row">
 			<p>&copy; 2015 &mdash; Weblog personal de Patrick D'appollonio<br>
-			Creado con <a href="http://gohugo.io/" rel="nofollow" target="_blank">Hugo</a> más la adaptación del template Monoid de Ghost</p>
+			Creado con <a href="http://gohugo.io/" rel="nofollow" target="_blank">Hugo</a> + Adaptación de Monoid de Ghost</p>
 			<ul>
 				<li>
 					<a href="https://www.twitter.com/marlex" target="_blank" rel="nofollow">
@@ -135,5 +135,8 @@
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src="/js/code.min.js"></script>
 </body>
 </html>
