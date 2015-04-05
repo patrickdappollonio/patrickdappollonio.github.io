@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Patrick D&#39;appollonio</title>
-    <link>https://patrickdappollonio.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Patrick D&#39;appollonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Sat, 04 Apr 2015 23:18:19 -0400</lastBuildDate>
-    <atom:link href="https://patrickdappollonio.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jan 2011 20:02:19 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>acumula puntos con su rut</title>
-      <link>https://patrickdappollonio.github.io/post/acumula-puntos-con-su-rut/</link>
-      <pubDate>Sat, 04 Apr 2015 23:18:19 -0400</pubDate>
+      <title>La idea tras el “¿acumula puntos con su RUT?”</title>
+      <link>http://localhost:1313/post/acumula-puntos-con-su-rut/</link>
+      <pubDate>Wed, 05 Jan 2011 20:02:19 -0400</pubDate>
       
-      <guid>https://patrickdappollonio.github.io/post/acumula-puntos-con-su-rut/</guid>
+      <guid>http://localhost:1313/post/acumula-puntos-con-su-rut/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://silvrback.s3.amazonaws.com/uploads/2fdf6ba7-35c4-4b30-a34a-fdea608e6b7f/boleta_large.gif&#34; alt=&#34;Una boleta cualquiera&#34; /&gt;
 &lt;/p&gt;
 
