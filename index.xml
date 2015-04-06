@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Patrick D&#39;appollonio</title>
-    <link>http://localhost:1313/</link>
+    <link>http://patrick.dappollonio.us/</link>
     <description>Recent content on Patrick D&#39;appollonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Sun, 05 Apr 2015 22:07:26 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://patrick.dappollonio.us/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Usa las fuentes de Google Web Fonts localmente</title>
-      <link>http://localhost:1313/post/google-fonts-local/</link>
+      <link>http://patrick.dappollonio.us/post/google-fonts-local/</link>
       <pubDate>Sun, 05 Apr 2015 22:07:26 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/google-fonts-local/</guid>
+      <guid>http://patrick.dappollonio.us/post/google-fonts-local/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/google-web-fonts-icon.jpg&#34; alt=&#34;Google Web Fonts :r&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/google-web-fonts-icon.jpg&#34; alt=&#34;Google Web Fonts :r&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Google Web Fonts es una herramienta bastante útil al momento de diseñar sitios web&lt;/strong&gt;. No sólo porque te ofrece un sinnúmero de beneficios, gracias a que hospeda las fuentes por ti, las optimiza para mostrarlas y, además, basado en el &lt;code&gt;User-Agent&lt;/code&gt; del usuario, entrega la fuente correcta, sin enviar fuentes adicionales innecesarias.&lt;/p&gt;
@@ -34,7 +34,7 @@
 
 &lt;p&gt;&lt;code&gt;webfont-dl&lt;/code&gt; es un programa escrito en Javascript para NodeJS &lt;strong&gt;que permite descargar una fuente de Google, además de todos sus archivos de fuente&lt;/strong&gt; — es decir, &lt;code&gt;WOFF,&lt;/code&gt;TTF, &lt;code&gt;EOG y&lt;/code&gt;SVG — a un grupo de archivos locales. Por si eso no fuera suficiente, y adelantándose al hecho de que una buena parte de los navegadores puede usar fuentes &lt;code&gt;WOFF2&lt;/code&gt;, te las descarga dentro del mismo archivo (es decir, las deja &amp;ldquo;inline&amp;rdquo;, evitando hacer una petición HTTP adicional) para comodidad de uso.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/webfont-dl.png&#34; alt=&#34;webfont-dl&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/webfont-dl.png&#34; alt=&#34;webfont-dl&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;instalación&#34;&gt;Instalación&lt;/h3&gt;
@@ -70,13 +70,13 @@
     
     <item>
       <title>Previene que tu app en Heroku se duerma</title>
-      <link>http://localhost:1313/post/previene-que-tu-app-en-heroku-se-duerma/</link>
+      <link>http://patrick.dappollonio.us/post/previene-que-tu-app-en-heroku-se-duerma/</link>
       <pubDate>Thu, 08 Jan 2015 15:04:00 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/previene-que-tu-app-en-heroku-se-duerma/</guid>
+      <guid>http://patrick.dappollonio.us/post/previene-que-tu-app-en-heroku-se-duerma/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/coffee.jpg&#34; alt=&#34;¿Se te apetece un grano de café? :l&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/coffee.jpg&#34; alt=&#34;¿Se te apetece un grano de café? :l&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Para los amigos webmasters que deciden alojar sus ideas en beta y desarrollos básicos en Heroku, éste presenta una gran alternativa: es fácil de usar, no se requiere inversión inicial, y además, acelera de sobremanera todo el trabajo de &lt;em&gt;sysoperations&lt;/em&gt;, puesto que no hay que hacer más que un simple &lt;code&gt;git push heroku master&lt;/code&gt; para tener la app funcionando en línea.&lt;/p&gt;
@@ -97,13 +97,13 @@
     
     <item>
       <title>Cómo prevenir el envío de la configuración de &#39;locale&#39; en Mac vía SSH</title>
-      <link>http://localhost:1313/post/como-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh/</link>
+      <link>http://patrick.dappollonio.us/post/como-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh/</link>
       <pubDate>Fri, 01 Aug 2014 19:29:00 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/como-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh/</guid>
+      <guid>http://patrick.dappollonio.us/post/como-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh/</guid>
       <description>&lt;p&gt;Uno de los problemas que siempre me surge al momento en que limpio el Mac para dejarlo listo para la batalla es el problema de que &lt;strong&gt;la configuración por defecto del SSH de Mac envía a cualquier conexión vía SSH una solicitud para que aplique la configuración de &lt;code&gt;locale&lt;/code&gt; de mi Mac en esas conexiones&lt;/strong&gt;, resultando en problemas cuando instalas algunas aplicaciones o simplemente cuando ejecutas algún &lt;code&gt;make&lt;/code&gt;. El resultado visual es algo así&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/locale.png&#34; alt=&#34;Los mensajes de locale que dan problema...&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/locale.png&#34; alt=&#34;Los mensajes de locale que dan problema...&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Con mensajes como:&lt;/p&gt;
@@ -114,7 +114,7 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
 
 &lt;p&gt;Para evitar que se convierta en un inconveniente, podemos decirle al cliente de SSH integrado en Mac que evite mandar esa configuración, simplemente comentando una línea en el archivo de configuración ubicado en &lt;code&gt;/etc/ssh_config&lt;/code&gt;. Para ello, bastará con editarlo, requiriendo obviamente los permisos de &lt;code&gt;sudo&lt;/code&gt; para poder hacerlo y comentar la línea que reza &lt;code&gt;SendEnv LANG LC_*&lt;/code&gt; anteponiendo una almohadilla al principio&amp;hellip; Algo más visual, en esta imagen:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/editando-locale.png&#34; alt=&#34;Editando la configuración de SSH en Mac&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/editando-locale.png&#34; alt=&#34;Editando la configuración de SSH en Mac&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Una vez hecho lo anterior, bastará con reiniciar cualquier conexión SSH abierta para que los cambios se apliquen.&lt;/p&gt;
@@ -123,10 +123,10 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
     
     <item>
       <title>Cómo crear una interfaz &#39;Card UI&#39; en Android usando XML</title>
-      <link>http://localhost:1313/post/interfaz-card-ui-xml/</link>
+      <link>http://patrick.dappollonio.us/post/interfaz-card-ui-xml/</link>
       <pubDate>Sun, 11 May 2014 23:40:00 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/interfaz-card-ui-xml/</guid>
+      <guid>http://patrick.dappollonio.us/post/interfaz-card-ui-xml/</guid>
       <description>
 
 &lt;p&gt;Una de las cosas que son más comunes a la hora de diseñar interfaces en Android son las interfaces &lt;em&gt;Holo&lt;/em&gt;. Actualmente, el elemento que es más común — en conjunto con los menús laterales y las &lt;em&gt;ActionBar&lt;/em&gt; — son los elementos tipo tarjeta, bastante comunes en el Play Store.&lt;/p&gt;
@@ -165,7 +165,7 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
 
 &lt;p&gt;Este es un ejemplo en donde, además, se puso el fondo de color plomo, de manera de notar de mejor forma el resultado. El alto del &lt;em&gt;LinearLayout&lt;/em&gt; es de 100dp, ya que si omitimos el alto o lo definimos como &lt;em&gt;wrap_content&lt;/em&gt;, entonces no podremos ver prácticamente nada.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/card-ui-pixel-perfect.png&#34; alt=&#34;Card UI Pixel Perfect&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/card-ui-pixel-perfect.png&#34; alt=&#34;Card UI Pixel Perfect&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Además, entre usar un 9patch vs un archivo XML, el resultado es, técnicamente, más &lt;em&gt;pixel perfect&lt;/em&gt;.&lt;/p&gt;
@@ -176,13 +176,13 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
     
     <item>
       <title>Cómo leer archivos bin/cue en Mac OS X</title>
-      <link>http://localhost:1313/post/leer-archivos-bin-cue-mac/</link>
+      <link>http://patrick.dappollonio.us/post/leer-archivos-bin-cue-mac/</link>
       <pubDate>Fri, 25 Apr 2014 00:48:00 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/leer-archivos-bin-cue-mac/</guid>
+      <guid>http://patrick.dappollonio.us/post/leer-archivos-bin-cue-mac/</guid>
       <description>&lt;p&gt;Hoy me topé con algo de mi día a día: en un viejo disco duro de respaldo tenía unas copias de DVDs en formato bin/cue. Lamentablemente, Mavericks no me dejó montar los archivos bin ya que, técnicamente, &lt;em&gt;Apple no da soporte a los archivos bin/cue&lt;/em&gt; de manera nativa en Mac, &lt;strong&gt;pero la solución es bastante simple&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/binchunker.png&#34; alt=&#34;binchunker en acción&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/binchunker.png&#34; alt=&#34;binchunker en acción&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Existe un programa de consola llamado  &lt;code&gt;binchunker&lt;/code&gt; que convierte archivos bin/cue a ISO sin mayores inconvenientes. Eso sí, &lt;strong&gt;necesitas tener el archivo &amp;lsquo;cue&amp;rsquo;&lt;/strong&gt; —que no es más que la descripción de los elementos dentro del archivo bin— aunque entiendo que también se pueden crear &lt;em&gt;&lt;a href=&#34;http://www.tech-recipes.com/rx/881/how-do-i-open-or-mount-a-bin-file-without-a-cue-file/&#34;&gt;a mano&lt;/a&gt;&lt;/em&gt;. ¿Lo tienes en mano? ¡Genial!&lt;/p&gt;
@@ -207,11 +207,11 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
     
     <item>
       <title>¿Por qué los camiones de UPS no giran a la Izquierda?</title>
-      <link>http://localhost:1313/post/por-que-los-camiones-de-ups-no-giran-a-la-izquierda/</link>
+      <link>http://patrick.dappollonio.us/post/por-que-los-camiones-de-ups-no-giran-a-la-izquierda/</link>
       <pubDate>Sat, 05 Apr 2014 17:58:00 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/por-que-los-camiones-de-ups-no-giran-a-la-izquierda/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/ups-truck.jpg&#34; alt=&#34;Imagen&#34; /&gt;
+      <guid>http://patrick.dappollonio.us/post/por-que-los-camiones-de-ups-no-giran-a-la-izquierda/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/ups-truck.jpg&#34; alt=&#34;Imagen&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;En 2004, UPS anunció una nueva política corporativa para sus conductores: la forma correcta de llegar a cualquier destino &lt;strong&gt;era evitar cualquier giro a la &lt;em&gt;izquierda&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
@@ -246,16 +246,16 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
     
     <item>
       <title>HD Wallpapers para Android</title>
-      <link>http://localhost:1313/post/hd-wallpapers-para-android/</link>
+      <link>http://patrick.dappollonio.us/post/hd-wallpapers-para-android/</link>
       <pubDate>Wed, 02 Apr 2014 21:03:00 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/hd-wallpapers-para-android/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/hd-wallpapers-screenshot.jpg&#34; alt=&#34;Una captura de HD Wallpapers, en widescreen&#34; /&gt;
+      <guid>http://patrick.dappollonio.us/post/hd-wallpapers-para-android/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/hd-wallpapers-screenshot.jpg&#34; alt=&#34;Una captura de HD Wallpapers, en widescreen&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;En mis ratos, una de las cosas que hago es crear algunas piezas de código interesantes. La última, buscaba conseguir una &lt;em&gt;performance&lt;/em&gt; de &lt;em&gt;scrolling&lt;/em&gt; en Android bastante decente cuando habían imágenes de &amp;ldquo;peso&amp;rdquo; cargadas en la ventana, lo que logré optimizar bastante —cosa que ni Facebook hace con su app móvil—. ¿El resultado? Una app que decidí lanzar a todo público: HD Wallpapers.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/hd-wallpapers-screenshot-second.jpg&#34; alt=&#34;Puedes elegir imágenes de un grupo de categorías :)&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/hd-wallpapers-screenshot-second.jpg&#34; alt=&#34;Puedes elegir imágenes de un grupo de categorías :)&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Básicamente, &lt;em&gt;HD Wallpapers&lt;/em&gt; es una app que &lt;strong&gt;obtiene las imágenes desde un sitio de Wallpapers&lt;/strong&gt; — acción conocida como &lt;em&gt;web-scraping&lt;/em&gt; — y las muestra directamente en pantalla. ¿La idea? Intentar hacer una línea de tiempo con imágenes &lt;strong&gt;y que el scrolling sobre éstas no tenga lag cuando pasamos sobre una multitud de imágenes&lt;/strong&gt;. Esto permite dos cosas: primero, demostrar que Android es bastante potente en sí, que el manejo de memoria es bastante eficiente y que ciertos patrones que han aparecido como algunos llamados &lt;em&gt;&amp;ldquo;ViewHolders&amp;rdquo;&lt;/em&gt; (que almacenan en el elemento &amp;ldquo;tag&amp;rdquo; de la vista XML su posición de memoria) realmente funcionan a la perfección; y lo segundo, es que hay muchas empresas que no cuidan este tipo de cosas: prueben entrando a Facebook para Android e intentar hacer scroll sin que se pegue al menos un poco mientras carga las fotos de la línea de tiempo. &lt;strong&gt;¡Difícil!&lt;/strong&gt;&lt;/p&gt;
@@ -272,15 +272,15 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
     
     <item>
       <title>LaunchRocket: Lanza cualquier app Homebrew desde el panel de Preferencias de Mac</title>
-      <link>http://localhost:1313/post/launchrocket-prefpane-homebrew/</link>
+      <link>http://patrick.dappollonio.us/post/launchrocket-prefpane-homebrew/</link>
       <pubDate>Mon, 24 Mar 2014 21:50:00 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/launchrocket-prefpane-homebrew/</guid>
+      <guid>http://patrick.dappollonio.us/post/launchrocket-prefpane-homebrew/</guid>
       <description>
 
 &lt;p&gt;Ok, &lt;em&gt;&lt;strong&gt;¡GeekTime!&lt;/strong&gt;&lt;/em&gt; Para todos aquellos amigos informáticos que desarrollan tecnologías, una de las cosas más molestas de todas — &lt;em&gt;al menos para mí&lt;/em&gt; — es el hecho de &lt;strong&gt;tener que instalar un sinfín de comandos&lt;/strong&gt; para poder iniciar y detener los servicios de diferentes apps como bases de datos y servicios de Mac —sí, &lt;em&gt;launchctl&lt;/em&gt;, te estoy mirando a ti!—.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/launchrocket.png&#34; alt=&#34;La ventana de LaunchRocket, con tres servicios detectados&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/launchrocket.png&#34; alt=&#34;La ventana de LaunchRocket, con tres servicios detectados&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Hoy, dando vuelta optimizando un poco mi trabajo habitual, me encontré con esta pieza de Software llamada &lt;strong&gt;LaunchRocket&lt;/strong&gt;. Básicamente, LaunchRocket revisará los programas que hayas instalado con &lt;em&gt;Homebrew&lt;/em&gt; y &lt;strong&gt;te permitirá crear un lanzador de servicios&lt;/strong&gt; —ya sea con un usuario convencional o como &lt;code&gt;root&lt;/code&gt;— fácilmente y sin tener que ver tu equipo afectado por comandos que de seguro olvidarás más adelante.&lt;/p&gt;
@@ -289,7 +289,7 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Para instalar LaunchRocket, &lt;strong&gt;bastará con que &lt;a href=&#34;https://github.com/jimbojsb/launchrocket/releases/tag/v0.6&#34;&gt;vayas al repositorio Github&lt;/a&gt; y descargues la versión 0.6&lt;/strong&gt; —que, al momento de redactar esta nota, es la última versión— y luego hagas doble click en el archivo .prefPane que se descomprimirá del zip que bajes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/launchrocket-release.png&#34; alt=&#34;El último release de LaunchRocket&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/launchrocket-release.png&#34; alt=&#34;El último release de LaunchRocket&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;consideraciones-de-ejecución&#34;&gt;Consideraciones de ejecución&lt;/h3&gt;
@@ -314,17 +314,17 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
     
     <item>
       <title>Series que ver (primera parte)</title>
-      <link>http://localhost:1313/post/series-que-ver-primera-parte/</link>
+      <link>http://patrick.dappollonio.us/post/series-que-ver-primera-parte/</link>
       <pubDate>Fri, 06 Sep 2013 16:45:19 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/series-que-ver-primera-parte/</guid>
+      <guid>http://patrick.dappollonio.us/post/series-que-ver-primera-parte/</guid>
       <description>
 
 &lt;p&gt;Una de las cosas que hago en mi tiempo libre es ver series. &lt;strong&gt;Son aquellas cosas que me desestresan, mantienen la mente fuera de contexto por un rato, te hacen gritar, o incluso, te dejan preocupado por lo que pasará.&lt;/strong&gt; Aquí, la recopilación de series que deberías ver (sin un orden de preferencia) y un pequeño resumen de cada una…&lt;/p&gt;
 
 &lt;h2 id=&#34;arrow-esperando-a-la-segunda-temporada&#34;&gt;Arrow &lt;em&gt;(esperando a la segunda temporada)&lt;/em&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/arrow.jpeg&#34; alt=&#34;Arrow :f&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/arrow.jpeg&#34; alt=&#34;Arrow :f&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Arrow es una de esas series que llama la atención.&lt;/strong&gt; Aunque a más de alguno no le puede terminar de gustar el fork que sucedió luego de Smallville — y la presencia de &lt;em&gt;Green Arrow&lt;/em&gt; en ésta —, la nueva serie sí que es toda una creación.&lt;/p&gt;
@@ -337,7 +337,7 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;continuum-recién-terminada-espera-la-tercera-temporada&#34;&gt;Continuum &lt;em&gt;(recién terminada, espera la tercera temporada)&lt;/em&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/continuum.jpeg&#34; alt=&#34;Continuum :l&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/continuum.jpeg&#34; alt=&#34;Continuum :l&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Continuum es una de esas series con toque futurista que llaman la atención: una policía del futuro — Kiera Cameron — atrapa a un par de maleantes de una agrupación terrorista llamada Liber8 (Liberate) y cuando los iban a enjuiciar, &lt;strong&gt;usan un dispositivo para viajar en el tiempo, 64 años en el pasado desde el 2077 hasta el 2013&lt;/strong&gt;.&lt;/p&gt;
@@ -350,7 +350,7 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;homeland-esperando-la-tercera-temporada&#34;&gt;Homeland &lt;em&gt;(esperando la tercera temporada)&lt;/em&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/homeland.jpeg&#34; alt=&#34;Homeland: Carrie y Nicholas :f&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/homeland.jpeg&#34; alt=&#34;Homeland: Carrie y Nicholas :f&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Debo decir que la primera vez que la vi, &lt;strong&gt;no me llamó la atención para nada&lt;/strong&gt;. Le di una oportunidad un día en el que me quedé sin series que ver y no me arrepiento: ¡es una excelente historia!&lt;/p&gt;
@@ -363,7 +363,7 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;under-the-dome-en-transmisión-de-la-primera-temporada&#34;&gt;Under The Dome &lt;em&gt;(en transmisión de la primera temporada)&lt;/em&gt;&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/under-the-dome.jpeg&#34; alt=&#34;Under the Dome, de Stephen King :f&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/under-the-dome.jpeg&#34; alt=&#34;Under the Dome, de Stephen King :f&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Del libro de Stephen King del mismo nombre&lt;/strong&gt;, la serie que cubre a un pequeño pueblo de Estados Unidos con un domo misterioso del cual nadie sabe de dónde aparece.&lt;/p&gt;
@@ -380,13 +380,13 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
     
     <item>
       <title>LinkedIn como fuente de trabajo para Profesionales</title>
-      <link>http://localhost:1313/post/linkedin-como-fuente-de-trabajo-para-profesionales/</link>
+      <link>http://patrick.dappollonio.us/post/linkedin-como-fuente-de-trabajo-para-profesionales/</link>
       <pubDate>Mon, 03 Sep 2012 20:21:19 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/linkedin-como-fuente-de-trabajo-para-profesionales/</guid>
+      <guid>http://patrick.dappollonio.us/post/linkedin-como-fuente-de-trabajo-para-profesionales/</guid>
       <description>&lt;p&gt;Hola de nuevo. Por acá poniendo el hombro con otra nota. Esta vez, &lt;strong&gt;para comentar alguna de las bondades de LinkedIn&lt;/strong&gt;, la red social profesional. He de decir primero que LinkedIn no es algo muy factible de usar en empresas que quieren llegar a su público objetivo, a menos que sea un público de profesionales. LinkedIn es más algo como para que los profesionales y expertos puedan conocerse, fomentar el trabajo que realizan, y conseguir nuevas redes de contacto.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/linkedin.gif&#34; alt=&#34;LinkedIn&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/linkedin.gif&#34; alt=&#34;LinkedIn&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Una de las cosas que he estado siguiendo de cerca de LinkedIn, para Chile, es lo poderoso que se está convirtiendo en redes de contacto y búsqueda de empleos. Leí por ahí alguna vez a una conocida mujer —muy amiga de un amigo mío— preguntándose si LinkedIn servía para algo, y la verdad es que &lt;strong&gt;he visto a varios conseguir excelentes puestos de trabajo&lt;/strong&gt; usando esta red de contactos.&lt;/p&gt;
@@ -413,15 +413,15 @@ Original de Alex Mayyasi.&lt;/em&gt;&lt;/p&gt;
     
     <item>
       <title>El Manual del Hosting — For Dummies</title>
-      <link>http://localhost:1313/post/el-manual-del-hosting-for-dummies/</link>
+      <link>http://patrick.dappollonio.us/post/el-manual-del-hosting-for-dummies/</link>
       <pubDate>Tue, 20 Sep 2011 20:15:19 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/el-manual-del-hosting-for-dummies/</guid>
+      <guid>http://patrick.dappollonio.us/post/el-manual-del-hosting-for-dummies/</guid>
       <description>
 
 &lt;p&gt;Hace algunos minutos una interesante pregunta llegó a mi Twitter preguntándome por hosting, cosa práctica, puesto que &lt;strong&gt;toda la gente que quiere tener una web necesita hospedarla en alguna parte&lt;/strong&gt;. Es por eso que me decidí a publicar una nota explicando los tipos de hostings que existen en la actualidad totalmente a huevo —explicado con papas y manzanas, como decimos en Chile— para que tenga una idea enorme.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/hosting.jpg&#34; alt=&#34;Así se ve un datacenter&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/hosting.jpg&#34; alt=&#34;Así se ve un datacenter&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;De más está decir que &lt;strong&gt;todo lo aquí expresado es basado en conocimientos y la experiencia personal&lt;/strong&gt; —llevo más de 8 años en el marco web, sobre todo en el hosting y alojo sitios de alta cantidad de usuarios, como también de baja— y además no puede ser la totalidad de hostings existentes —puesto que algunas compañías deciden “poner nombre” a tipos de hostings especiales, que en la práctica, &lt;strong&gt;no tienen nada especial más que el nombre&lt;/strong&gt;, véase “hybrid” más abajo— así que lo dejo a criterio del lector.&lt;/p&gt;
@@ -437,7 +437,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Ahora, ¿qué debes saber de un hosting compartido? Que, como su nombre lo dice, es compartido. Generalmente &lt;strong&gt;las empresas que venden “shared hosting” tienen grandes equipos&lt;/strong&gt; —como ordenadores con 16 GB de RAM o más, procesadores super-hiper-monstruosos, discos duros de más de un terabyte por parte baja, y otro gran etcétera— &lt;strong&gt;y deciden poner en un sólo ordenador a unos 2.000 a 3.000 usuarios&lt;/strong&gt; —sí, son 3.000 personas que utilizan un mismo servidor en común— en los casos más amplios, mientras que en lo normal puedes toparte con unos 300 usuarios en tu propio servidor a groso modo.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/shared-hosting.jpg&#34; alt=&#34;Hosting compartido: este es tu espacio&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/shared-hosting.jpg&#34; alt=&#34;Hosting compartido: este es tu espacio&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Como te ofrecen algo “ilimitado”, si el disco duro de ese ordenador —que, dije, es de un terabyte— se llena y tú no puedes meter más cosas, es simple… &lt;strong&gt;Te mueven a otro servidor que sí tenga espacio.&lt;/strong&gt; En teoría, casi un 75% de todos los clientes de una empresa de hosting nunca usan más allá de 10 GB —y eso con suerte!— de almacenamiento y por ende, el tráfico también es poco, por lo que, &lt;strong&gt;el tráfico y el disco duro que les sobra se lo entregan a otro cliente como tú&lt;/strong&gt;.&lt;/p&gt;
@@ -462,7 +462,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Este es el segundo punto en la escala de tu sitio web &lt;strong&gt;y es un tanto similar al anterior, aunque hay algo que los diferencia enormemente&lt;/strong&gt;. Es igual porque aún se siguen metiendo en &lt;strong&gt;un mismo computador a varios clientes&lt;/strong&gt;, aunque esta vez en menor cantidad —¡y mucha menor cantidad!— siendo entre &lt;strong&gt;3 a 10-15 clientes por PC&lt;/strong&gt;—.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/vps-diagram.gif&#34; alt=&#34;Así es un VPS&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/vps-diagram.gif&#34; alt=&#34;Así es un VPS&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Ahora, te preguntarás, aparte de eso, ¿qué tiene de nuevo? Muy simple: &lt;strong&gt;&lt;em&gt;Virtualización&lt;/em&gt;&lt;/strong&gt;. Si eres un recién llegado, estimado webmaster, seguramente habrás oído el término pero no tengas idea de qué se trata y, como lo explicamos a huevo, lo entenderás… Imagina el computador desde el que estás leyendo esta nota. La virtualización significa que lo que harán es que &lt;strong&gt;con programas especiales, ese computador se subdivida en 3 a 10-15 computadores dentro de ese mismo computador&lt;/strong&gt; y, ¿sabes qué es lo mejor? que &lt;strong&gt;cada computador tiene sus propias características especiales tal cual como si fueran uno independiente&lt;/strong&gt;: puedes reiniciarlo, apagarlo, cambiarle el sistema operativo, reinstalarlo, borrarlo por completo, desconectarlo de internet, y agrega aquí un tercer gran etcétera.&lt;/p&gt;
@@ -497,7 +497,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Para algunos, el final de la línea del hosting. Para otros, sólo el comienzo. Los servidores dedicados, como su nombre lo dicen, &lt;strong&gt;no tienen a nadie más que a ti dentro y están a tu entera disposición&amp;hellip;&lt;/strong&gt; ¿Quieres tenerlos 5 semanas apagados? Adelante, nadie te dirá nada. ¿Quieres estropearlo? Adelante! Es todo tuyo. En sí, &lt;strong&gt;en un servidor dedicado puedes hacer y deshacer lo que quieras&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/servidor-dedicado.jpg&#34; alt=&#34;Servidores dedicados&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/servidor-dedicado.jpg&#34; alt=&#34;Servidores dedicados&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Es un computador REAL que sirve de alojamiento a tu sitio web —pudiendo ser perfectamente uno o varios, aunque sólo tuyos o de amigos y conocidos— aunque no como un ordenador común, sino que en el común de los casos &lt;strong&gt;se trata de un computador plano y muy delgado que se monta dentro de un rack junto con otros servidores&lt;/strong&gt; —sí, otros ordenadores de otros clientes que no tienen ninguna relación más contigo que estar cerca porque están dentro de la misma empresa— o también puede ser una torre de ordenador convencional —como los ordenadores de escritorio, observa la primera imagen de esta nota— claro que &lt;strong&gt;sin pantalla, mouse, teclado, tarjeta de vídeo, y todo el hardware innecesario&lt;/strong&gt;, sino que, esencialmente, una tarjeta de red, RAM, un procesador y una tarjeta de red que lo conecta a internet.&lt;/p&gt;
@@ -518,7 +518,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Aunque el nombre de este tipo de hosting no es del todo un estándar —muchos suelen llamarle como quieren—, &lt;strong&gt;es uno de los pasos de hosting más poderosos y baratos que existen&lt;/strong&gt; —esto último a largo plazo—. Súper simple: &lt;strong&gt;tú compras el computador que requieres o el servidor y luego le pides a una empresa un espacio donde ubicarlo&lt;/strong&gt;, pudiendo ser cerca tuyo, como también lejos, además pagando un extra muy básico por la electricidad consumida y la conexión a internet y, por supuesto, un céntimo por el espacio gastado y los técnicos, en caso de que los necesites.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/datacenter-de-google.jpg&#34; alt=&#34;Uno de los Datacenters de Google&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/datacenter-de-google.jpg&#34; alt=&#34;Uno de los Datacenters de Google&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;En principio, el costo inicial es alto, puesto que debes comprar un ordenador completo. Luego, &lt;strong&gt;te olvidas de seguir pagando el precio del equipo y te preocupas de pagar sólo electricidad, internet y la ubicación&lt;/strong&gt;, lo que baja bastante el precio.&lt;/p&gt;
@@ -535,7 +535,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Este, a mi criterio, &lt;strong&gt;es el final de la línea del hosting&lt;/strong&gt;. Cloud Computing —o computación en la nube— ha llegado para quedarse. &lt;strong&gt;El cloud computing podría ser similar a lo que, en su tiempo y hasta ahora es el &lt;em&gt;clustering&lt;/em&gt;.&lt;/strong&gt; Contrario a lo que sucedía con el hosting compartido donde un equipo hospedaba a 300 clientes, aquí es totalmente al revés: &lt;strong&gt;300 servidores hospedan un equipo o una cuenta&lt;/strong&gt;. Sí, no estoy loco. El cloud computing no es más que miles de máquinas distribuidas en el mundo y que en conjunto hacen una gran cabeza que puede venderse como una por partes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/cloud-computing.jpg&#34; alt=&#34;La &#39;Computación en la Nube&#39;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/cloud-computing.jpg&#34; alt=&#34;La &#39;Computación en la Nube&#39;&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Así, por ejemplo, &lt;strong&gt;si contratas un cloud VPS, en teoría no deberías tener ningún problema si tu web se vuelve más famosa que la portada de Google algún día&lt;/strong&gt;, puesto que toda esa nube —a la nube le llamamos a aquellos cientos de miles de computadores trabajando como uno solo— &lt;strong&gt;estará disponible para que tú la uses&lt;/strong&gt; —eso si puedes pagar el extra, claro—.&lt;/p&gt;
@@ -564,10 +564,10 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
     
     <item>
       <title>El primer teléfono de Google no fue el Nexus S</title>
-      <link>http://localhost:1313/post/primer-telefono-google-nexus-one/</link>
+      <link>http://patrick.dappollonio.us/post/primer-telefono-google-nexus-one/</link>
       <pubDate>Tue, 31 May 2011 19:54:19 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/primer-telefono-google-nexus-one/</guid>
+      <guid>http://patrick.dappollonio.us/post/primer-telefono-google-nexus-one/</guid>
       <description>&lt;p&gt;No es una novedad para muchos de mis conocidos que &lt;strong&gt;me encantan los gadgets y muchos me podrán tachar de “fan” de todos los productos y servicios de Google&lt;/strong&gt;, y no ha sido muy diferente con las últimas aplicaciones y tecnologías del megabuscador. Una de esas cosas que me encantan &lt;strong&gt;son los teléfonos y tablets y, más especialmente, Android&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Me gusta Android &lt;strong&gt;porque es un sistema operativo móvil&lt;/strong&gt; -es decir, &lt;strong&gt;no sólo para teléfonos, sino también para tablets&lt;/strong&gt;- totalmente versátil y útil. Algunas veces lo llego a comparar con Windows en el sentido de que &lt;strong&gt;es muy fácil pasar de una versión de Android a otra&lt;/strong&gt;, sólo falta entender un poco el inglés y ponerse a buscar &lt;a href=&#34;http://forum.xda-developers.com/&#34;&gt;en los foros de XDA Developers&lt;/a&gt; para encontrar soluciones.&lt;/p&gt;
@@ -610,7 +610,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Google entonces puso el ojo en este nuevo actor que entraba a escena y decidió anunciar el 15 de Diciembre de 2010 en el evento Web 2.0 Summit, &lt;strong&gt;que estaba haciendo un partnership con Samsung para lanzar el sucesor del Nexus One, el &lt;em&gt;Google Nexus S&lt;/em&gt;&lt;/strong&gt; utilizando algunas características de hardware calcadas del Samsung Galaxy S, pero con un añadido: &lt;strong&gt;un chip de comunicaciones &lt;em&gt;NFC&lt;/em&gt;&lt;/strong&gt; que ya se está hablando de ellos pero que no es motivo de esta nota.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/nexus-s-movistar.jpg&#34; alt=&#34;Nexus S de Movistar&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/nexus-s-movistar.jpg&#34; alt=&#34;Nexus S de Movistar&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Es el Nexus S hasta el momento, el segundo teléfono de Google manufacturado por una empresa externa&lt;/strong&gt; -y es totalmente comprensible que Google manufacture con empresas externas, puesto que &lt;strong&gt;Google no se dedica a producir teléfonos, sino software&lt;/strong&gt;-. Hasta el momento, mientras muchas compañías podrán decir que los teléfonos con Android son “powered by Google”, lo que dicen en realidad &lt;strong&gt;es que es el sistema operativo el hecho por Google, pero no el teléfono&lt;/strong&gt;.&lt;/p&gt;
@@ -623,10 +623,10 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
     
     <item>
       <title>La idea tras el “¿acumula puntos con su RUT?”</title>
-      <link>http://localhost:1313/post/acumula-puntos-con-su-rut/</link>
+      <link>http://patrick.dappollonio.us/post/acumula-puntos-con-su-rut/</link>
       <pubDate>Wed, 05 Jan 2011 20:02:19 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/acumula-puntos-con-su-rut/</guid>
+      <guid>http://patrick.dappollonio.us/post/acumula-puntos-con-su-rut/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Pongámonos en este caso:&lt;/strong&gt; vas de camino a una farmacia, o a un supermercado de una cadena nacional y cuando pasas por caja, la gentil cajera que poco o nada sabe del asunto te pregunta: &lt;em&gt;&amp;ldquo;¿Acumula puntos?, ¿Cuál es su RUT?&amp;rdquo;&lt;/em&gt;. ¿Cuál será la idea a través de esto? Muy simple: &lt;strong&gt;Información&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Como dice una vieja frase: &lt;em&gt;la información es poder&lt;/em&gt;. &lt;strong&gt;Y las multinacionales y grandes empresas lo saben muy bien.&lt;/strong&gt; Conocer tendencias, información, detalle&amp;hellip; Todo lo que suponga una buena venta significa mucho para ellos. &lt;strong&gt;¿Y los descuentos?&lt;/strong&gt; Aunque no lo crea, &lt;strong&gt;suponen beneficios para la empresa&lt;/strong&gt;, aún cuando baja los precios, puesto que elimina mercadería que está gastando espacio en su bodega y que podrían servir para poner allí mercadería que se vende en mayor cantidad. Y no todo el tiempo se vende una mercadería a una razón fija.&lt;/p&gt;
@@ -641,7 +641,7 @@ Muy extensa. Recomendado leer con tiempo y dedicación.&lt;/em&gt;&lt;/strong&gt
 
 &lt;p&gt;Una historia un tanto más diferente que pudo haber pasado en Chile resultó que cierto día &lt;strong&gt;una nieta de 17 años muy proactiva, notó que su abuelita necesitó, en su momento, unas pastillas para la depresión&lt;/strong&gt;, cuadro clínico que se generaliza cuando eres viejo y además estás solo. Como la nieta quería a su abuela, &lt;strong&gt;salió corriendo a comprar a la farmacia&lt;/strong&gt; &lt;em&gt;(ponga el nombre aquí de una farmacia conocida)&lt;/em&gt; más cercana unas pastillas antidepresivas para la abuelita. El dependiente le vendió el producto y le consultó el RUT para &lt;em&gt;&amp;ldquo;acumular puntos&amp;rdquo;&lt;/em&gt;. La niña, sin problemas porque &lt;strong&gt;estaba hablando con una empresa seria&lt;/strong&gt;, entregó su RUT, pagó el precio de las pastillas antidepresivas, y se fue a casa a entregar el medicamento.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/content/img/farmacia.jpg&#34; alt=&#34;Imagine una farmacia cualquiera...&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://patrick.dappollonio.us/content/img/farmacia.jpg&#34; alt=&#34;Imagine una farmacia cualquiera...&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Todo bien hasta que pasó el tiempo, la nieta llegó a los 18 y se puso a trabajar con contrato. Cuando fue a la ISAPRE o a FONASA como parte de su contrato que lo requería, &lt;strong&gt;le pidieron que, en una planilla, llenara todas las enfermedades de las que padecía&lt;/strong&gt;. Ella, como era muy sana, &lt;strong&gt;no marcó ninguna, ni siquiera el apartado de fumar y/o beber&lt;/strong&gt;. Pasó nuevamente el tiempo, y mientras trabajaba cayó en un cuadro de stress. Fue a su ISAPRE para obtener su beneficio legal para visitar al médico &lt;strong&gt;y éste fue rechazado. ¿El porqué? La ISAPRE le habría indicado que padecía de una &amp;ldquo;enfermedad no declarada&amp;rdquo;&lt;/strong&gt;. Que habían registros de que ella consumía antidepresivos desde antes de los 18.&lt;/p&gt;
