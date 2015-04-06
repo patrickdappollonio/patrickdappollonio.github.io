@@ -49,7 +49,7 @@
 
 &lt;p&gt;Con mensajes como:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-terminal&#34;&gt;locale: Cannot set LC_CTYPE to default locale: No such file or directory
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 &lt;/code&gt;&lt;/pre&gt;
 
