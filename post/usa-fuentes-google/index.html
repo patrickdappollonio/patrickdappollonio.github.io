@@ -8,7 +8,7 @@
 <link href="/css/style.css" rel="stylesheet">
 <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64 128x128 256x256">
 <meta name="generator" content="Hugo 0.14-DEV" />
-<title>Cómo crear una interfaz &#39;Card UI&#39; en Android usando XML</title>
+<title>usa fuentes google offline</title>
 <meta name="description" content="">
 </head>
 <body>
@@ -32,86 +32,42 @@
 			<div class="col-xs-12 col-lg-offset-1 col-lg-10">
 				<div id="post">
 					<div id="post-heading">
-						<h1><a href="http://localhost:1313/post/interfaz-card-ui-xml/">Cómo crear una interfaz &#39;Card UI&#39; en Android usando XML</a></h1>
+						<h1><a href="http://localhost:1313/post/usa-fuentes-google/">usa fuentes google offline</a></h1>
 						
 						<div class="meta">
 							<span>
-								2 minutos
+								0 minutos
 							
 							de lectura,
 							
-								234 palabras
+								0 palabras
 							</span>
-							<span>Publicado el 11-05-2014</span>
+							<span>Publicado el 05-04-2015</span>
 						</div>
 					</div>
 					<div id="post-content">
 						
-
-<p>Una de las cosas que son más comunes a la hora de diseñar interfaces en Android son las interfaces <em>Holo</em>. Actualmente, el elemento que es más común — en conjunto con los menús laterales y las <em>ActionBar</em> — son los elementos tipo tarjeta, bastante comunes en el Play Store.</p>
-
-<h3 id="implementación-en-xml">Implementación en XML</h3>
-
-<p>Hay varias alternativas de implementación. La que más se repite es hacer un <em>nine patch</em>, que requiere cierto esfuerzo, pero lamentablemente, el resultado no es <em>pixel perfect</em>, así que la mejor solución siempre es usar XML.</p>
-
-<p>Crea un nuevo archivo XML en tu carpeta de <em>drawables</em> y en ese archivo pega lo siguiente:</p>
-
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;
-   &lt;item&gt;
-      &lt;shape android:shape=&quot;rectangle&quot;&gt;
-         &lt;solid android:color=&quot;#CABBBBBB&quot;/&gt;
-         &lt;corners android:radius=&quot;2dp&quot; /&gt;
-      &lt;/shape&gt;
-   &lt;/item&gt;
-
-   &lt;item
-      android:left=&quot;0dp&quot;
-      android:right=&quot;0dp&quot;
-      android:top=&quot;0dp&quot;
-      android:bottom=&quot;2dp&quot;&gt;
-      &lt;shape android:shape=&quot;rectangle&quot;&gt;
-         &lt;solid android:color=&quot;@android:color/white&quot;/&gt;
-         &lt;corners android:radius=&quot;2dp&quot; /&gt;
-      &lt;/shape&gt;
-   &lt;/item&gt;
-&lt;/layer&gt;
-</code></pre>
-
-<p>Con eso, tendrás un elemento tipo &ldquo;Card&rdquo; en la parte que necesites. Bastará nada más que definas como fondo al XML recién creado sobre cualquier <em>view</em> de Android.</p>
-
-<h3 id="demo">Demo</h3>
-
-<p>Este es un ejemplo en donde, además, se puso el fondo de color plomo, de manera de notar de mejor forma el resultado. El alto del <em>LinearLayout</em> es de 100dp, ya que si omitimos el alto o lo definimos como <em>wrap_content</em>, entonces no podremos ver prácticamente nada.</p>
-
-<p><img src="/content/img/card-ui-pixel-perfect.png" alt="Card UI Pixel Perfect" />
-</p>
-
-<p>Además, entre usar un 9patch vs un archivo XML, el resultado es, técnicamente, más <em>pixel perfect</em>.</p>
-
-<p>Ojalá te sirva como a mi. ¡Suerte!</p>
-
 					</div>
 					<div id="post-share">
 						<strong>Comparte esto:</strong>
 						<ul>
 							<li>
-								<a href="https://twitter.com/share?text=C%c3%b3mo%20crear%20una%20interfaz%20%27Card%20UI%27%20en%20Android%20usando%20XML&amp;url=http%3a%2f%2flocalhost%3a1313%2fpost%2finterfaz-card-ui-xml%2f" target="_blank" rel="nofollow">
+								<a href="https://twitter.com/share?text=usa%20fuentes%20google%20offline&amp;url=http%3a%2f%2flocalhost%3a1313%2fpost%2fusa-fuentes-google%2f" target="_blank" rel="nofollow">
 									<i class="fa fa-twitter-square"></i>
 								</a>
 							</li>
 							<li>
-								<a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2finterfaz-card-ui-xml%2f" target="_blank" rel="nofollow">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fusa-fuentes-google%2f" target="_blank" rel="nofollow">
 									<i class="fa fa-facebook-square"></i>
 								</a>
 							</li>
 							<li>
-								<a href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fpost%2finterfaz-card-ui-xml%2f" target="_blank" rel="nofollow">
+								<a href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fusa-fuentes-google%2f" target="_blank" rel="nofollow">
 									<i class="fa fa-google-plus-square"></i>
 								</a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fpost%2finterfaz-card-ui-xml%2f&amp;title=C%c3%b3mo%20crear%20una%20interfaz%20%27Card%20UI%27%20en%20Android%20usando%20XML&amp;summary=&amp;source=" target="_blank" rel="nofollow">
+								<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fpost%2fusa-fuentes-google%2f&amp;title=usa%20fuentes%20google%20offline&amp;summary=&amp;source=" target="_blank" rel="nofollow">
 									<i class="fa fa-linkedin-square"></i>
 								</a>
 							</li>

@@ -17,7 +17,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-lg-offset-1 col-lg-10">
 				<div id="header">
-					<h1><a href="http://patrick.dappollonio.us/">Patrick D&#39;appollonio</a></h1>
+					<h1><a href="http://localhost:1313/">Patrick D&#39;appollonio</a></h1>
 				</div>
 				
 				</div>
@@ -32,7 +32,7 @@
 			<div class="col-xs-12 col-lg-offset-1 col-lg-10">
 				<div id="post">
 					<div id="post-heading">
-						<h1><a href="http://patrick.dappollonio.us/post/como-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh/">Cómo prevenir el envío de la configuración de &#39;locale&#39; en Mac vía SSH</a></h1>
+						<h1><a href="http://localhost:1313/post/como-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh/">Cómo prevenir el envío de la configuración de &#39;locale&#39; en Mac vía SSH</a></h1>
 						
 						<h2>Y evitar mensajes como... &#39;locale: Cannot set LC_CTYPE to default locale: No such file or directory&#39; en conexiones SSH</h2>
 						
@@ -71,22 +71,22 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
 						<strong>Comparte esto:</strong>
 						<ul>
 							<li>
-								<a href="https://twitter.com/share?text=C%c3%b3mo%20prevenir%20el%20env%c3%ado%20de%20la%20configuraci%c3%b3n%20de%20%27locale%27%20en%20Mac%20v%c3%ada%20SSH&amp;url=http%3a%2f%2fpatrick.dappollonio.us%2fpost%2fcomo-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh%2f" target="_blank" rel="nofollow">
+								<a href="https://twitter.com/share?text=C%c3%b3mo%20prevenir%20el%20env%c3%ado%20de%20la%20configuraci%c3%b3n%20de%20%27locale%27%20en%20Mac%20v%c3%ada%20SSH&amp;url=http%3a%2f%2flocalhost%3a1313%2fpost%2fcomo-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh%2f" target="_blank" rel="nofollow">
 									<i class="fa fa-twitter-square"></i>
 								</a>
 							</li>
 							<li>
-								<a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpatrick.dappollonio.us%2fpost%2fcomo-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh%2f" target="_blank" rel="nofollow">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fcomo-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh%2f" target="_blank" rel="nofollow">
 									<i class="fa fa-facebook-square"></i>
 								</a>
 							</li>
 							<li>
-								<a href="https://plus.google.com/share?url=http%3a%2f%2fpatrick.dappollonio.us%2fpost%2fcomo-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh%2f" target="_blank" rel="nofollow">
+								<a href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fcomo-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh%2f" target="_blank" rel="nofollow">
 									<i class="fa fa-google-plus-square"></i>
 								</a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fpatrick.dappollonio.us%2fpost%2fcomo-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh%2f&amp;title=C%c3%b3mo%20prevenir%20el%20env%c3%ado%20de%20la%20configuraci%c3%b3n%20de%20%27locale%27%20en%20Mac%20v%c3%ada%20SSH&amp;summary=&amp;source=" target="_blank" rel="nofollow">
+								<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fpost%2fcomo-prevenir-el-envio-de-la-configuracion-de-locale-en-mac-via-ssh%2f&amp;title=C%c3%b3mo%20prevenir%20el%20env%c3%ado%20de%20la%20configuraci%c3%b3n%20de%20%27locale%27%20en%20Mac%20v%c3%ada%20SSH&amp;summary=&amp;source=" target="_blank" rel="nofollow">
 									<i class="fa fa-linkedin-square"></i>
 								</a>
 							</li>
@@ -150,5 +150,8 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad()</script>
 <script src="/js/code.min.js"></script>
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>

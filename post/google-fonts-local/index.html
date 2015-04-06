@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64 128x128 256x256">
+<meta name="generator" content="Hugo 0.14-DEV" />
+<title>Usa las fuentes de Google Web Fonts localmente</title>
+<meta name="description" content="Descarga las fuentes de Google Web Fonts para su uso offline, tanto en tu Computador como sitio web.">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-lg-offset-1 col-lg-10">
+				<div id="header">
+					<h1><a href="http://localhost:1313/">Patrick D&#39;appollonio</a></h1>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	
+<section id="single">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-lg-offset-1 col-lg-10">
+				<div id="post">
+					<div id="post-heading">
+						<h1><a href="http://localhost:1313/post/google-fonts-local/">Usa las fuentes de Google Web Fonts localmente</a></h1>
+						
+						<h2>Descargando el CSS de las Google Web Fonts para su uso offline</h2>
+						
+						<div class="meta">
+							<span>
+								3 minutos
+							
+							de lectura,
+							
+								594 palabras
+							</span>
+							<span>Publicado el 05-04-2015</span>
+						</div>
+					</div>
+					<div id="post-content">
+						
+
+<p><img src="/content/img/google-web-fonts-icon.jpg" alt="Google Web Fonts :r" />
+</p>
+
+<p><strong>Google Web Fonts es una herramienta bastante útil al momento de diseñar sitios web</strong>. No sólo porque te ofrece un sinnúmero de beneficios, gracias a que hospeda las fuentes por ti, las optimiza para mostrarlas y, además, basado en el <code>User-Agent</code> del usuario, entrega la fuente correcta, sin enviar fuentes adicionales innecesarias.</p>
+
+<p>Positivamente, las web fonts o, más correctamente, las <code>font-face</code> han tenido un largo trayecto. Por ejemplo, las <code>WOFF2</code> ya no son un sueño, y son soportadas por Chrome y Firefox y por ende, tenemos un mismo tipo de fuente para distintos navegadores.</p>
+
+<p>Por otra parte, <strong>mucha gente se ha cuestionado la &ldquo;bondad&rdquo; de Google de ofrecer fuentes instalables fácilmente en cualquier sitio entregando una URL</strong>, pero, ¿qué información reciben ellos? Prácticamente <em>toda</em> la información del visitante, con lo que pueden seguir a quien quieran.</p>
+
+<h2 id="usando-las-fuentes-de-manera-local">Usando las fuentes de manera local</h2>
+
+<p>Usar las fuentes de Google localmente no es una mala idea: previenes a tus usuarios entregar una vez más su información a Google (quiéranlo o no), pero además, puede permitirte, por ejemplo, usar las fuentes de manera offline en tu demo de sitio web o, incluso aun, cuando estás probando dentro de una intranet y no tienes manera de acceder al link del CSS que Google provee.</p>
+
+<h3 id="conoce-webfont-dl">Conoce <code>webfont-dl</code></h3>
+
+<p><code>webfont-dl</code> es un programa escrito en Javascript para NodeJS <strong>que permite descargar una fuente de Google, además de todos sus archivos de fuente</strong> — es decir, <code>WOFF,</code>TTF, <code>EOG y</code>SVG — a un grupo de archivos locales. Por si eso no fuera suficiente, y adelantándose al hecho de que una buena parte de los navegadores puede usar fuentes <code>WOFF2</code>, te las descarga dentro del mismo archivo (es decir, las deja &ldquo;inline&rdquo;, evitando hacer una petición HTTP adicional) para comodidad de uso.</p>
+
+<p><img src="/content/img/webfont-dl.png" alt="webfont-dl" />
+</p>
+
+<h3 id="instalación">Instalación</h3>
+
+<p>Para instalar <code>webfont-dl</code> <strong>necesitas tener NodeJS</strong> — o io.js, si estás más &ldquo;con la onda&rdquo; — instalado en tu equipo. Descarga el instalador desde el sitio web de <a href="https://nodejs.org/download/">NodeJS</a> y procede a instalarlo y luego ejecuta en una consola o terminal <code>node -v</code>. Eso debería mostrarte la versión de NodeJS / io.js instalada y su versión.</p>
+
+<p>Una vez hecho eso, usando el gestor de paquetes de Node, conocido como Node Package Manager, <code>npm</code>, instala <code>webfont-dl</code> escribiendo:</p>
+
+<pre><code class="language-bash">npm install -g webfont-dl # No olvides usar &quot;sudo&quot; si lo necesitas
+</code></pre>
+
+<p>Ese comando instalará el programa <code>webfont-dl</code> globalmente en tu sistema. Con eso, ya puedes llamarlo usando tu consola.</p>
+
+<h3 id="descargando-una-fuente-de-google">Descargando una fuente de Google</h3>
+
+<p>Por ejemplo, imagina que tienes este CSS añadido en el <code>head</code> de tu sitio web:</p>
+
+<pre><code class="language-html">&lt;link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,700,300,400' rel='stylesheet' type='text/css'&gt;
+</code></pre>
+
+<p>Y quieres bajar la fuente <strong>Open Sans</strong> indicada en esa dirección, entonces ejecuta este comando:</p>
+
+<pre><code class="language-bash">webfont-dl &quot;http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,700,300,400&quot; -o open-sans.css
+</code></pre>
+
+<p>Verás que hay dos parámetros: primero, tienes <strong>la URL de la fuente que estás usando</strong>. En una misma URL <strong>puedes tener cuantas fuentes quieras</strong> (en Google Web Fonts es posible unir en una misma URL todos los tipos de fuente que necesites, uniéndolas con un <code>|</code>), ya que <code>webfont-dl</code> es lo suficientemente inteligente como para detectarlas todas y descargarlas. El segundo parámetro es <code>-o open-sans.css</code> que es <strong>la dirección de salida donde quieres guardar tanto el CSS como las fuentes</strong> (los archivos de fuente serán guardados en el mismo lugar donde guardes el CSS. Aun así, siempre puedes editarlo para cambiarlas de lugar.</p>
+
+<hr />
+
+<p><strong>¡Todo listo!</strong> Ya puedes usar las fuentes de manera offline. Ninguna petición irá a Google y, como agregado, si el navegador soporta <code>WOFF2</code>, ninguna petición extra más se realizará a tu servidor, ya que, por defecto, <code>WOFF2</code> viene &ldquo;inline&rdquo; dentro del CSS (<strong>OJO:</strong> eso hará el CSS considerablemente más &ldquo;pesado&rdquo;).</p>
+
+					</div>
+					<div id="post-share">
+						<strong>Comparte esto:</strong>
+						<ul>
+							<li>
+								<a href="https://twitter.com/share?text=Usa%20las%20fuentes%20de%20Google%20Web%20Fonts%20localmente&amp;url=http%3a%2f%2flocalhost%3a1313%2fpost%2fgoogle-fonts-local%2f" target="_blank" rel="nofollow">
+									<i class="fa fa-twitter-square"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fgoogle-fonts-local%2f" target="_blank" rel="nofollow">
+									<i class="fa fa-facebook-square"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fgoogle-fonts-local%2f" target="_blank" rel="nofollow">
+									<i class="fa fa-google-plus-square"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fpost%2fgoogle-fonts-local%2f&amp;title=Usa%20las%20fuentes%20de%20Google%20Web%20Fonts%20localmente&amp;summary=&amp;source=" target="_blank" rel="nofollow">
+									<i class="fa fa-linkedin-square"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="post-comments">
+					<i class="fa fa-comments"></i>
+					<div id="disqus_thread"></div>
+					<script type="text/javascript">
+						var disqus_shortname = 'patrickdappollonio';
+						(function() {
+							var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+							dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+							(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+						})();
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<p>&copy; 2015 &mdash; Weblog personal de Patrick D'appollonio<br>
+			Creado con <a href="http://gohugo.io/" rel="nofollow" target="_blank">Hugo</a> + Adaptación de Monoid de Ghost</p>
+			<ul>
+				<li>
+					<a href="https://www.twitter.com/marlex" target="_blank" rel="nofollow">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/patrickdappollonio" target="_blank" rel="nofollow">
+						<i class="fa fa-github"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://play.google.com/store/apps/developer?id=Patrick+D%27appollonio" target="_blank" rel="nofollow">
+						<i class="fa fa-android"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.twitch.tv/patrickdappollonio" target="_blank" rel="nofollow">
+						<i class="fa fa-twitch"></i>
+					</a>
+				</li>
+				<li>
+					<a href="/index.xml" target="_blank" rel="nofollow">
+						<i class="fa fa-rss-square"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src="/js/code.min.js"></script>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
