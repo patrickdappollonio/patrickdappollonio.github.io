@@ -31,7 +31,7 @@ $(function() {
 
 		$('#subheader h2').html(function(i, old) {
 			return old
-				.replace('CTO de Sonusland Inc., Fundador de', 'CTO of Sonusland Inc., Founder of')
+				.replace('Fundador de', 'Founder of')
 				.replace('Escribiendo desde', 'Writing from')
 				.replace('Originalmente Chileno', 'Originally from Chile')
 				.replace('Mi twitter', 'Follow me on Twitter')
