@@ -32,7 +32,7 @@ $(function() {
 		$('#subheader h2').html(function(i, old) {
 			return old
 				.replace('Fundador de', 'Founder of')
-				.replace('Escribiendo desde', 'Writing from')
+				.replace('Viviendo en Estados Unidos mientras dure mi Visa', 'Living in the US under a working Visa')
 				.replace('Originalmente Chileno', 'Originally from Chile')
 				.replace('Mi twitter', 'Follow me on Twitter')
 		});
@@ -87,7 +87,7 @@ $(function() {
 			return old
 				.replace('Weblog personal de', 'Personal weblog of')
 				.replace('Creado con', 'Created with')
-				.replace('Adaptación de Monoid de Ghost', 'Modified version of Monoid from Ghost')
+				.replace('Adaptación del template Monoid de Ghost', 'Modified version of the Monoid template from Ghost')
 		});
 	}
 });
